@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>technologic</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+  <link rel="stylesheet" href="../../assets/css/mycss0.css" type="text/css" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/myscript.js"></script>
+
+  <style>
+  .buttons{
+    background: #406eb3;
+  }
+  .playbttn2{
+    cursor: pointer;
+
+  }
+  .psbttn2{
+    cursor: pointer;
+    display: none;
+  }
+  </style>
+
+  <script>
+  $(document).ready(function(){
+    $(".playbttn2").click(function(){
+
+      $(this).hide();
+      $(".psbttn2").show();
+      $("#mv1120")[0].play();
+
+    });
+
+    $(".psbttn2").click(function(){
+      $(this).hide();
+      $(".playbttn2").show();
+      $("#mv1120")[0].pause();
+
+    });
+
+    $("#mv1120").on('ended',function(){
+
+      $(".playbttn2").show();
+      $(".psbttn2").hide();
+
+    });
+
+
+    $(".playbttn").click(function(){
+
+      $(this).hide();
+      $(".psbttn").show();
+      $("#mv1115")[0].play();
+
+    });
+
+    $(".psbttn").click(function(){
+      $(this).hide();
+      $(".playbttn").show();
+      $("#mv1115")[0].pause();
+
+    });
+
+    $("#mv1115").on('ended',function(){
+
+      $(".playbttn").show();
+      $(".psbttn").hide();
+
+    });
+  });
+  </script>
+
+
+</head>
+
+<body>
+  <!-- new -->
+  <div class="headerNav">
+      <a href="../../index.html">
+        <div class="logobox">
+          <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
+          <img class="logo1 logoname" src="../../assets/imgs/logo03e.png" alt="">
+        </div>
+      </a>
+  </div>
+
+  <div class="columnBox"></div>
+
+  <div class="column1">
+    <div class="section intro">
+      <img id="pics" src="thumbnail2.gif" alt="">
+      <h1>Technologic</h1>
+      <h2>
+        Fall 2016 | Type in Motion | Group | 5 weeks
+        <br>
+        Premiere, Photoshop
+      </h2>
+      The Evolution of typography technology
+    </div>
+
+    <div class="section">
+      <h3>my role</h3>
+      My role in my team was editing music and video.
+    </div>
+
+    <div class="section">
+      <video id="mv1115" poster="img_1.jpg">
+        <source src="mv1117.mp4" type="video/mp4">
+      </video>
+      <div class="buttons playbttn">
+        play
+      </div>
+      <div class="buttons psbttn">
+        pause
+      </div>
+    </div>
+
+    <div class="section">
+      <img id="pics" src="img_2.jpg" alt="">
+      <img id="pics" src="img_4.jpg" alt="">
+      <img id="pics" src="img_6.png" alt="">
+      <img id="pics" src="img_9.png" alt="">
+      <img id="pics" src="img_10.png" alt="">
+    </div>
+
+    <div class="section">
+      <h3>Process</h3>
+      <div class="section">
+        <img id="pics" src="img_a01.jpg" alt="">
+        <h5>choosing music</h5>
+
+        <img id="pics" src="img_b00.jpg" alt="">
+        <h5>concept; focus on typography</h5>
+
+        <img id="pics" src="img_b02.png" alt="">
+        <h5>idea; making specialized storyboards for this</h5>
+        <video id="mv1115" autoplay playsinline loop muted>
+          <source src="mv1118.mp4" type="video/mp4">
+        </video>
+        <h5>test shot 01</h5>
+
+        <img id="pics" src="img_b01.jpg" alt="">
+        <h5>add the progression</h5>
+
+
+        <img id="pics" src="img_b02.jpg" alt="">
+        <img id="pics" src="img_b03.jpg" alt="">
+
+        <video id="mv1115" autoplay playsinline loop muted>
+          <source src="mv1116.mp4" type="video/mp4">
+        </video>
+        <h5>test shot 04; only photography left</h5>
+        <br>
+        <img id="pics" src="img_b04.jpg" alt="">
+        <h5>to the end</h5>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="footers"></div>
+  <!-- new end -->
+
+</body>
+</html>

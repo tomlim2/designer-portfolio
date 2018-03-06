@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>sound journal</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+    <link rel="stylesheet" href="../../assets/css/mycss0.css" type="text/css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/myscript.js"></script>
+
+    <style>
+    .buttons{
+      background-color: #d9d0c7;
+    }
+    .plb2{
+      cursor: pointer;
+
+    }
+    .psb2{
+      cursor: pointer;
+      display: none;
+    }
+    .plb3{
+      cursor: pointer;
+    }
+    .psb3{
+      cursor: pointer;
+      display: none;
+    }
+    </style>
+
+    <script>
+    $(document).ready(function(){
+      $(".playbttn").click(function(){
+
+        $(this).hide();
+        $(".psbttn").show();
+        $("#mv1115")[0].play();
+
+      });
+
+      $(".psbttn").click(function(){
+        $(this).hide();
+        $(".playbttn").show();
+        $("#mv1115")[0].pause();
+
+      });
+
+      $("#mv1115").on('ended',function(){
+
+        $(".playbttn").show();
+        $(".psbttn").hide();
+
+      });
+
+      // sound1
+
+      $(".plb2").click(function(){
+        $(this).hide();
+        $(".psb2").show();
+        $("#bello")[0].play();
+      });
+
+      $(".psb2").click(function(){
+        $(this).hide();
+        $(".plb2").show();
+        $("#bello")[0].pause();
+      });
+
+      $("#bello").on('ended',function(){
+
+        $(".plb2").show();
+        $(".psb2").hide();
+      });
+
+      // sound2
+      $(".plb3").click(function(){
+        $(this).hide();
+        $(".psb3").show();
+        $("#bello")[0].play();
+      });
+
+      $(".psb3").click(function(){
+        $(this).hide();
+        $(".plb3").show();
+        $("#bello")[0].pause();
+      });
+
+      $("#bello").on('ended',function(){
+
+        $(".plb3").show();
+        $(".psb3").hide();
+      });
+    });
+    </script>
+
+
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="headerNav">
+        <a href="../../index.html">
+          <div class="logobox">
+            <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
+            <img class="logo1 logoname" src="../../assets/imgs/logo03e.png" alt="">
+          </div>
+        </a>
+    </div>
+
+    <div class="columnBox"></div>
+      <!-- new -->
+
+      <div class="column1">
+        <div class="section intro">
+          <img id="pics" src="img_0.gif" alt="">
+          <h1>Sound Journey</h1>
+          <h2>
+            Spring 2017 | Motion graphic | 4 weeks <br>
+            Audition, After Effect
+          </h2>
+          <div class="textbox1">
+            This motion is abstract animation based on sounds that I collected, sequence, and edit to create rhythm and movement.
+          </div>
+        </div>
+
+        <div class="section">
+          <video id="mv1115" poster="img_3.jpg">
+            <source src="mv1115.mp4" type="video/mp4">
+          </video>
+          <div class="buttons playbttn">
+            play
+          </div>
+          <div class="buttons psbttn">
+            pause
+          </div>
+        </div>
+
+        <div class="section">
+
+          <img id="pics2L" src="img_1.jpg" alt="">
+          <img id="pics2R" src="img_2.jpg" alt="">
+          <img id="pics2L" src="img_3.jpg" alt="">
+          <img id="pics2R" src="img_4.jpg" alt="">
+          <img id="pics2L" src="img_5.jpg" alt="">
+
+        </div>
+
+        <div class="section">
+          <h3>Process</h3>
+          <br>
+          <audio id="bello">
+            <source src="audio1111.wav" type="audio/wav">
+          </audio>
+          <div class="buttons plb2">
+            play
+          </div>
+          <div class="buttons psb2">
+            pause
+          </div>
+          <br>
+          <h5>Step1; Recoding sounds from my environment</h5>
+          <br>
+          <audio id="bello2">
+            <source src="audio1112.wav" type="audio/wav">
+          </audio>
+          <div class="buttons plb3">
+            play
+          </div>
+          <div class="buttons psb3">
+            pause
+          </div>
+          <br>
+          <h5>Step2; Mixing the sounds</h5>
+          <br>
+          <video id="mv1115" autoplay playsinline loop muted>
+            <source src="mv1116.mp4" type="video/mp4">
+          </video>
+          <h5>Step3; Premiere version</h5>
+        </div>
+
+      </div>
+
+      <div class="footers"></div>
+      <!-- new end -->
+
+
+
+  </body>
+</html>

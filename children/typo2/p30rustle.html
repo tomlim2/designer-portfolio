@@ -1,0 +1,282 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<link rel="stylesheet" href="css/typo2.css" type="text/css" media="screen" />
+
+	<title>
+		GRASS / NOISY BERRY!!
+	</title>
+	<style>
+
+		.mainpic{
+			background-image: url('pic/p30_0.jpg');
+			background-size: cover;
+      background-position: right;
+		}
+
+		/*.content {
+			height: 100%;
+			position: relative;
+		}*/
+
+		.choochoo{
+			background-image: url('pic/p30_1.png');
+			background-size: cover;
+      background-position: center;
+			width: 143px;
+			height: 34px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo2{
+			background-image: url('pic/p30_2.png');
+			background-size: cover;
+      background-position: center;
+			width: 143px;
+			height: 36px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo3{
+			background-image: url('pic/p30_3.png');
+			background-size: cover;
+			background-position: center;
+			width: 240px;
+			height: 41px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo4{
+			background-image: url('pic/p30_4.png');
+			background-size: cover;
+      background-position: center;
+			width: 240px;
+			height: 39px;
+			opacity: 0;
+			z-index: 1;
+		}
+
+		.choomv{
+			animation: chooprss 3s forwards;
+			position: absolute;
+			top: 80%;
+			left: 5%;
+		}
+		.choomv2{
+			animation: chooprss 3s forwards;
+			animation-delay: 1.4s;
+			position: absolute;
+			top: 60%;
+			right: 5%;
+		}
+		.choomv3{
+			animation: chooprss 3s forwards;
+			animation-delay: 2.8s;
+			position: absolute;
+			top: 40%;
+			right: 5%;
+		}
+		.choomv4{
+			animation: chooprss 3s forwards;
+			animation-delay: 4.2s;
+			position: absolute;
+			top: 15%;
+			left: 10%;
+		}
+
+		@keyframes chooprss{
+			0% {
+				opacity: 1;
+				z-index: 13;
+				transform: rotate(10deg);
+			}
+			3%{
+				transform: rotate(-10deg);
+			}
+			6%{
+				transform: rotate(5deg);
+			}
+			9%{
+				transform: rotate(-5deg);
+			}
+			12%{
+				transform: rotate(0deg);
+			}
+
+			34%{
+				transform: rotate(0deg);
+			}
+			35%{
+				transform: rotate(10deg);
+			}
+			38%{
+				transform: rotate(-10deg);
+			}
+			41%{
+				transform: rotate(5deg);
+			}
+			44%{
+				transform: rotate(-5deg);
+				opacity: 1;
+			}
+			45%{
+				transform: rotate(0deg);
+				opacity: 1;
+			}
+			99% {
+				opacity: 0;
+				z-index: 13;
+			}
+			100% {
+				opacity: 0;
+				z-index: 1;
+			}
+		}
+		@keyframes chooprss2{
+			0% {
+				top: 70%;
+				left: 35%;
+				opacity: 1;
+				z-index: 13;
+			}
+			99% {
+				top: 50%;
+				left: 35%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				z-index: 0;
+			}
+		}
+		@keyframes chooprss3{
+			0% {
+				top: 74%;
+				left: -1600px;
+				z-index: 13;
+			}
+			99% {
+				top: 74%;
+				left: 800px;
+				opacity: 1;
+				z-index: 13;
+			}
+			100% {
+				top: 74%;
+				left: 800px;
+				opacity: 0;
+				z-index: 1;
+			}
+		}
+		.cbmv{
+			animation-delay: 5.6s;
+		}
+
+
+	</style>
+	<script>
+	$(document).ready(function(){
+
+
+
+				var myAudio = ['a01', 'a02', 'a03'];
+
+				$(".mainpic").click(function(){
+					var rand = myAudio[Math.floor(Math.random() * myAudio.length)];
+					if(rand == 'a01'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound1')[0].currentTime = 0;
+						$("#ctsound1")[0].play();
+					}
+					if(rand == 'a02'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound2')[0].currentTime = 0;
+						$("#ctsound2")[0].play();
+					}
+					if(rand == 'a03'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound3')[0].currentTime = 0;
+						$("#ctsound3")[0].play();
+					}
+					// console.log(rand);
+				});
+
+		$(".mainpic").click(function(){
+
+			$('.choochoo').toggleClass('choomv');
+			$('.choochoo2').toggleClass('choomv2');
+			$('.choochoo3').toggleClass('choomv3');
+			$('.choochoo4').toggleClass('choomv4');
+
+			// $("#ctsound")[0].play();
+
+		});
+
+	});
+
+	</script>
+</head>
+
+<body>
+	<div class="container0">
+
+		<div class="choochoo choomv"></div>
+		<div class="choochoo2 choomv2"></div>
+		<div class="choochoo3 choomv3"></div>
+		<div class="choochoo4 choomv4"></div>
+
+		<div class="choochoo"></div>
+		<div class="choochoo2"></div>
+		<div class="choochoo3"></div>
+		<div class="choochoo4"></div>
+
+		<div class="container1">
+			<div class="interior">
+				<div class="clickbox cbmv">CLICK THE IMAGE!</div>
+
+				<div class="mainpicshadow"></div>
+				<div class="mainpic"></div>
+
+				<div class="name">GRASS</div>
+			</div>
+
+		</div>
+
+		<div class="bottomnav">
+			<div class="bttmnv bnvcenter">
+				<div class="bnvleft">
+					<a href="p28tennis.html">TENNIS COURT |</a>
+				</div>
+
+				<a href="index_1.html">HOME</a>
+
+				<div class="bnvright">
+					<a href="p34dog.html">| DOG PARK</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<audio id="ctsound1">
+		<source src="audio/p30rustle01.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound2">
+		<source src="audio/p30rustle02.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound3">
+		<source src="audio/p30rustle03.wav" type="audio/wav">
+	</audio>
+
+</body>
+</html>

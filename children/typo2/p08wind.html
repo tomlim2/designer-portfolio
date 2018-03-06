@@ -1,0 +1,298 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<link rel="stylesheet" href="css/typo2.css" type="text/css" media="screen" />
+
+	<title>
+		WIND & TREE / NOISY BERRY!!
+	</title>
+	<style>
+		.mainpic{
+			background-image: url('pic/p08_0.jpg');
+			background-size: cover;
+			background-position: right;
+		}
+
+		.choochoo{
+			background-image: url('pic/p08_1.png');
+			background-size: cover;
+      background-position: center;
+			width: 50px;
+			height: 284px;
+			opacity: 0;
+		}
+		.choochoo2{
+			background-image: url('pic/p08_2.png');
+			background-size: cover;
+      background-position: center;
+			width: 40px;
+			height: 235px;
+			opacity: 0;
+		}
+		.choochoo3{
+			background-image: url('pic/p08_2.png');
+			background-size: cover;
+      background-position: center;
+			width: 40px;
+			height: 235px;
+			opacity: 0;
+		}
+		.choomv{
+			animation: chooprss 2s;
+			animation-delay: 2.4s;
+			position: absolute;
+			transform: rotate(-5deg);
+			z-index: 1;
+		}
+		.choomv2{
+			animation: chooprss2 2s;
+			animation-delay: 1.2s;
+			position: absolute;
+			z-index: 1;
+		}
+		.choomv3{
+			animation: chooprss3 2s;
+			position: absolute;
+			z-index: 1;
+		}
+		@keyframes chooprss{
+			0% {
+				transform: rotate(-35deg);
+				top: 24%;
+	    	left: 13%;
+				z-index: 13;
+				opacity: 1;
+			}
+			40%{
+				transform: rotate(-5deg);
+				top: 4%;
+	    	left: 13%;
+				opacity: 1;
+			}
+			/*41%{
+				transform: rotate(-5deg);
+				top: 4%;
+	    	left: 13%;
+				opacity: 1;
+			}*/
+			/*80%{
+				transform: rotate(24deg);
+				top: -26%;
+    		left: 20%;
+			}*/
+			99% {
+				transform: rotate(25deg);
+				top: -16%;
+    		left: 13%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+		@keyframes chooprss2{
+			0% {
+				transform: rotate(50deg);
+				top: 70%;
+				left: 3%;
+				opacity: 1;
+				z-index: 13;
+			}
+
+			40%{
+				transform: rotate(30deg);
+				top: 49%;
+				left: 13%;
+				opacity: 1;
+			}
+			/*41%{
+				transform: rotate(30deg);
+				top: 49%;
+				left: 13%;
+				opacity: 1;
+			}*/
+			99% {
+				transform: rotate(10deg);
+		    top: 28%;
+		    left: 23%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				z-index: 0;
+				opacity: 0;
+			}
+		}
+
+		@keyframes chooprss3{
+			0% {
+				transform: rotate(51deg);
+		    top: 89%;
+		    left: 59%;
+				opacity: 1;
+				z-index: 13;
+			}
+
+			40%{
+				transform: rotate(31deg);
+		    top: 68%;
+		    left: 69%;
+				opacity: 1;
+			}
+			/*42%{
+				transform: rotate(31deg);
+		    top: 68%;
+		    left: 69%;
+				opacity: 1;
+			}*/
+			99% {
+				transform: rotate(11deg);
+				top: 47%;
+				left: 79%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				z-index: 0;
+				opacity: 0;
+			}
+
+
+	</style>
+	<script>
+	$(document).ready(function(){
+
+
+
+				var myAudio = ['a01', 'a02', 'a03'];
+
+				$(".mainpic").click(function(){
+					var rand = myAudio[Math.floor(Math.random() * myAudio.length)];
+					if(rand == 'a01'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound1')[0].currentTime = 0;
+						$("#ctsound1")[0].play();
+					}
+					if(rand == 'a02'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound2')[0].currentTime = 0;
+						$("#ctsound2")[0].play();
+					}
+					if(rand == 'a03'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound3')[0].currentTime = 0;
+						$("#ctsound3")[0].play();
+					}
+					// console.log(rand);
+				});
+
+		$(".mainpic").click(function() {
+
+			$('.choochoo').toggleClass('choomv');
+			$('.choochoo2').toggleClass('choomv2');
+			$('.choochoo3').toggleClass('choomv3');
+
+			// $("#ctsound")[0].play();
+
+		});
+
+		// $(".mainpic").click(function(){
+		//
+		//
+		//
+		//
+		// 	$('.choochoo').removeClass('choomv');
+		// 	setTimeout(function() {
+		// 	$('.choochoo').addClass('choomv');
+		// 	},1);
+		// 	$('.choochoo2').removeClass('choomv2');
+		// 	setTimeout(function() {
+		// 	$('.choochoo2').addClass('choomv2');
+		// 	},1);
+		// 	$('.choochoo3').removeClass('choomv3');
+		// 	setTimeout(function() {
+		// 	$('.choochoo3').addClass('choomv3');
+		// 	},1);
+		//
+		// 	$("#ctsound")[0].play();
+		//
+		//
+		// 	// $('.choochoo').toggleClass('choomv');
+		// 	// $('.choochoo2').toggleClass('choomv2');
+		// 	// $('.choochoo3').toggleClass('choomv3');
+		//
+		// });
+
+
+	});
+
+	</script>
+</head>
+
+<body>
+
+	<div class="container0">
+
+		<div class="choochoo choomv"></div>
+		<div class="choochoo2 choomv2"></div>
+		<div class="choochoo3 choomv3"></div>
+
+		<div class="choochoo"></div>
+		<div class="choochoo2"></div>
+		<div class="choochoo3"></div>
+
+		<div class="container1">
+			<div class="interior">
+
+				<div class="clickbox cbmv">CLICK THE IMAGE!</div>
+
+				<div class="mainpicshadow"></div>
+				<div class="mainpic"></div>
+				<div class="name">
+					WIND & TREE
+				</div>
+
+			</div>
+		</div>
+
+		<div class="bottomnav">
+			<div class="bttmnv bnvcenter">
+				<div class="bnvleft">
+					<a href="p34dog.html">DOG PARK |</a>
+				</div>
+
+				<a href="index_1.html">HOME</a>
+
+				<div class="bnvright">
+					<a href="p10hwy.html">| HIGHWAY</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<audio id="ctsound1">
+		<source src="audio/p08wind01.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound2">
+		<source src="audio/p08wind02.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound3">
+		<source src="audio/p08wind03.wav" type="audio/wav">
+	</audio>
+
+</body>
+</html>

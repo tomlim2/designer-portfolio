@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>aug.art</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+  <link rel="stylesheet" href="../../assets/css/mycss0.css" type="text/css" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/myscript.js"></script>
+
+  <style>
+  .works{
+    margin-top: 2vh;
+    margin-bottom: 12vh;
+  }
+  .bg1{
+    background: #ae95cd;
+  }
+  .bg2{
+    background: #f3f0f7;
+  }
+
+  </style>
+
+  <script>
+  $(document).ready(function(){
+  $(".playbttn").click(function(){
+
+    $(this).hide();
+    $(".psbttn").show();
+    $("#mv1115")[0].play();
+
+  });
+
+  $(".psbttn").click(function(){
+    $(this).hide();
+    $(".playbttn").show();
+    $("#mv1115")[0].pause();
+
+  });
+
+  $("#mv1115").on('ended',function(){
+
+    $(".playbttn").show();
+    $(".psbttn").hide();
+
+  });
+  });
+  </script>
+
+
+</head>
+
+<body>
+
+    <!-- new -->
+
+    <!-- header -->
+    <div class="headerNav">
+        <a href="../../index.html">
+          <div class="logobox">
+            <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
+            <img class="logo1 logoname" src="../../assets/imgs/logo03e.png" alt="">
+          </div>
+        </a>
+    </div>
+
+    <div class="columnBox"></div>
+
+    <div class="column1">
+
+      <div class="section intro">
+        <video id="mv1115" autoplay playsinline loop muted>
+          <source src="mv1115.mp4" type="video/mp4">
+        </video>
+        <h1>aug.art</h1>
+        <h2>
+          Fall 2017 | AR project | Group | 6 weeks
+          <br>
+          Aurasma, Blender, Maya, After Effect, Audition</h2>
+          <div class="textbox1">
+          Collaborating Art and Augmented Reality
+          </div>
+      </div>
+
+
+      <div class="section">
+        <img id="picsMobile" src="assets/img_logo.png" alt="">
+        <h3>project aug.art</h3>
+        Through aug.art, ‘art’ and ‘collaboration’ becomes redefinded; the piece takes on multi-layered, multi- dimensional qualities.
+        <br><br>
+
+        <img id="pics" src="img_05a.jpg" alt="">
+        <img id="pics" src="img_05b.jpg" alt="">
+        <img id="pics" src="img_05c.jpg" alt="">
+        <img id="pics" src="img_05d.jpg" alt="">
+
+        <video id="mv1117" autoplay playsinline loop muted>
+          <source src="mv1116.mp4" type="video/mp4">
+        </video>
+        <br><br>
+        Aug Art is augmenting “2D”static art into a“3D”augmented reality animation using the Aurasma app and collaborating with the artists to create an experience. It is an experience that combines Aurasma’s augmented reality technology with traditional art forms to create unique, interactive, and informational experiences.
+        <br><br>
+        <div class="column2">
+          <img id="pics2L" src="img_01.png" alt="">
+          <img id="pics2R" src="img_02.png" alt="">
+          <img id="pics2L" src="img_04.png" alt="">
+          <img id="pics2R" src="img_03.png" alt="">
+        </div>
+        <h5>Thanks for all artists who participated in aug.art</h5>
+
+      </div>
+
+      <div class="section">
+        <h3>My roles</h3>
+        My roles in this project was technology, making motion, animation, and scripting for AR engine, Aurasma.
+      </div>
+
+      <div class="section">
+        <h3>HP Reveal (=Aurasma)</h3>
+        Engine for compliment Augmented Reality.
+        <div class="column2">
+          <img id="pics2L" src="assets/img_a01.png" alt="">
+          <img id="pics2R" src="assets/img_a02.png" alt="">
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Participated works and artists (Trigger Images)</h3>
+          <div class="infobox">
+            <img id="pics" src="img_01.png" alt="">
+            <strong>WE</strong> | 2017
+            <br>GD students:
+            <br>Kaylee Zhou, Quadir Moultrie, Yasmeen Khaja, Sol Yun, Justin Truong, Jimmy Don
+            <br>Designer: Jon Key
+            <br>Faculty: Annie Wang
+          </div>
+          <br>
+          <br>
+          <img id="pics" src="img_02.png" alt="">
+          <div class="infobox">
+            <strong>Hombre Piscador / Harvest Man</strong> | Arlene Correa Valencia | 2017
+          </div>
+          <br>
+          <br>
+          <img id="pics" src="img_03.jpg" alt="">
+          <div class="infobox">
+            <strong>Where is my heart</strong> | Lisa Fong | 2016
+          </div>
+          <br>
+          <br>
+          <img id="pics" src="img_04.png" alt="">
+          <div class="infobox">
+            <strong>Robot No. 6</strong> | Jennifer Han | 2017
+          </div>
+          <br>
+
+
+      </div>
+
+      <div class="section">
+        <div id="textexppj2sp">
+          <h3 id="">User Interface</h3>
+          Information, process, and motion to show information of artists
+        </div>
+        <br>
+          <strong>Motion</strong>
+        <div class="column2">
+          <img id="pics2L" class="bg1" src="assets/img_b06a.gif" alt="">
+          <img id="pics2R" class="bg2" src="assets/img_b05a.gif" alt="">
+          <img id="pics2L" class="bg1" src="assets/img_b08.gif" alt="">
+          <img id="pics2R" class="bg2" src="assets/img_b07.gif" alt="">
+        </div>
+      </div>
+
+      <div class="section">
+        <div id="textexppj2sp">
+          <strong>op-ed Animation</strong>
+
+          <div id="pics2exppj2row">
+            <img id="pics2L" src="assets/img_b01.gif" alt="">
+            <img id="pics2R" src="assets/img_b02.gif" alt="">
+          </div>
+          <div id="pics2exppj2row">
+            <img id="pics2L" src="assets/img_b03.gif" alt="">
+            <img id="pics2R" src="assets/img_b04.gif" alt="">
+          </div>
+        </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="section">
+        <div id="textexppj2sp">
+          <strong>Process</strong>
+        </div>
+
+        <div class="column2">
+          <img id="pics2L" src="assets/img_b09.jpg" alt="">
+          <img id="pics2R" src="assets/img_b12.jpg" alt="">
+          <img id="pics2L" src="assets/img_b10.jpg" alt="">
+          <img id="pics2R" src="assets/img_b11.jpg" alt="">
+        </div>
+      </div>
+
+
+      <div class="section">
+        <h3>Process</h3>
+        <div class="column2">
+          <img id="pics2C" src="assets/img_c00.png" alt="">
+          <h5>facebook communication</h5>
+          <br>
+          <img id="pics2L" src="assets/img_c01.png" alt="">
+          <img id="pics2R" src="assets/img_c02.png" alt="">
+          <img id="pics2L" src="assets/img_c03.png" alt="">
+          <img id="pics2R" src="assets/img_c04.png" alt="">
+          <h5>start; ideas & storyboards</h5>
+          <img id="pics2C" src="assets/img_c16.png" alt="">
+          <h5>check list</h5>
+          <br><br>
+          <strong>#Contents part</strong> | animation, scripting...
+          <br><br>
+          <img id="pics2L" src="assets/img_c04b.png" alt="">
+          <img id="pics2R" src="assets/img_c04a.gif" alt="">
+          <h5>just make it happen:)</h5>
+          <br>
+          <img id="pics2L" src="assets/img_c05.png" alt="">
+          <img id="pics2R" src="assets/img_c06.png" alt="">
+          <img id="pics2C3" src="assets/img_c06a.png" alt="">
+          <img id="pics2C" src="assets/img_c07.gif" alt="">
+          <img id="pics2L" src="assets/img_c08.jpg" alt="">
+          <img id="pics2R" src="assets/img_c09.jpg" alt="">
+          <h5>I remembered what the designer said after this projects</h5>
+          <br>
+          <img id="pics2C" src="assets/img_c10.png" alt="">
+          <h5>art works from painters who want to collaborate with AR(thanks for participating!)</h5>
+          <br>
+          <img id="pics2L" src="assets/img_c10a.png" alt="">
+          <img id="pics2R" src="assets/img_c10b.png" alt="">
+          <h5>meeting, and get process pics</h5>
+          <br>
+          <img id="pics2L" src="assets/img_c11.png" alt="">
+          <img id="pics2R" src="assets/img_c12.png" alt="">
+          <h5>two works in a week... it was tough...</h5>
+          <br>
+          <img id="pics2C" src="assets/img_c12a.png" alt="">
+          <img id="pics2L" src="assets/img_c12ab.png" alt="">
+          <img id="pics2R" src="assets/img_c12b.png" alt="">
+          <h5>one work in a week... I had time to try my first 3D animation ever, but...</h5>
+          <br>
+          <img id="pics2C" src="assets/img_c12c.gif" alt="">
+          <h5>!!??</h5>
+          <img id="pics2C2" src="assets/img_c12e.png" alt="">
+          <h5>they became easter egg... but combination AR & 3D looked better then the pixel media</h5>
+          <br>
+          <img id="pics2C" src="assets/img_c12d.png" alt="">
+          <h5>go back to AE...</h5>
+          <br>
+          <img id="pics2L" src="assets/img_c17.png" alt="">
+          <img id="pics2R" src="assets/img_c18.png" alt="">
+          <h5>graphic guide from teamate, shankai:)</h5>
+          <br>
+          <img id="pics2L" src="img_08d.png" alt="">
+          <img id="pics2R" src="img_08c.png" alt="">
+          <h5>done done</h5>
+          <br><br>
+          <strong>#Way-finding part</strong>
+          <br><br>
+          <img id="pics2C" src="assets//wayfinding/img_d01.png" alt="">
+          <h5>checking the place</h5>
+          <img id="pics2C" src="assets//wayfinding/img_d04.png" alt="">
+          <img id="pics2C" src="assets//wayfinding/img_d03.png" alt="">
+          <h5>sketches</h5>
+          <img id="pics2C2" src="assets//wayfinding/img_d02.png" alt="">
+          <h5>prototype</h5>
+          <img id="pics2C" src="assets//wayfinding/img_d05.png" alt="">
+          <h5>prototype22</h5>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="footers"></div>
+
+    <!-- new end -->
+
+
+</body>
+</html>

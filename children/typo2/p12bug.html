@@ -1,0 +1,344 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<link rel="stylesheet" href="css/typo2.css" type="text/css" media="screen" />
+
+	<title>
+		BUGS & TREE / NOISY BERRY!!
+	</title>
+	<style>
+		.mainpic{
+			background-image: url('pic/p12_0.jpg');
+			background-size: cover;
+			background-position: right;
+		}
+		.choochoo{
+			background-image: url('pic/p12_1.png');
+			background-size: cover;
+      background-position: center;
+			width: 207px;
+			height: 49px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo2{
+			background-image: url('pic/p12_2.png');
+			background-size: cover;
+      background-position: center;
+			width: 207px;
+			height: 49px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo3{
+			background-image: url('pic/p12_1.png');
+			background-size: cover;
+      background-position: center;
+			width: 207px;
+			height: 49px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo4{
+			background-image: url('pic/p12_2.png');
+			background-size: cover;
+      background-position: center;
+			width: 207px;
+			height: 49px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo5{
+			background-image: url('pic/p12_1.png');
+			background-size: cover;
+      background-position: center;
+			width: 207px;
+			height: 49px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo6{
+			background-image: url('pic/p12_2.png');
+			background-size: cover;
+      background-position: center;
+			width: 207px;
+			height: 49px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choomv{
+			animation: chooprss 1s forwards;
+			animation-delay: 3s;
+			position: absolute;
+			top: 250px;
+    	left: 90px;
+		}
+		.choomv2{
+			animation: chooprss2 1s forwards;
+			animation-delay: 0s;
+			position: absolute;
+			top: 320px;
+			left: 10px;
+		}
+		.choomv3{
+			animation: chooprss3 1s forwards;
+			animation-delay: 1.5s;
+			position: absolute;
+			top: 80%;
+    	left: 2px;
+		}
+		.choomv4{
+			animation: chooprss4 1s forwards;
+			animation-delay: 1.8s;
+			position: absolute;
+			top: 65%;
+    	right: 20px;
+		}
+		.choomv5{
+			animation: chooprss5 1s forwards;
+			animation-delay: 0.3s;
+			position: absolute;
+			top: 30px;
+	    left: 100px;
+		}
+		.choomv6{
+			animation: chooprss6 1s forwards;
+			animation-delay: 3.3s;
+			position: absolute;
+			top: 80px;
+			left: 10px;
+		}
+		@keyframes chooprss{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				opacity: 1;
+			}
+			80%{
+				opacity: 1;
+			}
+			99% {
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+		@keyframes chooprss2{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				opacity: 1;
+			}
+			80%{
+				opacity: 1;
+			}
+			99% {
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+		@keyframes chooprss3{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				opacity: 1;
+			}
+			80%{
+				opacity: 1;
+			}
+			99% {
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+		@keyframes chooprss4{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				opacity: 1;
+			}
+			80%{
+				opacity: 1;
+			}
+			99% {
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+		@keyframes chooprss5{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				opacity: 1;
+			}
+			80%{
+				opacity: 1;
+			}
+			99% {
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+		@keyframes chooprss6{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				opacity: 1;
+			}
+			80%{
+				opacity: 1;
+			}
+			99% {
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+
+
+	</style>
+	<script>
+	$(document).ready(function(){
+
+
+				var myAudio = ['a01', 'a02', 'a03'];
+
+				$(".mainpic").click(function(){
+					var rand = myAudio[Math.floor(Math.random() * myAudio.length)];
+					if(rand == 'a01'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound1')[0].currentTime = 0;
+						$("#ctsound1")[0].play();
+					}
+					if(rand == 'a02'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound2')[0].currentTime = 0;
+						$("#ctsound2")[0].play();
+					}
+					if(rand == 'a03'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound3')[0].currentTime = 0;
+						$("#ctsound3")[0].play();
+					}
+					// console.log(rand);
+				});
+
+		$(".mainpic").click(function(){
+
+			// $("#ctsound")[0].play();
+
+			$('.choochoo').toggleClass('choomv');
+			$('.choochoo2').toggleClass('choomv2');
+			$('.choochoo3').toggleClass('choomv3');
+			$('.choochoo4').toggleClass('choomv4');
+			$('.choochoo5').toggleClass('choomv5');
+			$('.choochoo6').toggleClass('choomv6');
+
+		});
+
+	});
+
+	</script>
+</head>
+
+<body>
+	<div class="container0">
+
+		<div class="choochoo choomv"></div>
+		<div class="choochoo2 choomv2"></div>
+		<div class="choochoo3 choomv3"></div>
+		<div class="choochoo4 choomv4"></div>
+		<div class="choochoo5 choomv5"></div>
+		<div class="choochoo6 choomv6"></div>
+
+		<div class="choochoo"></div>
+		<div class="choochoo2"></div>
+		<div class="choochoo3"></div>
+		<div class="choochoo4"></div>
+		<div class="choochoo5"></div>
+		<div class="choochoo6"></div>
+
+		<div class="container1">
+			<div class="interior">
+				<div class="clickbox cbmv">CLICK THE IMAGE!</div>
+
+				<div class="mainpicshadow"></div>
+				<div class="mainpic"></div>
+
+				<div class="name">BUGS & BIRDS</div>
+			</div>
+		</div>
+
+		<div class="bottomnav">
+			<div class="bttmnv bnvcenter">
+				<div class="bnvleft">
+					<a href="p10hwy.html">HIGHWAY |</a>
+				</div>
+
+				<a href="index_1.html">HOME</a>
+
+				<div class="bnvright">
+					<a href="p14cal.html">| CALTRAIN</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<audio id="ctsound1">
+		<source src="audio/p12bog01.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound2">
+		<source src="audio/p12bog02.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound3">
+		<source src="audio/p12bog03.wav" type="audio/wav">
+	</audio>
+
+</body>
+</html>

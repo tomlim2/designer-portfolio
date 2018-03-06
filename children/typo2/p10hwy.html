@@ -1,0 +1,180 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<link rel="stylesheet" href="css/typo2.css" type="text/css" media="screen" />
+	<title>
+		HIGHWAY / NOISY BERRY!!
+	</title>
+	<style>
+		.mainpic{
+			background-image: url('pic/p10_0.jpg');
+			background-size: cover;
+			background-position: right;
+		}
+		.mainpic2{
+			width: 370px;
+			height: 340px;
+			background-image: url('pic/p10_1.png');
+			background-size: cover;
+			background-position: right;
+			position: absolute;
+			cursor: pointer;
+			z-index: 14;
+		}
+
+		.choochoo{
+			background-image: url('pic/p10_2.png');
+			background-size: cover;
+			background-position: center;
+			width: 1697px;
+			height: 100px;
+		}
+		.choochoo2{
+			background-image: url('pic/p10_2.png');
+			background-size: cover;
+			background-position: center;
+			width: 1697px;
+			height: 100px;
+		}
+		.choomv{
+			animation: chooprss 4s linear;
+			opacity: 0;
+			position: absolute;
+			top: 145px;
+			left: 50px;
+			z-index: 1;
+		}
+		.choomv2{
+			animation: chooprss 2s linear;
+			animation-delay: 3s;
+			opacity: 0;
+			position: absolute;
+			top: 145px;
+			left: 50px;
+			z-index: 1;
+		}
+		@keyframes chooprss{
+			0% {
+				left: 100%;
+				opacity: 1;
+				z-index: 13;
+			}
+			99% {
+				left: -2100px;
+				opacity: 1;
+				z-index: 13;
+			}
+			100% {
+				left: -2100px;
+				opacity: 0;
+				z-index: 1;
+			}
+		}
+
+
+	</style>
+	<script>
+	$(document).ready(function(){
+
+
+				var myAudio = ['a01', 'a02', 'a03'];
+
+				$(".mainpic2").click(function(){
+					var rand = myAudio[Math.floor(Math.random() * myAudio.length)];
+					if(rand == 'a01'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound1')[0].currentTime = 0;
+						$("#ctsound1")[0].play();
+					}
+					if(rand == 'a02'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound2')[0].currentTime = 0;
+						$("#ctsound2")[0].play();
+					}
+					if(rand == 'a03'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound3')[0].currentTime = 0;
+						$("#ctsound3")[0].play();
+					}
+					// console.log(rand);
+				});
+
+		$(".mainpic2").click(function(){
+
+			$('.choochoo').toggleClass('choomv');
+			$('.choochoo2').toggleClass('choomv2');
+
+			// $("#ctsound")[0].play();
+
+		});
+
+	});
+
+	</script>
+</head>
+
+<body>
+	<div class="container0">
+		<div class="container1">
+			<div class="interior">
+
+				<div class="clickbox cbmv">CLICK THE IMAGE!</div>
+
+				<div class="mainpicshadow"></div>
+				<div class="mainpic"></div>
+				<div class="mainpic2"></div>
+
+
+				<div class="choochoo choomv"></div>
+				<div class="choochoo2 choomv2"></div>
+
+				<div class="choochoo"></div>
+				<div class="choochoo2"></div>
+
+				<div class="name">
+					HIGHWAY
+				</div>
+			</div>
+		</div>
+
+		<div class="noisyberry"></div>
+
+		<div class="bottomnav">
+			<div class="bttmnv bnvcenter">
+				<div class="bnvleft">
+					<a href="p08wind.html">WIND & TREE |</a>
+				</div>
+
+				<a href="index_1.html">HOME</a>
+
+				<div class="bnvright">
+					<a href="p12bug.html">| BUGS & BIRDS</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<audio id="ctsound1">
+		<source src="audio/p10hwy01.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound2">
+		<source src="audio/p10hwy02.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound3">
+		<source src="audio/p10hwy03.wav" type="audio/wav">
+	</audio>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>brain bot</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+  <link rel="stylesheet" href="../../assets/css/mycss0.css" type="text/css" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/myscript.js"></script>
+
+  <style>
+  body{
+    background-color: black;
+    color: white;
+  }
+  #pics{
+
+  }
+  #tllogo{
+    color: white;
+  }
+
+  .buttons{
+    background-color: white;
+  }
+  #linkbtn{
+    color: black;
+  }
+
+  </style>
+
+  <script>
+  $(document).ready(function(){
+  $(".playbttn").click(function(){
+
+    $(this).hide();
+    $(".psbttn").show();
+    $("#mv1115")[0].play();
+
+  });
+
+  $(".psbttn").click(function(){
+    $(this).hide();
+    $(".playbttn").show();
+    $("#mv1115")[0].pause();
+
+  });
+
+  $("#mv1115").on('ended',function(){
+
+    $(".playbttn").show();
+    $(".psbttn").hide();
+
+  });
+  });
+  </script>
+
+
+</head>
+
+<body>
+
+    <!-- new -->
+
+    <!-- header -->
+    <div class="headerNav">
+        <a href="../../index.html">
+          <div class="logobox">
+            <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
+            <img class="logo1 logoname" style="opacity: 0.9;" src="../../assets/imgs/logo03f.png" alt="">
+          </div>
+        </a>
+    </div>
+
+    <div class="columnBox"></div>
+
+    <div class="column1">
+
+        <div class="section intro">
+          <img id="pics" src="thumbnail1.gif" alt="">
+          <h1>Brain Bot</h1>
+          <h2>
+            Fall 2017 | Javascript | 5 weeks
+            <br>
+            html, css, javascript
+          </h2>
+          <div class="textbox1">
+            Drawing with coding; making unique web visual language22
+          </div>
+        </div>
+
+        <div class="section">
+          <img id="pics" src="assets/project/img_a01.png" alt="">
+          <h3>Concept</h3>
+            Website theseday is a fantastic calculator. What could happen if I use this calculator as a tool to make images?
+            <br><br>
+            Each ball has their own color, shapes, and I make unlimited unique images as long as I click refresh button.
+        </div>
+
+        <div class="section">
+          <h3>Galaxy Bot</h3>
+            I built website whoever can make thier own this Galaxy in 4mins.
+          <br><br>
+          <a id="linkbtn" href="assets/yourgalaxy/index.html">
+            <img id="pics" src="assets/project/img_b01.png" alt="">
+          </a>
+          <br>
+          <div class="buttons">
+            <a id="linkbtn" href="assets/yourgalaxy/index.html">link</a>
+          </div>
+          <br>
+          <img id="pics" src="assets/project/img_b03.png" alt="">
+          <img id="pics" src="assets/project/img_b02.png" alt="">
+          <img id="pics" src="assets/project/img_b04.png" alt="">
+        </div>
+
+
+        <div class="section">
+          <h3>process</h3>
+          <!-- <img id="pics" src="img_03e.png" alt=""> -->
+
+          <div class="column2">
+            <img id="pics2C" src="assets/process/img_d01.gif" alt="">
+            <img id="pics2C" src="assets/process/img_d02.gif" alt="">
+            <img id="pics2C" src="assets/process/img_d03.gif" alt="">
+            <img id="pics2C" src="assets/process/img_d04.gif" alt="">
+            <h5>First meet with CTX world</h5>
+
+            <img id="pics2C" src="assets/process/img_d04a0.gif" alt="">
+            <img id="pics2C" src="assets/process/img_d04a1.gif" alt="">
+            <img id="pics2C" src="assets/process/img_d04a2.gif" alt="">
+            <h5>now I am interested in CTX animation, but I may need 8 monthes more to script what I want (sin,cos,tan)</h5>
+
+            <img id="pics2C" src="assets/process/img_d07.png" alt="">
+            <img id="pics2C" src="assets/process/img_d06.png" alt="">
+            <h5>focus on shape, but random</h5>
+
+            <img id="pics2C" src="assets/process/img_d05.png" alt="">
+            <img id="pics2C" src="assets/process/img_d08.png" alt="">
+            <h5>special thanks to Jared for helping combining shape and color pelete:)</h5>
+
+            <img id="pics2C" src="assets/process/img_d06a.gif" alt="">
+            <img id="pics2C" src="assets/process/img_d06b.png" alt="">
+            <h5>how to package and develop it?</h5>
+
+            <img id="pics2C" src="assets/process/img_d09.png" alt="">
+            <img id="pics2C" src="assets/process/img_d10.png" alt="">
+            <h5>special thanks to Juile who said "the tree looks like nerve":)</h5>
+
+            <img id="pics2C" src="assets/process/img_d10a.jpg" alt="">
+            <img id="pics2C" src="assets/process/img_d10b.jpg" alt="">
+            <h5>how to package?? printing-out form</h5>
+
+            <img id="pics2C" src="assets/process/img_d11.png" alt="">
+            <h5>even this screenshot is only image in this world</h5>
+
+            <img id="pics2C" src="assets/process/img_d12.png" alt="">
+            <h5>how to package22?? personalize</h5>
+
+            <img id="pics2C" src="assets/process/img_d15.png" alt="">
+          </div>
+        </div>
+    </div>
+
+
+    <div class="footers"></div>
+
+    <!-- new end -->
+
+
+</body>
+</html>

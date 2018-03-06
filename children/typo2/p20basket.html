@@ -1,0 +1,387 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<link rel="stylesheet" href="css/typo2.css" type="text/css" media="screen" />
+
+	<title>
+		BASKETBALL COURT / NOISY BERRY!!
+	</title>
+	<style>
+		.mainpic{
+			background-image: url('pic/p20_0.jpg');
+			background-size: cover;
+			background-position: bottom;
+		}
+
+		.choochoo1{
+			background-image: url('pic/p20_1.png');
+			background-size: cover;
+      background-position: center;
+			width: 97px;
+			height: 53px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo2{
+			background-image: url('pic/p20_2.png');
+			background-size: cover;
+			background-position: center;
+			width: 106px;
+			height: 53px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo3{
+			background-image: url('pic/p20_3.png');
+			background-size: cover;
+      background-position: center;
+			width: 95px;
+			height: 53px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo4{
+			background-image: url('pic/p20_4.png');
+			background-size: cover;
+      background-position: center;
+			width: 108px;
+			height: 53px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo5{
+			background-image: url('pic/p20_5.png');
+			background-size: cover;
+			background-position: center;
+			width: 235px;
+			height: 114px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo6{
+			background-image: url('pic/p20_6.png');
+			background-size: cover;
+			background-position: center;
+			width: 327px;
+			height: 376px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo7{
+			background-image: url('pic/p20_7.png');
+			background-size: cover;
+			background-position: center;
+			width: 201px;
+			height: 75px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo8{
+			background-image: url('pic/p20_8.png');
+			background-size: cover;
+			background-position: center;
+			width: 110px;
+			height: 66px;
+			opacity: 0;
+			z-index: 1;
+		}
+
+		.choomv1{
+			animation: chooprss1 0.6s forwards linear;
+			animation-delay: 0s;
+			position: absolute;
+			top: 86%;
+			left: 10px;
+		}
+		.choomv2{
+			animation: chooprss1 0.6s forwards linear;
+			animation-delay: 0.6s;
+			position: absolute;
+			top: 76%;
+			right: 20px;
+		}
+		.choomv3{
+			animation: chooprss1 0.6s forwards linear;
+			animation-delay: 1.2s;
+			position: absolute;
+			top: 60%;
+			left: 70px;
+		}
+		.choomv4{
+			animation: chooprss1 0.6s forwards linear;
+			animation-delay: 1.4s;
+			position: absolute;
+			top: 56%;
+			left: 15px;
+		}
+		.choomv5{
+			animation: chooprss1 0.9s forwards linear;
+			animation-delay: 2.0s;
+			position: absolute;
+			top: 22%;
+			left: 10px;
+		}
+		.choomv6{
+			animation: chooprss6 2s forwards linear;
+			animation-delay: 2.8s;
+			position: absolute;
+			top: 10px;
+			left: 0%;
+		}
+		.choomv7{
+			animation: chooprss7 1.2s forwards linear;
+			animation-delay: 4.2s;
+			position: absolute;
+			top: 280px;
+			left: 30px;
+		}
+		.choomv8{
+			animation: chooprss8 1.2s forwards linear;
+			animation-delay: 4.8s;
+			position: absolute;
+			transform: rotate(40deg);
+			top: 100px;
+			right: 20px;
+		}
+
+		@keyframes chooprss1{
+			0% {
+				transform: translateY(0px);
+				opacity: 1;
+				z-index: 13;
+			}
+			40%{
+				opacity: 1;
+			}
+			99% {
+				transform: translateY(-10px);
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 1;
+			}
+		}
+		@keyframes chooprss6{
+			0% {
+				opacity: 0;
+				z-index: 1;
+			}
+			1% {
+				opacity: 0;
+				z-index: 13;
+			}
+			9% {
+				opacity: 0;
+				z-index: 13;
+			}
+			10%{
+				top: 10px;
+				opacity: 1;
+				transform: rotate(0deg);
+			}
+			10%{
+				transform: rotate(-20deg);
+			}
+			11%{
+				transform: rotate(20deg);
+			}
+			15%{
+				transform: rotate(-15deg);
+			}
+			17%{
+				transform: rotate(15deg);
+			}
+			20%{
+				transform: rotate(0deg);
+			}
+			30%{
+				top: 10px;
+				opacity: 1;
+			}
+			99% {
+				top: -40px;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+		@keyframes chooprss7{
+			0% {
+				opacity: 0;
+				z-index: 1;
+			}
+			1% {
+				opacity: 0;
+				z-index: 13;
+			}
+			19% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				top: 270px;
+				opacity: 1;
+			}
+			99% {
+				top: 250px;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+		@keyframes chooprss8{
+			0% {
+				opacity: 0;
+				z-index: 1;
+			}
+			1% {
+				opacity: 0;
+				z-index: 13;
+			}
+			19% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				top: 100px;
+				opacity: 1;
+			}
+			99% {
+				top: 70px;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+
+	</style>
+	<script>
+	$(document).ready(function(){
+
+
+				var myAudio = ['a01', 'a02', 'a03'];
+
+				$(".mainpic").click(function(){
+					var rand = myAudio[Math.floor(Math.random() * myAudio.length)];
+					if(rand == 'a01'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound1')[0].currentTime = 0;
+						$("#ctsound1")[0].play();
+					}
+					if(rand == 'a02'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound2')[0].currentTime = 0;
+						$("#ctsound2")[0].play();
+					}
+					if(rand == 'a03'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound3')[0].currentTime = 0;
+						$("#ctsound3")[0].play();
+					}
+					// console.log(rand);
+				});
+
+		$(".mainpic").click(function(){
+
+			$('.choochoo1').toggleClass('choomv1');
+			$('.choochoo2').toggleClass('choomv2');
+			$('.choochoo3').toggleClass('choomv3');
+			$('.choochoo4').toggleClass('choomv4');
+			$('.choochoo5').toggleClass('choomv5');
+			$('.choochoo6').toggleClass('choomv6');
+			$('.choochoo7').toggleClass('choomv7');
+			$('.choochoo8').toggleClass('choomv8');
+
+			// $("#ctsound")[0].play();
+
+		});
+
+	});
+
+	</script>
+</head>
+
+<body>
+	<div class="container0">
+
+		<div class="choochoo1 choomv1"></div>
+		<div class="choochoo2 choomv2"></div>
+		<div class="choochoo3 choomv3"></div>
+		<div class="choochoo4 choomv4"></div>
+		<div class="choochoo5 choomv5"></div>
+		<div class="choochoo6 choomv6"></div>
+		<div class="choochoo7 choomv7"></div>
+		<div class="choochoo8 choomv8"></div>
+
+		<div class="choochoo1"></div>
+		<div class="choochoo2"></div>
+		<div class="choochoo3"></div>
+		<div class="choochoo4"></div>
+		<div class="choochoo5"></div>
+		<div class="choochoo6"></div>
+		<div class="choochoo7"></div>
+		<div class="choochoo8"></div>
+
+		<div class="container1">
+			<div class="interior">
+
+					<div class="clickbox cbmv">CLICK THE IMAGE!</div>
+
+					<div class="mainpicshadow"></div>
+					<div class="mainpic"></div>
+
+					<div class="name">BASKETBALL COURT</div>
+
+			</div>
+		</div>
+
+				<div class="bottomnav">
+					<div class="bttmnv bnvcenter">
+						<div class="bnvleft">
+							<a href="p18dudu.html">CONSTRUCTION |</a>
+						</div>
+
+						<a href="index_1.html">HOME</a>
+
+						<div class="bnvright">
+							<a href="p22volley.html">| VOLLEYBALL</a>
+						</div>
+					</div>
+				</div>
+
+	</div>
+
+	<audio id="ctsound1">
+		<source src="audio/p20basket01.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound2">
+		<source src="audio/p20basket02.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound3">
+		<source src="audio/p20basket03.wav" type="audio/wav">
+	</audio>
+
+</body>
+</html>

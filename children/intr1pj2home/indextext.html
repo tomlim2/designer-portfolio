@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>smile factory</title>
+  <meta charset="utf-8" />
+
+
+
+
+  <style>
+    .loop{
+      position: absolute;
+      width: 1800px;
+      height: 20px;
+      background-color: blue;
+      left: 1400px;
+      font-size: 420px;
+    }
+    .loopmv{
+      animation: loopprcss 4s infinite linear;
+    }
+    .loopmv2{
+      animation: loopprcss 4s 2s infinite linear;
+    }
+    @keyframes loopprcss {
+      from {
+       transform: translate(0px,0px);
+      }
+      to{
+        transform: translate(-3600px,0px);
+      }
+    }
+
+  </style>
+
+  <script>
+  </script>
+
+
+</head>
+
+<body>
+  <div class="loop loopmv">
+    &nbsploop loop
+  </div>
+  <div class="loop loopmv2">
+    &nbsploop loop
+  </div>
+  <!-- <div class="loop loopmv3">
+    loop
+  </div> -->
+</body>
+</html>

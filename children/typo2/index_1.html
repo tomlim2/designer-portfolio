@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<link rel="stylesheet" href="css/typo2.css" type="text/css" media="screen" />
+	<title>
+		Introduction
+	</title>
+	<style>
+	a{
+		/*color: #f6c755;*/
+		font-weight: 700;
+		font-size: 1.0em;
+	}
+		.mainpic0 {
+		    width: 500px;
+		    height: 450px;
+		    background-image: url(pic/p00_00.png);
+		    background-position: center;
+		    background-size: cover;
+		    position: absolute;
+		    top: 52%;
+		    left: 50%;
+				margin-top: -250px;
+		    margin-left: -289px;
+		    cursor: pointer;
+		}
+
+	</style>
+	<script>
+	$(document).ready(function(){
+
+		var myAudio = ['a01', 'a02', 'a03'];
+
+		$(".mainpic0").click(function(){
+			var rand = myAudio[Math.floor(Math.random() * myAudio.length)];
+			if(rand == 'a01'){
+				$('#ctsound1')[0].pause();
+				$('#ctsound2')[0].pause();
+				$('#ctsound3')[0].pause();
+		 		$('#ctsound1')[0].currentTime = 0;
+				$("#ctsound1")[0].play();
+			}
+			if(rand == 'a02'){
+				$('#ctsound1')[0].pause();
+				$('#ctsound2')[0].pause();
+				$('#ctsound3')[0].pause();
+		 		$('#ctsound2')[0].currentTime = 0;
+				$("#ctsound2")[0].play();
+			}
+			if(rand == 'a03'){
+				$('#ctsound1')[0].pause();
+				$('#ctsound2')[0].pause();
+				$('#ctsound3')[0].pause();
+		 		$('#ctsound3')[0].currentTime = 0;
+				$("#ctsound3")[0].play();
+			}
+			// console.log(rand);
+		});
+
+	});
+
+	</script>
+</head>
+
+<body>
+	<div class="container0">
+		<div class="mainpic0 popuup"></div>
+		<div class="choochoo choomv"></div>
+		<div class="choochoo choomv3"></div>
+		<div class="choochoo2 choomv2"></div>
+		<div class="container1">
+			<div class="interior">
+
+				<!-- <div class="clickbox cbmv2">CLICK My logo</div> -->
+			</div>
+		</div>
+		<div class="noisyberry"></div>
+		<div class="intronav2 popuup2">
+				<div class="intronavleft">
+						<a href="p08wind.html">WIND & TREE</a><br>
+						<a href="p10hwy.html">HIGHWAY</a><br>
+						<a href="p12bug.html">BUGS & BIRDS</a><br>
+
+				</div>
+
+				<div class="intronavright">
+					<a href="p14cal.html">CALTRAIN</a><br>
+					<a href="p18dudu.html">CONSTRUCTION</a><br>
+					<a href="p20basket.html">BASKETBALL</a><br>
+				</div>
+		</div>
+		<div class="intronav poppup3">
+
+				<div class="intronavleft">
+						<a href="p22volley.html">VOLLEYBALL</a><br>
+						<a href="p26water.html">WATERFALL</a><br>
+						<a href="p28tennis.html">TENNIS</a><br>
+				</div>
+
+				<div class="intronavright">
+					<a href="p30rustle.html">GRASS</a><br>
+					<a href="p34dog.html">DOG PARK</a><br>
+					<a href="index.html">OPENING</a>
+				</div>
+		</div>
+	</div>
+
+	<audio id="ctsound1">
+		<source src="audio/p0intro1.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound2">
+		<source src="audio/p0intro2.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound3">
+		<source src="audio/p0intro3.wav" type="audio/wav">
+	</audio>
+
+	<div class="goback">
+		<a href="../index.html">HOME</a>
+	</div>
+
+</body>
+</html>
