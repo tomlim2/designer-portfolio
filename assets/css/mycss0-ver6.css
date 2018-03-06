@@ -250,9 +250,9 @@ p{
 
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 600px) {
   .container{
-    width: 750px;
+    width: 500px;
   }
 
   .hs-content-inner{
