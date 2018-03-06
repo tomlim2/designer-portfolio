@@ -101,8 +101,6 @@ h5 {
   right: 100px;
 
   cursor: pointer;
-
-  transition: 0.1s all linear;
 }
 
 .logo1{
@@ -114,6 +112,14 @@ h5 {
 
 .logoname{
   right: -0.5px;
+  transition: 0.3s all linear;
+  transform: translateX(2px) rotateY(90deg);
+
+  transform-origin: right;
+}
+
+.logobox:hover .logoname{
+  transform: rotateY(0deg);
 }
 
 .logospinning{
