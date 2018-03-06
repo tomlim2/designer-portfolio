@@ -5,10 +5,12 @@
   <head>
     <title>sound journal</title>
     <meta charset="utf-8" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/mycss0.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../../assets/css/mycss0-ver6.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../../assets/css/decocss.css" type="text/css" media="screen" />
+
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="../../assets/js/myscript.js"></script>
 
@@ -81,13 +83,13 @@
       $(".plb3").click(function(){
         $(this).hide();
         $(".psb3").show();
-        $("#bello")[0].play();
+        $("#bello2")[0].play();
       });
 
       $(".psb3").click(function(){
         $(this).hide();
         $(".plb3").show();
-        $("#bello")[0].pause();
+        $("#bello2")[0].pause();
       });
 
       $("#bello").on('ended',function(){
@@ -118,13 +120,21 @@
       <div class="column1">
         <div class="section intro">
           <img id="pics" src="img_0.gif" alt="">
-          <h1>Sound Journey</h1>
-          <h2>
-            Spring 2017 | Motion graphic | 4 weeks <br>
-            Audition, After Effect
-          </h2>
-          <div class="textbox1">
-            This motion is abstract animation based on sounds that I collected, sequence, and edit to create rhythm and movement.
+          <div class="headline">
+            <h2>Sound Journey</h2>
+            <h3>
+              Spring 2017 | Motion graphic | 4 weeks <br>
+              Audition, After Effect
+            </h3>
+          </div>
+
+          <div class="text-content">
+            <!-- <p class="bodytextB">
+            I don't want people hungry, but I want chickens
+            </p> -->
+            <p class="bodytextS">
+              This motion is abstract animation based on sounds that I collected, sequence, and edit to create rhythm and movement.
+            </p>
           </div>
         </div>
 
@@ -153,34 +163,43 @@
         <div class="section">
           <h3>Process</h3>
           <br>
-          <audio id="bello">
-            <source src="audio1111.wav" type="audio/wav">
-          </audio>
-          <div class="buttons plb2">
-            play
-          </div>
-          <div class="buttons psb2">
-            pause
-          </div>
-          <br>
           <h5>Step1; Recoding sounds from my environment</h5>
-          <br>
-          <audio id="bello2">
-            <source src="audio1112.wav" type="audio/wav">
-          </audio>
-          <div class="buttons plb3">
-            play
+          <div class="audiolist">
+            <audio id="bello">
+              <source src="audio1111.wav" type="audio/wav">
+            </audio>
+            <div class="buttons plb2">
+              play
+            </div>
+            <div class="buttons psb2">
+              pause
+            </div>
           </div>
-          <div class="buttons psb3">
-            pause
-          </div>
+
           <br>
+
+          <br>
+
           <h5>Step2; Mixing the sounds</h5>
+          <div class="audiolist">
+            <audio id="bello2">
+              <source src="audio1112.wav" type="audio/wav">
+            </audio>
+            <div class="buttons plb3">
+              play
+            </div>
+            <div class="buttons psb3">
+              pause
+            </div>
+          </div>
+
           <br>
+
+          <h5>Step3; Premiere version</h5>
           <video id="mv1115" autoplay playsinline loop muted>
             <source src="mv1116.mp4" type="video/mp4">
           </video>
-          <h5>Step3; Premiere version</h5>
+
         </div>
 
       </div>

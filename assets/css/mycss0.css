@@ -39,22 +39,24 @@ h1{
 
 
 h2{
+  margin: 0;
+  font-weight: 600;
+  font-size: 3.6rem;
+
+  line-height: 1.15;
+  margin-bottom: .2em;
+
+}
+
+h3 {
+  margin: 0;
   font-style: italic;
   font-weight: 400;
   font-size: 0.8em;
   text-transform: uppercase;
 
   letter-spacing: 0.03em;
-  margin: 0;
-}
 
-h3 {
-  margin: 0;
-  font-weight: 600;
-  font-size: 1em;
-  margin-bottom: 2px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 h4 {
@@ -72,20 +74,24 @@ h5 {
   margin-top: 0px;
   margin-bottom: 30px;
 }
-h6 {
-  margin: 0;
-  font-weight: 600;
-  font-size: 3.6em;
-  text-transform: uppercase;
-  letter-spacing: .12em;
+
+
+
+.headline{
+  padding: 10px 0px 30px 0px;
 }
 
-.bodytext{
-  position: relative;
+.bodytextB{
+  line-height: 1.5;
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
 
-  border-bottom: solid rgba(0,0,0,0.2) 2px;
-
-  padding-bottom: 30px;
+.bodytextS{
+      line-height: 1.5;
+  font-size: 1.25rem;
 }
 
 
@@ -243,7 +249,7 @@ h6 {
 
 .intro{
   padding-bottom: 40px;
-  border-bottom: solid rgba(0,0,0,0.2) 2px;
+  border-bottom: solid rgba(0,0,0,0.2) 1px;
   margin-bottom: 40px;
 }
 
