@@ -1,0 +1,86 @@
+/* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
+
+/*tvmode*/
+.concept2017{
+  background-image: url("../../imgs/gd1pj2th.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gd1pj2tv{
+  background-image: url("../imgs/gd1pj2th.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.gd2pj2tv{
+  background-image: url("../imgs/gd2pj2th.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.gd2pj3tv{
+  background-image: url("../imgs/gd2pj3.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.gd2pj14tv{
+  background-image: url("../imgs/gd2pj14.png");
+  background-size: cover;
+}
+.gd3tv:hover{
+  background-color: #eae3d9;
+}
+.gd3tv{
+  background-image: url("../imgs/gd3.png");
+  background-size: cover;
+
+}
+
+.grtv{
+  background-image: url("../imgs/grth.jpg");
+  background-size: cover;
+}
+
+.philotv{
+  background-image: url("../imgs/philoth.jpg");
+  background-size: cover;
+}
+
+.intr1pj2tv{
+  background-image: url("../imgs/intr1pj2th.gif");
+  background-size: cover;
+
+  background-position: center;
+}
+.intr1pj3tv{
+  background-image: url("../imgs/intr1pj3th.jpg");
+  background-size: cover;
+
+  background-position: center;
+}
+.intr2pj2tv{
+  background-image: url("../imgs/intr2pj2th.gif");
+  background-size: cover;
+  background-position: center;
+}
+.intr2pj3tv{
+  background-image: url("../imgs/intr2pj3th.gif");
+  background-size: cover;
+  background-position: center;
+}
+.typo2tv{
+  background-image: url("../imgs/typo2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.typo3pj3tv{
+  background-image: url("../imgs/typo3pj3.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.tbmpj2tv{
+  background-image: url("../imgs/tbmpj2.gif");
+  background-size: cover;
+  background-position: center;
+}

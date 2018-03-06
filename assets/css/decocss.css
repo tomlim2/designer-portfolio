@@ -1,0 +1,25 @@
+/* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
+
+.logobox:hover{
+
+}
+
+.portfolio-item-title{
+
+}
+
+.portfolio-item-title:hover,.portfolio-item-detail:hover{
+  text-decoration: underline;
+  background-color: rgba(92,202,232,1);
+}
+
+
+::-moz-selection { /* Code for Firefox */
+    /* color: red; */
+    background: rgba(92,202,232,1);
+}
+
+::selection {
+    /* color: red; */
+    background: rgba(92,202,232,1);
+}
