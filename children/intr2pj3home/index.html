@@ -14,7 +14,40 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="../../assets/js/myscript.js"></script>
   <style>
+  /* hero-images */
+  .parallax-hero{
+    background-image: url(assets/img/img_hero.gif);
+  }
 
+  .headline{
+    color: white;
+  }
+
+  .deco-box{
+    background: white;
+  }
+
+  .video-icon{
+    /* color: white;
+    background-color: #406eb3; */
+  }
+
+  .video-icon:hover{
+    /* color: black;
+    filter: drop-shadow(6px 6px 0px rgba(250,227,189,1)) drop-shadow(-6px -6px 0px rgba(250,227,189,1)); */
+  }
+
+  #process-section{
+    background-color: rgba(250,227,189,1);
+  }
+
+  #img-link{
+    transition: 0.3s all;
+  }
+
+  #img-link:hover{
+    filter: drop-shadow(1em 1em 0px rgba(92,202,232,1)) drop-shadow(-1em -1em 0px rgba(92,202,232,1));
+  }
 
 
   </style>
@@ -26,83 +59,86 @@
 </head>
 
 <body>
-  <!-- new -->
-  <!-- header -->
-  <div class="headerNav">
-      <a href="../../index.html">
-        <div class="logobox">
-          <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
-          <img class="logo1 logoname" src="../../assets/imgs/logo03e.png" alt="">
+  <!-- End Page Wrapper -->
+  <div id="page">
+    <!-- Navbar -->
+    <div class="headerNav">
+        <a href="../../index.html">
+          <div class="logobox">
+            <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
+            <img class="logo1 logoname" src="../../assets/imgs/logo03e.png" alt="">
+          </div>
+        </a>
+    </div>
+    <!-- /End Navbar -->
+
+    <!-- Hero Image Section -->
+    <section id="home-section" class="home-section full-screen">
+      <div class="parallax-hero overlay full-screen home-image" data-top-bottom="transform: translate3d(0px, -200px, 0px)">
+        <div class="hs-content">
+          <div class="hs-content-inner">
+            <div class="headline">
+              <div class="deco-box txt-box"></div>
+              <h2>Alexander Calder</h2>
+
+              <h3 class="subhead">
+                Exhibition Microsite
+              </h3>
+            </div>
+          </div>
         </div>
-      </a>
-  </div>
-
-  <div class="columnBox"></div>
-
-  <div class="column1">
-    <div class="section intro">
-      <a href="../intr2pj3/index.html">
-        <img id="pics" src="img_1.gif" alt="">
-      </a>
-
-      <div class="headline">
-        <h2>Alexander Calder</h2>
-        <h3>
-          Spring 2017 | Exhibition Microsite | 5 weeks
-          <br>
-          html, javascript, css
-        </h3>
       </div>
+    </section>
+    <!-- End Hero Image Section -->
 
-      <div class="text-content">
-        <!-- <p class="bodytextB">
-        I don't want people hungry, but I want chickens
-        </p> -->
-        <p class="bodytextS">
-          colorful, whimsical abstract-organic mobiles, and Center of mass
-        </p>
-      </div>
+    <!-- Page2 -->
+    <div id="page-2">
+      <!-- Project Section -->
+      <section id="project-info-section" class="project-info-section section6">
+        <div class="container">
+          <div class="section-title">
+
+            <div class="text-content">
+              <p class="bodytextB col-sm-50">
+                Colorful, whimsical abstract-organic mobiles, and center of mass
+              </p>
+              <p class="bodytextS col-sm-50">
+                Spring 2017 | Exhibition Microsite | 5 weeks
+                <br>
+                html, javascript, css
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Project info Section -->
+
+      <!-- Project work Section -->
+      <section id="project-work-section" class="project-info-section section7">
+        <a href="../intr2pj3/index.html">
+          <div class="container">
+            <img id="img-link" class="img-responsive padding-bottom-120" src="assets/img/img_a1.png" alt="">
+          </div>
+        </a>
+        <div class="container">
+          <img class="img-responsive padding-bottom-30" src="assets/img/img_a2.png" alt="">
+          <img class="img-responsive padding-bottom-30" src="assets/img/img_a3.png" alt="">
+          <img class="img-responsive padding-bottom-30" src="assets/img/img_a4.png" alt="">
+          <img class="img-responsive padding-bottom-120" src="assets/img/img_a5.png" alt="">
+        </div>
+      </section>
+
+    <!-- End Project info Section -->
+
+      <footer class="footer-section section7">
+        <div class="footer-text">
+          Tom Lim © 2018. All Right Reserved.
+        </div>
+      </footer>
+    </div>
+    <!-- End Page-2 -->
 
     </div>
-
-
-
-    <div class="section">
-      <img id="pics" src="img_2.png" alt="">
-      <a href="../intr2pj3/index.html">
-      <div class="buttons">
-        <div id="linkbtn" href="../intr2pj3/index.html">link</div>
-      </div>
-      </a>
-    </div>
-
-    <div class="section">
-
-      <img id="pics" src="img_3.png" alt="">
-      <img id="pics" src="img_4.png" alt="">
-      <img id="pics" src="img_5.png" alt="">
-      <img id="pics" src="img_6.png" alt="">
-
-    </div>
-
-    <div class="section">
-      <h3>Process</h3>
-      <img id="pics" src="img_a01.png" alt="">
-      <h5>inspiration</h5>
-      <a href="assets/pj3prototype/index.html">
-        <img id="pics" src="img_a02.png" alt="">
-      </a>
-      <h5>protoyping</h5>
-
-    </div>
-
-    </div>
-
-    <div class="footers"></div>
-
-
-  <!-- new end -->
-
-
+    <!-- End Page Wrapper -->
 </body>
 </html>
