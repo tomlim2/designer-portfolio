@@ -215,8 +215,8 @@ p{
 }
 
 .home-section.overlay:before, .overlay:before {
-    background-color: rgba(10, 12, 23, 0.7);
-    opacity: .5;
+    background-color: rgba(0,0,0,0.8);;
+    opacity: .3;
 }
 .overlay:before {
     content: "";
