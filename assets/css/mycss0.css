@@ -41,7 +41,7 @@ h1{
 h2{
   margin: 0;
   font-weight: 600;
-  font-size: 6rem;
+  font-size: 3rem;
 
   line-height: 1.15;
   margin-bottom: .2em;
@@ -454,6 +454,10 @@ h5 {
 
 
 @media screen and (min-width: 900px) {
+  h2{
+    font-size: 6rem;
+  }
+
   .headerNavbox{
     width: 630px;
     margin-left: -315px;
