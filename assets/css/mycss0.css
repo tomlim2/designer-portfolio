@@ -106,6 +106,8 @@ h5 {
   padding: 10px 0px 50px 0px;
 
   text-transform: capitalize;
+
+  opacity: .9;
 }
 
 .subhead{

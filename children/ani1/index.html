@@ -16,42 +16,49 @@
   <script type="text/javascript" src="../../assets/js/myscript.js"></script>
 
   <style>
+  /* hero-images */
+  .parallax-hero{
+    background-image: url(assets/img/img_hero_1.jpg);
+  }
 
+  .headline{
+    color: black;
+  }
+
+  .deco-box{
+    background: black;
+  }
+
+  .video-icon{
+    /* color: white;
+    background-color: #406eb3; */
+  }
+
+  .video-icon:hover{
+    /* color: black;
+    filter: drop-shadow(6px 6px 0px rgba(250,227,189,1)) drop-shadow(-6px -6px 0px rgba(250,227,189,1)); */
+  }
+
+  #process-section{
+    background-color: rgba(250,227,189,1);
+  }
+
+  #img-link:hover{
+
+  }
 
   </style>
 
   <script>
-  $(document).ready(function(){
-  $(".playbttn").click(function(){
-
-    $(this).hide();
-    $(".psbttn").show();
-    $("#mv1115")[0].play();
-
-  });
-
-  $(".psbttn").click(function(){
-    $(this).hide();
-    $(".playbttn").show();
-    $("#mv1115")[0].pause();
-
-  });
-
-  $("#mv1115").on('ended',function(){
-
-    $(".playbttn").show();
-    $(".psbttn").hide();
-
-  });
-  });
   </script>
 
 
 </head>
 
 <body>
-
-    <!-- mainnv -->
+  <!-- End Page Wrapper -->
+  <div id="page">
+    <!-- Navbar -->
     <div class="headerNav">
         <a href="../../index.html">
           <div class="logobox">
@@ -60,106 +67,116 @@
           </div>
         </a>
     </div>
+    <!-- /End Navbar -->
 
-    <div class="columnBox"></div>
+    <!-- Hero Image Section -->
+    <section id="home-section" class="home-section full-screen">
+      <div class="parallax-hero overlay full-screen home-image" data-top-bottom="transform: translate3d(0px, -200px, 0px)">
+        <div class="hs-content">
+          <div class="hs-content-inner">
+            <div class="headline">
+              <div class="deco-box txt-box"></div>
+              <h2>Animation Tests</h2>
 
-    <div class="column1">
-
-        <div class="section intro">
-          <img id="pics" src="img_thumb2.gif" alt="">
-          <div class="headline">
-            <h2>Animation Tests</h2>
-            <h3>
-              Hobby | Traditional Animation
-            </h3>
+              <h3 class="subhead">
+                Traditional style
+              </h3>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Image Section -->
 
-          <div class="text-content">
-            <!-- <p class="bodytextB">
-            </p> -->
-            <p class="bodytextS">
-              Learning animation was one of my bucket list, and it came ture!
+    <!-- Page2 -->
+    <div id="page-2">
+      <!-- Project Section -->
+      <section id="project-info-section" class="project-info-section section6">
+        <div class="container">
+          <div class="section-title">
+
+            <div class="text-content">
+              <p class="bodytextB col-sm-50">
+                Learning animation was one of my bucket list, and it came ture!
+              </p>
+              <p class="bodytextS col-sm-50">
+                Fall 2017
+                <br>
+                Color Pencil
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container padding-bottom-120">
+          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_01a.gif" alt="">
+          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_01b.gif" alt="">
+          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_01c.gif" alt="">
+          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_01d.gif" alt="">
+          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_01e.gif" alt="">
+          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_01f.gif" alt="">
+          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_01g.gif" alt="">
+          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_01h.gif" alt="">
+          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_01i.gif" alt="">
+          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_01j.gif" alt="">
+        </div>
+
+        <div class="container">
+          <div class="text-content padding-bottom-30">
+            <p class="bodytextB col-sm-50">
+              Daily Animation Practice / 18DEC17 ~ 14JAN18
+            </p>
+            <p class="bodytextS col-sm-50">
+              #clip_studio #ipad #kyoani #nichijo
+              <br>
+              traning, timing, spacing, movement
             </p>
           </div>
         </div>
 
-        <div class="section">
-          <h3>Animation 101 / Fall 2017</h3>
-          Understanding basic principle of animation (Color Pencil).
-          <div class="column2">
-            <img id="pics2C" src="assets/img_01a.gif" alt="">
-            <h5>bouncing ball</h5>
-            <img id="pics2C" src="assets/img_01b.gif" alt="">
-            <h5>pendulum</h5>
-
-            <img id="pics2C" src="assets/img_01c.gif" alt="">
-            <h5>whip</h5>
-            <img id="pics2C" src="assets/img_01d.gif" alt="">
-            <h5>rotating Bob</h5>
-
-            <img id="pics2C" src="assets/img_01e.gif" alt="">
-            <h5>wave Bob</h5>
-            <img id="pics2C" src="assets/img_01f.gif" alt="">
-            <h5>sidestepping Bob</h5>
-
-            <img id="pics2C" src="assets/img_01g.gif" alt="">
-            <h5>jumping Bob</h5>
-            <img id="pics2C" src="assets/img_01h.gif" alt="">
-            <h5>walking Bob</h5>
-
-            <img id="pics2C" src="assets/img_01i.gif" alt="">
-            <h5>running Bob</h5>
-            <img id="pics2C" src="assets/img_01j.gif" alt="">
-            <h5>running Tim</h5>
-          </div>
+        <div class="container">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a01a.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a02.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a03.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a04.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a05.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a06.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a07.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a08.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a09.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a10.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a11.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a12.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a13a.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a14.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a15.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a16.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a17.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a18.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a19.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a20a.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a21a.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a22.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a23.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a24.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a25.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a26a.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a27a.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a28.gif" alt="">
+          <img class="img-responsive col-sm-33" src="assets/img/img_a29.gif" alt="">
         </div>
+      </section>
+      <!-- End Project info Section -->
 
-        <div class="section">
-          <h3>Daily Animation Practice / 18DEC17 ~ 14JAN18</h3>
-          #clip_studio #ipad #kyoani #nichijo
-          <br>
-          traning, timing, spacing, movement
-          <div class="column2">
-            <img id="pics3" src="assets/img_a01a.gif" alt="">
-            <img id="pics3" src="assets/img_a02.gif" alt="">
-            <img id="pics3" src="assets/img_a03.gif" alt="">
-            <img id="pics3" src="assets/img_a04.gif" alt="">
-            <img id="pics3" src="assets/img_a05.gif" alt="">
-            <img id="pics3" src="assets/img_a06.gif" alt="">
-            <img id="pics3" src="assets/img_a07.gif" alt="">
-            <img id="pics3" src="assets/img_a08.gif" alt="">
-            <img id="pics3" src="assets/img_a09.gif" alt="">
-            <img id="pics3" src="assets/img_a10.gif" alt="">
-            <img id="pics3" src="assets/img_a11.gif" alt="">
-            <img id="pics3" src="assets/img_a12.gif" alt="">
-            <img id="pics3" src="assets/img_a13a.gif" alt="">
-            <img id="pics3" src="assets/img_a14.gif" alt="">
-            <img id="pics3" src="assets/img_a15.gif" alt="">
-            <img id="pics3" src="assets/img_a16.gif" alt="">
-            <img id="pics3" src="assets/img_a17.gif" alt="">
-            <img id="pics3" src="assets/img_a18.gif" alt="">
-            <img id="pics3" src="assets/img_a19.gif" alt="">
-            <img id="pics3" src="assets/img_a20a.gif" alt="">
-            <img id="pics3" src="assets/img_a21a.gif" alt="">
-            <img id="pics3" src="assets/img_a22.gif" alt="">
-            <img id="pics3" src="assets/img_a23.gif" alt="">
-            <img id="pics3" src="assets/img_a24.gif" alt="">
-            <img id="pics3" src="assets/img_a25.gif" alt="">
-            <img id="pics3" src="assets/img_a26a.gif" alt="">
-            <img id="pics3" src="assets/img_a27a.gif" alt="">
-            <img id="pics3" src="assets/img_a28.gif" alt="">
-            <img id="pics3" src="assets/img_a29.gif" alt="">
-
-          </div>
+      <footer class="footer-section section7">
+        <div class="footer-text">
+          Tom Lim © 2018. All Right Reserved.
         </div>
+      </footer>
+    </div>
+    <!-- End Page-2 -->
 
     </div>
-
-
-    <div class="footers"></div>
-
-    <!-- new end -->
-
-
+    <!-- End Page Wrapper -->
 </body>
 </html>
