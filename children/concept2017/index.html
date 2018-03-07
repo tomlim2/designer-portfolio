@@ -15,41 +15,61 @@
   <script type="text/javascript" src="../../assets/js/myscript.js"></script>
 
   <style>
-  .buttons{
-    background-color: #f6ef78;
-    color: #183432;
+  /* hero-images */
+  .parallax-hero{
+    background-image: url(assets/img/img_hero_1.png);
   }
-  .buttons:hover{
-    transform: rotate(-3deg);
-    background-color: #eada69;
+
+  .headline{
     color: white;
+  }
+
+  .deco-box{
+    background: white;
+  }
+
+  .video-icon{
+    /* color: white;
+    background-color: #406eb3; */
+  }
+
+  .video-icon:hover{
+    /* color: black;
+    filter: drop-shadow(6px 6px 0px rgba(250,227,189,1)) drop-shadow(-6px -6px 0px rgba(250,227,189,1)); */
+  }
+
+  #process-section{
+    background-color: rgba(250,227,189,1);
+  }
+
+  #img-link:hover{
+
+  }
+
+  .txt-box{
+    top: 214px;
   }
 
   </style>
 
   <script>
   $(document).ready(function(){
-  $(".playbttn").click(function(){
+    $(".v-pl1").click(function(){
+      $(this).hide();
+      $(".v-ps1").show();
+      $("#video1")[0].play();
+    });
 
-    $(this).hide();
-    $(".psbttn").show();
-    $("#mv1115")[0].play();
+    $(".v-ps1").click(function(){
+      $(this).hide();
+      $(".v-pl1").show();
+      $("#video1")[0].pause();
+    });
 
-  });
-
-  $(".psbttn").click(function(){
-    $(this).hide();
-    $(".playbttn").show();
-    $("#mv1115")[0].pause();
-
-  });
-
-  $("#mv1115").on('ended',function(){
-
-    $(".playbttn").show();
-    $(".psbttn").hide();
-
-  });
+    $("#video1").on('ended',function(){
+      $(".v-pl1").show();
+      $(".v-ps1").hide();
+    });
   });
   </script>
 
@@ -57,10 +77,9 @@
 </head>
 
 <body>
-
-    <!-- new -->
-
-    <!-- header -->
+  <!-- End Page Wrapper -->
+  <div id="page">
+    <!-- Navbar -->
     <div class="headerNav">
         <a href="../../index.html">
           <div class="logobox">
@@ -69,144 +88,124 @@
           </div>
         </a>
     </div>
+    <!-- /End Navbar -->
 
-    <div class="columnBox"></div>
+    <!-- Hero Image Section -->
+    <section id="home-section" class="home-section full-screen">
+      <div class="parallax-hero overlay full-screen home-image" data-top-bottom="transform: translate3d(0px, -200px, 0px)">
+        <div class="hs-content">
+          <div class="hs-content-inner">
+            <div class="headline">
+              <div class="deco-box txt-box"></div>
+              <h2>Concept 2017, Curiosity</h2>
 
-    <div class="column1">
-        <div class="section intro">
-          <img id="pics" src="img_01.png" alt="">
-          <div class="headline">
-            <h2>Concept 2017, Curiosity</h2>
-            <h3>
-              Fall 2017 | Key visuals | 6 weeks
-              <br>
-              html, css, javascript, After Effcet, Illustrator, Photoshop
-            </h3>
+              <h3 class="subhead">
+                Key visuals
+              </h3>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Image Section -->
 
+    <!-- Page2 -->
+    <div id="page-2">
+      <!-- Project Section -->
+      <section id="project-info-section" class="project-info-section section6">
+        <div class="container">
+          <div class="section-title">
+
+            <div class="text-content">
+              <p class="bodytextB col-sm-50">
+                Key visuals for helping lecturers start their lecture comfortable.
+              </p>
+              <p class="bodytextS col-sm-50">
+                Fall 2017 | Key visuals | 6 weeks
+                <br>
+                html, css, javascript, After Effcet, Illustrator, Photoshop
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Project info Section -->
+
+      <!-- Project work Section -->
+      <section id="project-work-section" class="project-info-section section7">
+
+        <div class="container">
+          <h3>Concept</h3>
           <div class="text-content">
-            <!-- <p class="bodytextB">
-            I don't want people hungry, but I want chickens
-            </p> -->
-            <p class="bodytextS">
-              Key visuals for helping lecturers start their lecture comfortable.
+            <p class="bodytextB col-sm-50">
+              Curiosity killed the cat; Who killed the cat?
+            </p>
+            <p class="col-sm-50">
+              <img width="100%" height="auto" class="img-responsive padding-bottom-120" src="assets/img/img_concept_1.jpg" alt="">
             </p>
           </div>
-
         </div>
 
-      <div class="section">
+        <div class="container">
+          <h3>Posters</h3>
+          <img class="img-responsive padding-bottom-30" src="assets/img/img_poster_a1.png" alt="">
 
-        <h3>Concept</h3>
-        Who killed the cat; Curiosity killed the cat
-
-        <img id="pics" src="img_01a.png" alt="">
-      </div>
-
-      <div class="section">
-        <h3>Poster</h3>
-
-        <img id="pics" src="img_02.png" alt="">
-        <h4>version.α ~ D-day7 </h4>
-
-        <img id="pics" src="img_02a.png" alt="">
-        <img id="pics" src="img_02b.png" alt="">
-        <img id="pics" src="img_02c.png" alt="">
-        <img id="pics" src="img_02d.png" alt="">
-        <h4>version.β ~ D-day0</h4>
-      </div>
-
-      <div class="section">
-        <h3>Social Media</h3>
-        <img id="pics" src="img_03.png" alt="">
-        <h4>Facebook, Instagram, Eventbrite, Calendar</h4>
-      </div>
-
-      <div class="section">
-        <h3>Web experience</h3>
-        360 Photos on Facebook
-        <br>
-        <video playsinline loop muted id="mv1116" autoplay>
-          <source src="mv1116.mp4" type="video/mp4">
-        </video>
-
-        <br><br>
-        <img id="pics" src="img_04.jpg" alt="">
-        <img id="pics" src="img_04a.jpg" alt="">
-        <img id="pics" src="img_04b.jpg" alt="">
-        <img id="pics" src="img_04c.jpg" alt="">
-        <img id="pics" src="img_04d.jpg" alt="">
-
-
-      </div>
-
-
-
-      <div class="section">
-        <h3>Slide Bumper</h3>
-        <video id="mv1115" poster="img_05.png">
-          <source src="mv1115.mp4" type="video/mp4">
-        </video>
-
-        <div class="buttons playbttn">
-          play
-        </div>
-        <div class="buttons psbttn">
-          pause
+          <img class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_poster_b1.png" alt="">
+          <img class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_poster_b2.png" alt="">
+          <img class="img-responsive col-sm-50 padding-bottom-30" src="assets/img/img_poster_b3.png" alt="">
+          <img class="img-responsive col-sm-50 padding-bottom-120" src="assets/img/img_poster_b4.png" alt="">
         </div>
 
-        <br>
-
-        <img id="pics" src="img_05a.png" alt="">
-        <img id="pics" src="img_05b.png" alt="">
-        <img id="pics" src="img_05c.png" alt="">
-        <img id="pics" src="img_05d.png" alt="">
-
-      </div>
-
-      <div class="section">
-        <h3>Photos</h3>
-        <img id="pics2C2" src="img_07a.png" alt="">
-        <img id="pics" src="img_07b.png" alt="">
-        <img id="pics" src="img_07c.jpg" alt="">
-      </div>
-
-      <div class="section">
-        <h3>Process</h3>
-        <div class="column2">
-          <img id="pics2C" src="assets/process/img_b01.jpg" alt="">
-          <h5>my inside head, before the first meeting</h5>
-          <img id="pics2L" src="assets/process/img_b02.png" alt="">
-          <img id="pics2R" src="assets/process/img_b03.png" alt="">
-          <h5>mood boards</h5>
-          <img id="pics2C2" src="assets/process/img_b04.png" alt="">
-          <h5>iPhone sketch in the airplane</h5>
-          <img id="pics2L" src="assets/process/img_b07a3.png" alt="">
-          <img id="pics2R" src="assets/process/img_b07a4.png" alt="">
-          <img id="pics2L" src="assets/process/img_b07a5.png" alt="">
-          <img id="pics2R" src="assets/process/img_b07a6.png" alt="">
-          <h5>input & output more</h5>
-          <img id="pics2L" src="assets/process/img_b05.png" alt="">
-          <img id="pics2R" src="assets/process/img_b05a.png" alt="">
-          <img id="pics2L" src="assets/process/img_b06.png" alt="">
-          <img id="pics2R" src="assets/process/img_b06a.png" alt="">
-          <img id="pics2C" src="assets/process/img_b06b.png" alt="">
-          <h5>try more push more</h5>
-          <img id="pics2C2" src="assets/process/img_b07.png" alt="">
-          <img id="pics2C" src="assets/process/img_b07a.png" alt="">
-          <img id="pics2C" src="assets/process/img_b07a2.png" alt="">
-          <h5>try more push more22</h5>
-
-          <img id="picsMobile" src="assets/process/img_b07c.png" alt="">
-          <h5>ideas for other platform</h5>
+        <div class="container">
+          <h3>Images for SNS</h3>
+          <img class="img-responsive padding-bottom-120" src="assets/img/img_SNS_1.png" alt="">
         </div>
-      </div>
+
+        <div class="container padding-bottom-120">
+          <h3>Web Experiences</h3>
+          <video playsinline loop muted id="mv1116" autoplay>
+            <source src="assets/video/mv1116.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="container padding-bottom-120">
+          <h3>Slide Bumper</h3>
+
+          <div class="video-player">
+            <div class="video-screen">
+              <video id="video1" class="video-responsive" poster="assets/img/img_video_1.jpg">
+                <source src="assets/video/mv1115.mp4" type="video/mp4">
+              </video>
+            </div>
+            <br>
+            <div class="video-bttns">
+              <div class="video-icon video-psbttn v-ps1">
+                pause
+              </div>
+              <div class="video-icon video-plbttn v-pl1">
+                play
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+    <!-- End Project info Section -->
+
+      <footer class="footer-section section7">
+        <div class="footer-text">
+          Tom Lim © 2018. All Right Reserved.
+        </div>
+      </footer>
+    </div>
+    <!-- End Page-2 -->
 
     </div>
+    <!-- End Page Wrapper -->
 
-    <div class="footers"></div>
 
-    <!-- new end -->
 
 
 </body>
