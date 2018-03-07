@@ -41,7 +41,7 @@ h1{
 h2{
   margin: 0;
   font-weight: 600;
-  font-size: 3.6rem;
+  font-size: 4.375rem;
 
   line-height: 1.15;
   margin-bottom: .2em;
@@ -50,12 +50,12 @@ h2{
 
 h3 {
   margin: 0;
-  font-style: italic;
+
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: .875rem;
   text-transform: uppercase;
 
-  letter-spacing: 0.03em;
+  letter-spacing: .1em;
 
 }
 
@@ -74,11 +74,36 @@ h5 {
   margin-top: 0px;
   margin-bottom: 30px;
 }
+.deco-box{
+  transform: matrix(1, 1, 0, 1, 0, 0);
+  background: #000;
+  position: absolute;
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  transition: 0.2s all;
+}
 
+.txt-box{
+  opacity: 1;
 
+  width: 40px;
+  height: 10px;
+
+  top: 68px;
+  left: -28px;
+}
+
+.deco-box:hover{
+  height: 60px;
+  background: rgba(92,202,232,1);
+}
 
 .headline{
-  padding: 10px 0px 30px 0px;
+  padding: 10px 0px 50px 0px;
+}
+
+.subhead{
+  padding: 0px 24px;
 }
 
 .bodytextB{
@@ -90,7 +115,7 @@ h5 {
 }
 
 .bodytextS{
-      line-height: 1.5;
+  line-height: 1.5;
   font-size: 1.25rem;
 }
 
@@ -112,18 +137,24 @@ h5 {
 
 .logoname{
   right: -0.5px;
-  transition: 0.3s all linear;
-  transform: translateX(2px) rotateY(90deg);
+  transition: 0.6s all;
+  transform: translateX(20px);
+  opacity: 0;
 
   transform-origin: right;
+
+
 }
 
 .logobox:hover .logoname{
+  opacity: 1;
   transform: rotateY(0deg);
+}
+.logobox:hover .logospinning{
 }
 
 .logospinning{
-
+  z-index: 10;
 }
 
 

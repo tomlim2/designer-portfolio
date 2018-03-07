@@ -10,36 +10,59 @@
   <link rel="stylesheet" href="../../assets/css/mycss0-ver6.css" type="text/css" media="screen">
   <link rel="stylesheet" href="../../assets/css/decocss.css" type="text/css" media="screen" />
 
+  <link rel="icon" href="../../favicon.gif" type="image/gif" sizes="30x30">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="../../assets/js/myscript.js"></script>
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
   <style>
+  /* hero-images */
+  .parallax-hero{
+    background-image: url(assets/img/img_0_hero.png);
+  }
 
+  .deco-box{
+
+  }
+
+  .video-icon{
+    color: white;
+    background-color: rgba(236,84,50,1);
+  }
+
+  .video-icon:hover{
+    color: black;
+    filter: drop-shadow(6px 6px 0px rgba(250,227,189,1)) drop-shadow(-6px -6px 0px rgba(250,227,189,1));
+  }
+
+  #process-section{
+    background-color: rgba(250,227,189,1);
+  }
 
   </style>
 
   <script>
   $(document).ready(function(){
-  $(".playbttn").click(function(){
+  $(".v-pl1").click(function(){
 
     $(this).hide();
-    $(".psbttn").show();
-    $("#mv1115")[0].play();
+    $(".v-ps1").show();
+    $("#video1")[0].play();
 
   });
 
-  $(".psbttn").click(function(){
+  $(".v-ps1").click(function(){
     $(this).hide();
-    $(".playbttn").show();
-    $("#mv1115")[0].pause();
+    $(".v-pl1").show();
+    $("#video1")[0].pause();
 
   });
 
-  $("#mv1115").on('ended',function(){
+  $("#video1").on('ended',function(){
 
-    $(".playbttn").show();
-    $(".psbttn").hide();
+    $(".v-pl1").show();
+    $(".v-ps1").hide();
 
   });
   });
@@ -49,10 +72,9 @@
 </head>
 
 <body>
-
-    <!-- new -->
-
-    <!-- header -->
+  <!-- End Page Wrapper -->
+  <div id="page">
+    <!-- Navbar -->
     <div class="headerNav">
         <a href="../../index.html">
           <div class="logobox">
@@ -61,201 +83,133 @@
           </div>
         </a>
     </div>
+    <!-- /End Navbar -->
 
-    <div class="columnBox"></div>
+    <!-- Hero Image Section -->
+    <section id="home-section" class="home-section full-screen">
+      <div class="parallax-hero full-screen home-image" data-top-bottom="transform: translate3d(0px, -200px, 0px)"></div>
+    </section>
+    <!-- End Hero Image Section -->
 
-    <div class="column1">
-
-        <div class="section intro">
-          <img id="pics" src="img_0.png" alt="">
-          <div class="headline">
-            <h2>Olivia</h2>
-            <h3>
-              Spring 2017 | Branding | 14 weeks
-              <br>
-              html, css, javascript, After Effcet, Illustrator, Photoshop
-            </h3>
-          </div>
-          <div class="text-content">
-            <!-- <p class="bodytextB">
-            I don't want people hungry, but I want chickens
-            </p> -->
-            <p class="bodytextS">
+    <!-- Page2 -->
+    <div id="page-2">
+      <!-- Project Section -->
+      <section id="project-info-section" class="project-info-section section6">
+        <div class="container">
+          <div class="section-title">
+            <div class="headline">
+              <h2>Olivia</h2>
+              <div class="deco-box txt-box"></div>
+              <h3 class="subhead">
+                Branding
+              </h3>
+            </div>
+            <div class="text-content">
+              <p class="bodytextB col-sm-50">
               Branding pasture where chickens are happy
+              </p>
+              <p class="bodytextS col-sm-50">
+                Naming, Logo, Typface, Motion, Web
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Project info Section -->
+
+      <!-- Project work Section -->
+      <section id="project-work-section" class="project-info-section section7">
+        <div class="container">
+          <h3>Manifesto</h3>
+          <img class="img-responsive padding-bottom-120" src="assets/img/img_a02.png" alt="">
+        </div>
+
+        <div class="container">
+          <h3>Core Value</h3>
+          <img class="img-responsive padding-bottom-120" src="assets/img/img_a01.png" alt="">
+        </div>
+
+        <div class="container padding-bottom-120">
+          <h3>Naming</h3>
+          <h2>Olivia</h2>
+          <div class="text-content">
+            <p class="bodytextB col-sm-50">
+              This was the name of a Nymph. Olivia can derive
+              from the laurel tree, meaning "symbol of peace".
+            </p>
+            <p class="bodytextS col-sm-50">
+              As I want chickens to live in peace at least during life, and rest in peace, I named my chicken pasture Olivia.
+              The Latin form of the ancient Greek name Olvia.
             </p>
           </div>
-
         </div>
 
-      <div class="section">
-        <h3>Manifesto</h3>
-        <img id="pics" src="assets/img/img_a02.png" alt="">
-      </div>
-      <br>
-
-      <div class="section">
-        <h3>Core Value</h3>
-        <img id="pics" src="assets/img/img_a01.png" alt="">
-      </div>
-      <br>
-
-      <div class="section">
-        <h3>Naming</h3>
-        <img id="pics" src="assets/img/img_a03.png" alt="">
-        <br>
-        As I want chickens to live in peace at least during life, and rest in peace, I named my chicken pasture Olivia.
-
-        The Latin form of the ancient Greek name Olvia.
-        <br>
-        This was the name of a Nymph. Olivia can derive
-        from the laurel tree, meaning <strong>'symbol of peace'</strong>.
-      </div>
-      <br>
-
-      <div class="section">
-        <h3>Logo</h3>
-
-        <br>
-        <img id="pics" src="img_0a.png" alt="">
-        <img id="pics" src="img_1.png" alt="">
-        Shape of logo came from combining naming and typeface, chicken and egg.
-      </div>
-
-      <div class="section">
-        <h3>Typeface</h3>
-        I reframed wood-typeface Tasmin as making
-        typeface for Olivia could be the best way to form
-        Olivia-graphic style.
-
-        <img id="pics2C" src="assets/img/img_4_2.png" alt="">
-      </div>
-
-      <div class="section">
-        <h3>Color</h3>
-        <img id="pics" src="assets/img/img_a04.png" alt="">
-      </div>
-
-      <div class="section">
-        <h3>Pattern</h3>
-        <div class="column2">
-          <img id="pics2L" src="img_4a.png" alt="">
-          <img id="pics2R" src="img_4b.png" alt="">
+        <div class="container">
+          <h3>Logo</h3>
+          <img class="img-responsive padding-bottom-120" src="assets/img/img_logo_1.png" alt="">
         </div>
 
-      </div>
-
-
-      <div class="section">
-        <h3>Expressive poster</h3>
-        <img id="pics" src="img_3.jpg" alt="">
-        <img id="pics" src="img_3b.png" alt="">
-      </div>
-
-      <div class="section">
-        <h3>Video | Egg Picking Day Promotion</h3>
-        <video id="mv1115" poster="img_6b.jpg">
-          <source src="mv1115.mp4" type="video/mp4">
-        </video>
-
-        <div class="buttons psbttn">
-          pause
+        <div class="container">
+          <h3>Typeface</h3>
+          <img class="img-responsive padding-bottom-120" src="assets/img/img_typo_1.png" alt="">
         </div>
 
-        <div class="buttons playbttn">
-          play
+        <div class="container">
+          <h3>Color</h3>
+          <img class="img-responsive padding-bottom-120" src="assets/img/img_color_1.png" alt="">
         </div>
 
-        <br><br>
-        <div class="column2">
-          <img id="pics2C" src="img_6a.jpg" alt="">
-          <img id="pics2C" src="img_6b.jpg" alt="">
-          <img id="pics2C" src="img_6c.jpg" alt="">
-          <img id="pics2C" src="img_6d.jpg" alt="">
+        <div class="container">
+          <h3>Pattern</h3>
+          <img class="img-responsive img-50 padding-bottom-30" src="assets/img/img_pattern_1.png" alt="">
+          <img class="img-responsive img-50 padding-bottom-120" src="assets/img/img_pattern_2.png" alt="">
         </div>
 
-      </div>
+        <div class="container">
+          <h3>Expressive poster</h3>
+          <img class="img-responsive padding-bottom-120" src="assets/img/img_poster_1.png" alt="">
+        </div>
 
-      <div class="section">
-        <h3>Website</h3>
+        <div class="container">
+          <h3>Video | Egg Picking Day Promotion</h3>
 
-        <img id="pics" src="img_7.png" alt="">
-
-        <a href="assets/index.html">
-          <div class="buttons">
-            <div id="linkbtn">link</div>
+          <div class="video-player">
+            <div class="video-screen">
+              <video id="video1" class="video-responsive" poster="img_6b.jpg">
+                <source src="assets/video/mv1115.mp4" type="video/mp4">
+              </video>
+            </div>
+            <br>
+            <div class="video-bttns padding-bottom-120">
+              <div class="video-icon video-psbttn v-ps1">
+                pause
+              </div>
+              <div class="video-icon video-plbttn v-pl1">
+                play
+              </div>
+            </div>
           </div>
-        </a>
-
-        <br><br>
-        <img id="pics" src="img_7a.png" alt="">
-      </div>
-
-      <div class="section">
-        <h3>Education | Adopting Chickens Program</h3>
-
-        <img id="pics" src="img_7b.png" alt="">
-
-      </div>
-
-      <div class="section">
-        <h3>System Poster</h3>
-
-        <img id="pics" src="img_2a.png" alt="">
-
-      </div>
-
-      <div class="section">
-        <h3>process</h3>
-        <!-- <img id="pics" src="img_03e.png" alt=""> -->
-
-        <div class="column2">
-          <img id="pics2C" src="assets/img/process/img_a01.jpg" alt="">
-          <h5>my cause | "I produce food not chickens" from factory farmer</h5>
-          <img id="pics2C" src="assets/img/process/img_a02.jpg" alt="">
-          <h5>mood board</h5>
-          <img id="pics2C" src="assets/img/process/img_a03.jpg" alt="">
-          <h5>do all my best for my chicken pasture </h5>
-          <img id="pics2C" src="assets/img/process/img_a03_2.jpg" alt="">
-          <img id="pics2C" src="assets/img/process/img_a04.jpg" alt="">
-          <h5>as it is wood typeface...</h5>
-          <img id="pics2C" src="assets/img/process/img_a05.jpg" alt="">
-          <h5>ideas for logo & typeface</h5>
-          <img id="pics2C" src="assets/img/process/img_a06.jpg" alt="">
-          <h5>midterm; system, expressive, color, pattern, graphic style, motion...</h5>
-          <img id="pics2C" src="assets/img/process/img_a07.jpg" alt="">
-          <h5>refine, and tasmin egg bold process</h5>
-          <img id="pics2C" src="assets/img/process/img_a08.jpg" alt="">
-          <h5>logo & typeface</h5>
-          <img id="pics2C" src="assets/img/process/img_a09.jpg" alt="">
-          <img id="pics2C" src="assets/img/process/img_a10.jpg" alt="">
-          <img id="pics2C" src="assets/img/process/img_a11.jpg" alt="">
-          <img id="pics2C" src="assets/img/process/img_a12.jpg" alt="">
-          <h5>making pattern</h5>
-          <img id="pics2C" src="assets/img/process/img_a13.jpg" alt="">
-          <h5>ideas for education</h5>
-
-          <img id="pics2C" src="assets/img/process/img_a14_1.jpg" alt="">
-          <h5>ideas for motion</h5>
-          <img id="pics2C" src="assets/img/process/img_a14_2.jpg" alt="">
-          <h5>prototype</h5>
-          <img id="pics2L" src="assets/img/process/img_a14_3.jpg" alt="">
-          <img id="pics2R" src="assets/img/process/img_a14_4.jpg" alt="">
-          <img id="pics2L" src="assets/img/process/img_a14_5.jpg" alt="">
-          <img id="pics2R" src="assets/img/process/img_a14_6.jpg" alt="">
-          <img id="pics2L" src="assets/img/process/img_a14_7.jpg" alt="">
-          <img id="pics2R" src="assets/img/process/img_a14_8.jpg" alt="">
-          <img id="pics2L" src="assets/img/process/img_a14_9.jpg" alt="">
         </div>
-      </div>
+
+        <div class="container">
+          <h3>Website</h3>
+          <a href="assets/web/index.html">
+            <img class="img-responsive padding-bottom-120" src="assets/img/img_web_1.png" alt="">
+          </a>
+        </div>
+    </section>
+    <!-- End Project info Section -->
+
+      <footer class="footer-section section7">
+        <div class="footer-text">
+          Tom Lim © 2018. All Right Reserved.
+        </div>
+      </footer>
+    </div>
+    <!-- End Page-2 -->
 
     </div>
-
-    <div class="columnBox"></div>
-
-    <div class="footers"></div>
-
-    <!-- new end -->
-
+    <!-- End Page Wrapper -->
 
 </body>
 </html>
