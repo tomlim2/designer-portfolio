@@ -15,6 +15,30 @@
   <script type="text/javascript" src="../../assets/js/myscript.js"></script>
 
   <style>
+  /* hero-images */
+  .parallax-hero{
+    background-image: url(assets/img/img_0_hero.gif);
+  }
+
+  .deco-box{
+
+  }
+
+  .video-icon{
+    /* color: white;
+    background-color: #406eb3; */
+  }
+
+  .video-icon:hover{
+    /* color: black;
+    filter: drop-shadow(6px 6px 0px rgba(250,227,189,1)) drop-shadow(-6px -6px 0px rgba(250,227,189,1)); */
+  }
+
+  #process-section{
+    background-color: rgba(250,227,189,1);
+  }
+
+
   .buttons{
     background: #406eb3;
   }
@@ -30,49 +54,21 @@
 
   <script>
   $(document).ready(function(){
-    $(".playbttn2").click(function(){
-
+    $(".v-pl1").click(function(){
       $(this).hide();
-      $(".psbttn2").show();
-      $("#mv1120")[0].play();
-
+      $(".v-ps1").show();
+      $("#video1")[0].play();
     });
 
-    $(".psbttn2").click(function(){
+    $(".v-ps1").click(function(){
       $(this).hide();
-      $(".playbttn2").show();
-      $("#mv1120")[0].pause();
-
+      $(".v-pl1").show();
+      $("#video1")[0].pause();
     });
 
-    $("#mv1120").on('ended',function(){
-
-      $(".playbttn2").show();
-      $(".psbttn2").hide();
-
-    });
-
-
-    $(".playbttn").click(function(){
-
-      $(this).hide();
-      $(".psbttn").show();
-      $("#mv1115")[0].play();
-
-    });
-
-    $(".psbttn").click(function(){
-      $(this).hide();
-      $(".playbttn").show();
-      $("#mv1115")[0].pause();
-
-    });
-
-    $("#mv1115").on('ended',function(){
-
-      $(".playbttn").show();
-      $(".psbttn").hide();
-
+    $("#video1").on('ended',function(){
+      $(".v-pl1").show();
+      $(".v-ps1").hide();
     });
   });
   </script>
@@ -81,100 +77,96 @@
 </head>
 
 <body>
-  <!-- new -->
-  <div class="headerNav">
-      <a href="../../index.html">
-        <div class="logobox">
-          <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
-          <img class="logo1 logoname" src="../../assets/imgs/logo03e.png" alt="">
+  <!-- End Page Wrapper -->
+  <div id="page">
+    <!-- Navbar -->
+    <div class="headerNav">
+        <a href="../../index.html">
+          <div class="logobox">
+            <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
+            <img class="logo1 logoname" src="../../assets/imgs/logo03e.png" alt="">
+          </div>
+        </a>
+    </div>
+    <!-- /End Navbar -->
+
+    <!-- Hero Image Section -->
+    <section id="home-section" class="home-section full-screen">
+      <div class="parallax-hero full-screen home-image" data-top-bottom="transform: translate3d(0px, -200px, 0px)"></div>
+    </section>
+    <!-- End Hero Image Section -->
+
+    <!-- Page2 -->
+    <div id="page-2">
+      <!-- Project Section -->
+      <section id="project-info-section" class="project-info-section section6">
+        <div class="container">
+          <div class="section-title">
+            <div class="headline">
+              <h2>Technologic</h2>
+              <div class="deco-box txt-box"></div>
+              <h3 class="subhead">
+                Type in Motion
+              </h3>
+            </div>
+            <div class="text-content">
+              <p class="bodytextB col-sm-50">
+                The Evolution of typography technology
+              </p>
+              <p class="bodytextS col-sm-50">
+                Fall 2016 | Group | 5 weeks
+                <br>
+                Premiere, Photoshop
+              </p>
+            </div>
+          </div>
         </div>
-      </a>
-  </div>
+      </section>
+      <!-- End Project info Section -->
 
-  <div class="columnBox"></div>
+      <!-- Project work Section -->
+      <section id="project-work-section" class="project-info-section section7">
+        <div class="container padding-bottom-120">
+          <h3>Video</h3>
 
-  <div class="column1">
-    <div class="section intro">
-      <img id="pics" src="img_thumb2.gif" alt="">
-      <div class="headline">
-        <h2>Technologic</h2>
-        <h3>
-          Fall 2016 | Type in Motion | Group | 5 weeks
-          <br>
-          Premiere, Photoshop
-        </h3>
-      </div>
+          <div class="video-player">
+            <div class="video-screen">
+              <video id="video1" class="video-responsive" poster="assets/img/img_video_1.jpg">
+                <source src="assets/video/mv1117.mp4" type="video/mp4">
+              </video>
+            </div>
+            <br>
+            <div class="video-bttns">
+              <div class="video-icon video-psbttn v-ps1">
+                pause
+              </div>
+              <div class="video-icon video-plbttn v-pl1">
+                play
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="text-content">
-        <!-- <p class="bodytextB">
-        I don't want people hungry, but I want chickens
-        </p> -->
-        <p class="bodytextS">
-          The Evolution of typography technology
-        </p>
-      </div>
+        <div class="container">
+          <img class="img-responsive padding-bottom-30" src="assets/img/img_a1.jpg" alt="">
+          <img class="img-responsive padding-bottom-30" src="assets/img/img_a2.png" alt="">
+          <img class="img-responsive padding-bottom-30" src="assets/img/img_a3.jpg" alt="">
+          <img class="img-responsive padding-bottom-30" src="assets/img/img_a4.png" alt="">
+          <img class="img-responsive padding-bottom-120" src="assets/img/img_a5.png" alt="">
+        </div>
+    </section>
+    <!-- End Project info Section -->
+
+      <footer class="footer-section section7">
+        <div class="footer-text">
+          Tom Lim © 2018. All Right Reserved.
+        </div>
+      </footer>
+    </div>
+    <!-- End Page-2 -->
 
     </div>
-
-    <div class="section">
-      <video id="mv1115" poster="img_1.jpg">
-        <source src="mv1117.mp4" type="video/mp4">
-      </video>
-      <div class="buttons playbttn">
-        play
-      </div>
-      <div class="buttons psbttn">
-        pause
-      </div>
-    </div>
-
-    <div class="section">
-      <img id="pics" src="img_2.jpg" alt="">
-      <img id="pics" src="img_4.jpg" alt="">
-      <img id="pics" src="img_6.png" alt="">
-      <img id="pics" src="img_9.png" alt="">
-      <img id="pics" src="img_10.png" alt="">
-    </div>
-
-    <div class="section">
-      <h3>Process</h3>
-      <div class="section">
-        <img id="pics" src="img_a01.jpg" alt="">
-        <h5>choosing music</h5>
-
-        <img id="pics" src="img_b00.jpg" alt="">
-        <h5>concept; focus on typography</h5>
-
-        <img id="pics" src="img_b02.png" alt="">
-        <h5>idea; making specialized storyboards for this</h5>
-        <video id="mv1115" autoplay playsinline loop muted>
-          <source src="mv1118.mp4" type="video/mp4">
-        </video>
-        <h5>test shot 01</h5>
-
-        <img id="pics" src="img_b01.jpg" alt="">
-        <h5>add the progression</h5>
-
-
-        <img id="pics" src="img_b02.jpg" alt="">
-        <img id="pics" src="img_b03.jpg" alt="">
-
-        <video id="mv1115" autoplay playsinline loop muted>
-          <source src="mv1116.mp4" type="video/mp4">
-        </video>
-        <h5>test shot 04; only photography left</h5>
-        <br>
-        <img id="pics" src="img_b04.jpg" alt="">
-        <h5>to the end</h5>
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div class="footers"></div>
-  <!-- new end -->
+    <!-- End Page Wrapper -->
 
 </body>
 </html>

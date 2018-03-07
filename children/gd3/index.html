@@ -44,27 +44,22 @@
 
   <script>
   $(document).ready(function(){
-  $(".v-pl1").click(function(){
+    $(".v-pl1").click(function(){
+      $(this).hide();
+      $(".v-ps1").show();
+      $("#video1")[0].play();
+    });
 
-    $(this).hide();
-    $(".v-ps1").show();
-    $("#video1")[0].play();
+    $(".v-ps1").click(function(){
+      $(this).hide();
+      $(".v-pl1").show();
+      $("#video1")[0].pause();
+    });
 
-  });
-
-  $(".v-ps1").click(function(){
-    $(this).hide();
-    $(".v-pl1").show();
-    $("#video1")[0].pause();
-
-  });
-
-  $("#video1").on('ended',function(){
-
-    $(".v-pl1").show();
-    $(".v-ps1").hide();
-
-  });
+    $("#video1").on('ended',function(){
+      $(".v-pl1").show();
+      $(".v-ps1").hide();
+    });
   });
   </script>
 
@@ -170,7 +165,7 @@
           <img class="img-responsive padding-bottom-120" src="assets/img/img_poster_1.png" alt="">
         </div>
 
-        <div class="container">
+        <div class="container padding-bottom-120">
           <h3>Video | Egg Picking Day Promotion</h3>
 
           <div class="video-player">
@@ -180,7 +175,7 @@
               </video>
             </div>
             <br>
-            <div class="video-bttns padding-bottom-120">
+            <div class="video-bttns">
               <div class="video-icon video-psbttn v-ps1">
                 pause
               </div>
