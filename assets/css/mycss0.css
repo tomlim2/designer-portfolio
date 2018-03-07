@@ -107,7 +107,7 @@ h5 {
 
   text-transform: capitalize;
 
-  opacity: .95;
+  /* opacity: .98; */
 }
 
 .subhead{
@@ -414,6 +414,17 @@ h5 {
   margin-bottom: 20px;
 }
 
+.img-phone{
+  width: 180px;
+  height: auto;
+  position: relative;
+  left: 50%;
+  margin-left: -90px;
+  transition: 0.3s all;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 #picsMobile:hover{
   transform: rotate(-2deg);
 }
@@ -540,6 +551,11 @@ h5 {
   #pics2C3{
     width: 310px;
     margin-left: -155px;
+  }
+
+  .img-phone{
+    width: 270px;
+    margin-left: -135px;
   }
 
   #picsMobile{
