@@ -79,7 +79,7 @@ li{
 
 
 .portfolio-item-img:hover{
-  filter: drop-shadow(8px 8px 0px rgba(92,202,232,1)) drop-shadow(-8px -8px 0px rgba(92,202,232,1));
+  filter: drop-shadow(2em .5em 0em rgba(92,202,232,1)) drop-shadow(-2em -.5em 0em rgba(92,202,232,1));
   z-index: 10;
 }
 
@@ -303,7 +303,7 @@ p{
   .video-icon:hover{
     color: black;
     background-color: white;
-    filter: drop-shadow(6px 6px 0px rgba(92,202,232,1)) drop-shadow(-6px -6px 0px rgba(92,202,232,1));
+    filter: drop-shadow(1em .3em 0em rgba(92,202,232,1)) drop-shadow(-1em -.3em 0em rgba(92,202,232,1));
   }
 
   .video-psbttn{

@@ -33,7 +33,42 @@
   #linkbtn{
     color: black;
   }
+  #page-2{
+    background-color: black;
+  }
   /* End Invert Version Sets */
+
+  /* Ver6 Sets*/
+  .parallax-hero{
+    background-image: url(assets/img/img_hero_1.gif);
+  }
+
+  .headline{
+    color: white;
+  }
+
+  .deco-box{
+    background: white;
+  }
+
+  .video-icon{
+    /* color: white;
+    background-color: #406eb3; */
+  }
+
+  .video-icon:hover{
+    /* color: black;
+    filter: drop-shadow(6px 6px 0px rgba(250,227,189,1)) drop-shadow(-6px -6px 0px rgba(250,227,189,1)); */
+  }
+
+  #process-section{
+    background-color: rgba(250,227,189,1);
+  }
+
+  #img-link:hover{
+    filter: drop-shadow(2em .5em 0px rgba(92,202,232,1)) drop-shadow(-2em -.5em 0px rgba(92,202,232,1));
+  }
+  /* End Ver6 Sets */
 
   </style>
 
@@ -67,119 +102,99 @@
 </head>
 
 <body>
-
-    <!-- new -->
-
-    <!-- header -->
+  <!-- Page Wrapper -->
+  <div id="page">
+    <!-- Navbar -->
     <div class="headerNav">
         <a href="../../index.html">
           <div class="logobox">
             <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
-            <img class="logo1 logoname" style="opacity: 0.9;" src="../../assets/imgs/logo03f.png" alt="">
+            <img class="logo1 logoname" src="../../assets/imgs/logo03f.png" alt="">
           </div>
         </a>
     </div>
+    <!-- /End Navbar -->
 
-    <div class="columnBox"></div>
+    <!-- Hero Image Section -->
+    <section id="home-section" class="home-section full-screen">
+      <div class="parallax-hero full-screen home-image" data-top-bottom="transform: translate3d(0px, -200px, 0px)">
+        <div class="hs-content">
+          <div class="hs-content-inner">
+            <div class="headline">
+              <div class="deco-box txt-box"></div>
+              <h2>Brain Bot</h2>
 
-    <div class="column1">
-
-        <div class="section intro">
-          <img id="pics" src="img_thumb2.gif" alt="">
-          <div class="headline">
-            <h2>Brain Bot</h2>
-            <h3>
-              Fall 2017 | Javascript | 5 weeks
-              <br>
-              html, css, javascript
-            </h3>
+              <h3 class="subhead">
+                Drawing with coding;
+              </h3>
+            </div>
           </div>
-
-          <div class="text-content">
-            <!-- <p class="bodytextB"> Drawing with coding; making unique web visual language22</p> -->
-            <p class="bodytextS"> Drawing with coding; making unique web visual language22</p>
-          </div>
-
         </div>
+      </div>
+    </section>
+    <!-- End Hero Image Section -->
 
-        <div class="section">
-          <img id="pics" src="assets/project/img_a01.png" alt="">
+    <!-- Page2 -->
+    <div id="page-2">
+      <!-- Project Section -->
+      <section id="project-info-section" class="project-info-section section6">
+        <div class="container">
+          <div class="section-title">
+            <div class="text-content">
+              <p class="bodytextB col-sm-50">
+                Using website as a tool to make images
+              </p>
+              <p class="bodytextS col-sm-50">
+                Fall 2017 | Javascript | 5 weeks
+                <br>
+                html, css, javascript
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Project info Section -->
+
+      <!-- Project work Section -->
+      <section id="project-work-section" class="project-info-section section7">
+
+        <div class="container padding-bottom-120">
           <h3>Concept</h3>
-            Website theseday is a fantastic calculator. What could happen if I use this calculator as a tool to make images?
-            <br><br>
-            Each ball has their own color, shapes, and I make unlimited unique images as long as I click refresh button.
+          <div class="text-content">
+            <p class="col-sm-50">
+              <img width="100%" height="auto" class="img-responsive padding-bottom-0" src="assets/img/img_concept_1.png" alt="">
+            </p>
+            <p class="bodytextB col-sm-50">
+              Unlimited brain images; Galaxy
+            </p>
+          </div>
+          <img width="100%" height="auto" class="img-responsive padding-bottom-30" src="assets/img/img_concept_2.png" alt="">
         </div>
 
-        <div class="section">
-          <h3>Galaxy Bot</h3>
-            I built website whoever can make thier own this Galaxy in 4mins.
-          <br><br>
-          <a id="linkbtn" href="assets/yourgalaxy/index.html">
-            <img id="pics" src="assets/project/img_b01.png" alt="">
+        <div class="container">
+          <h3>Galaxy Bot; Personalize</h3>
+          <a href="assets/yourgalaxy/index.html">
+            <img id="img-link" width="100%" height="auto" class="img-responsive padding-bottom-30" src="assets/img/img_web_1.png" alt="">
           </a>
-          <br>
-          <div class="buttons">
-            <a id="linkbtn" href="assets/yourgalaxy/index.html">link</a>
-          </div>
-          <br>
-          <img id="pics" src="assets/project/img_b03.png" alt="">
-          <img id="pics" src="assets/project/img_b02.png" alt="">
-          <img id="pics" src="assets/project/img_b04.png" alt="">
+
+          <img width="100%" height="auto" class="img-responsive padding-bottom-30" src="assets/img/img_web_2.png" alt="">
+          <img width="100%" height="auto" class="img-responsive padding-bottom-120" src="assets/img/img_web_3.png" alt="">
         </div>
 
+      </section>
 
-        <div class="section">
-          <h3>process</h3>
-          <!-- <img id="pics" src="img_03e.png" alt=""> -->
+    <!-- End Project info Section -->
 
-          <div class="column2">
-            <img id="pics2C" src="assets/process/img_d01.gif" alt="">
-            <img id="pics2C" src="assets/process/img_d02.gif" alt="">
-            <img id="pics2C" src="assets/process/img_d03.gif" alt="">
-            <img id="pics2C" src="assets/process/img_d04.gif" alt="">
-            <h5>First meet with CTX world</h5>
-
-            <img id="pics2C" src="assets/process/img_d04a0.gif" alt="">
-            <img id="pics2C" src="assets/process/img_d04a1.gif" alt="">
-            <img id="pics2C" src="assets/process/img_d04a2.gif" alt="">
-            <h5>now I am interested in CTX animation, but I may need 8 monthes more to script what I want (sin,cos,tan)</h5>
-
-            <img id="pics2C" src="assets/process/img_d07.png" alt="">
-            <img id="pics2C" src="assets/process/img_d06.png" alt="">
-            <h5>focus on shape, but random</h5>
-
-            <img id="pics2C" src="assets/process/img_d05.png" alt="">
-            <img id="pics2C" src="assets/process/img_d08.png" alt="">
-            <h5>special thanks to Jared for helping combining shape and color pelete:)</h5>
-
-            <img id="pics2C" src="assets/process/img_d06a.gif" alt="">
-            <img id="pics2C" src="assets/process/img_d06b.png" alt="">
-            <h5>how to package and develop it?</h5>
-
-            <img id="pics2C" src="assets/process/img_d09.png" alt="">
-            <img id="pics2C" src="assets/process/img_d10.png" alt="">
-            <h5>special thanks to Juile who said "the tree looks like nerve":)</h5>
-
-            <img id="pics2C" src="assets/process/img_d10a.jpg" alt="">
-            <img id="pics2C" src="assets/process/img_d10b.jpg" alt="">
-            <h5>how to package?? printing-out form</h5>
-
-            <img id="pics2C" src="assets/process/img_d11.png" alt="">
-            <h5>even this screenshot is only image in this world</h5>
-
-            <img id="pics2C" src="assets/process/img_d12.png" alt="">
-            <h5>how to package22?? personalize</h5>
-
-            <img id="pics2C" src="assets/process/img_d15.png" alt="">
-          </div>
+      <footer class="footer-section section7">
+        <div class="footer-text">
+          Tom Lim © 2018. All Right Reserved.
         </div>
+      </footer>
     </div>
+    <!-- End Page-2 -->
 
-
-    <div class="footers"></div>
-
-    <!-- new end -->
-
+    </div>
+    <!-- End Page Wrapper -->
 
 </body>
 </html>

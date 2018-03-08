@@ -29,5 +29,5 @@
 }
 
 #img-link:hover{
-  filter: drop-shadow(1em 1em 0px rgba(92,202,232,1)) drop-shadow(-1em -1em 0px rgba(92,202,232,1));
+  filter: drop-shadow(2em .5em 0em rgba(92,202,232,1)) drop-shadow(-2em -.5em 0em rgba(92,202,232,1));
 }
