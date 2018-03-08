@@ -17,6 +17,28 @@
     <script type="text/javascript" src="../../assets/js/myscript.js"></script>
 
     <style>
+    /* hero-images */
+    .parallax-hero{
+      background-image: url(assets/img/img_hero_1.jpg);
+    }
+
+    .headline{
+      color: white;
+    }
+
+    .deco-box{
+      background: white;
+    }
+
+    .video-icon{
+      /* color: white;
+      background-color: #406eb3; */
+    }
+
+    .video-icon:hover{
+      /* color: black;
+      filter: drop-shadow(6px 6px 0px rgba(250,227,189,1)) drop-shadow(-6px -6px 0px rgba(250,227,189,1)); */
+    }
     .buttons{
       background-color: #d9d0c7;
     }
@@ -35,70 +57,97 @@
       cursor: pointer;
       display: none;
     }
+
+    /* Ver6 sets*/
+    .parallax-hero{
+      background-image: url(assets/img/img_hero_1.jpg);
+    }
+
+    .headline{
+      color: white;
+    }
+
+    .deco-box{
+      background: white;
+    }
+
+    .video-icon{
+      /* color: white;
+      background-color: #406eb3; */
+    }
+
+    .video-icon:hover{
+      /* color: black;
+      filter: drop-shadow(6px 6px 0px rgba(250,227,189,1)) drop-shadow(-6px -6px 0px rgba(250,227,189,1)); */
+    }
+
+    #process-section{
+      background-color: rgba(250,227,189,1);
+    }
+
+    /* End Ver6 sets*/
+
     </style>
 
     <script>
     $(document).ready(function(){
-      $(".playbttn").click(function(){
-
+      // Video 1
+      $(".v-pl1").click(function(){
         $(this).hide();
-        $(".psbttn").show();
-        $("#mv1115")[0].play();
-
+        $(".v-ps1").show();
+        $("#video1")[0].play();
       });
 
-      $(".psbttn").click(function(){
+      $(".v-ps1").click(function(){
         $(this).hide();
-        $(".playbttn").show();
-        $("#mv1115")[0].pause();
-
+        $(".v-pl1").show();
+        $("#video1")[0].pause();
       });
 
-      $("#mv1115").on('ended',function(){
-
-        $(".playbttn").show();
-        $(".psbttn").hide();
-
+      $("#video1").on('ended',function(){
+        $(".v-pl1").show();
+        $(".v-ps1").hide();
       });
+      // End Video 1
 
-      // sound1
-
-      $(".plb2").click(function(){
+      // Sound 1
+      $(".v-pl2").click(function(){
         $(this).hide();
-        $(".psb2").show();
-        $("#bello")[0].play();
+        $(".v-ps2").show();
+        $("#sound1")[0].play();
       });
 
-      $(".psb2").click(function(){
+      $(".v-ps2").click(function(){
         $(this).hide();
-        $(".plb2").show();
-        $("#bello")[0].pause();
+        $(".v-pl2").show();
+        $("#sound1")[0].pause();
       });
 
-      $("#bello").on('ended',function(){
-
-        $(".plb2").show();
-        $(".psb2").hide();
+      $("#sound1").on('ended',function(){
+        $(".v-pl2").show();
+        $(".v-ps2").hide();
       });
+      // End Sound2
 
-      // sound2
-      $(".plb3").click(function(){
+      // Sound 2
+      $(".v-pl3").click(function(){
         $(this).hide();
-        $(".psb3").show();
-        $("#bello2")[0].play();
+        $(".v-ps3").show();
+        $("#sound2")[0].play();
       });
 
-      $(".psb3").click(function(){
+      $(".v-ps3").click(function(){
         $(this).hide();
-        $(".plb3").show();
-        $("#bello2")[0].pause();
+        $(".v-pl3").show();
+        $("#sound2")[0].pause();
       });
 
-      $("#bello").on('ended',function(){
-
-        $(".plb3").show();
-        $(".psb3").hide();
+      $("#sound2").on('ended',function(){
+        $(".v-pl3").show();
+        $(".v-ps3").hide();
       });
+      // End Sound 2
+
     });
     </script>
 
@@ -106,110 +155,143 @@
   </head>
 
   <body>
-    <!-- header -->
-    <div class="headerNav">
-        <a href="../../index.html">
-          <div class="logobox">
-            <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
-            <img class="logo1 logoname" src="../../assets/imgs/logo03e.png" alt="">
-          </div>
-        </a>
-    </div>
-
-    <div class="columnBox"></div>
-      <!-- new -->
-
-      <div class="column1">
-        <div class="section intro">
-          <img id="pics" src="img_0.gif" alt="">
-          <div class="headline">
-            <h2>Sound Journey</h2>
-            <h3>
-              Spring 2017 | Motion graphic | 4 weeks <br>
-              Audition, After Effect
-            </h3>
-          </div>
-
-          <div class="text-content">
-            <!-- <p class="bodytextB">
-            I don't want people hungry, but I want chickens
-            </p> -->
-            <p class="bodytextS">
-              This motion is abstract animation based on sounds that I collected, sequence, and edit to create rhythm and movement.
-            </p>
-          </div>
-        </div>
-
-        <div class="section">
-          <video id="mv1115" poster="img_3.jpg">
-            <source src="mv1115.mp4" type="video/mp4">
-          </video>
-          <div class="buttons playbttn">
-            play
-          </div>
-          <div class="buttons psbttn">
-            pause
-          </div>
-        </div>
-
-        <div class="section">
-
-          <img id="pics2L" src="img_1.jpg" alt="">
-          <img id="pics2R" src="img_2.jpg" alt="">
-          <img id="pics2L" src="img_3.jpg" alt="">
-          <img id="pics2R" src="img_4.jpg" alt="">
-          <img id="pics2L" src="img_5.jpg" alt="">
-
-        </div>
-
-        <div class="section">
-          <h3>Process</h3>
-          <br>
-          <h5>Step1; Recoding sounds from my environment</h5>
-          <div class="audiolist">
-            <audio id="bello">
-              <source src="audio1111.wav" type="audio/wav">
-            </audio>
-            <div class="buttons plb2">
-              play
+    <!-- End Page Wrapper -->
+    <div id="page">
+      <!-- Navbar -->
+      <div class="headerNav">
+          <a href="../../index.html">
+            <div class="logobox">
+              <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
+              <img class="logo1 logoname" src="../../assets/imgs/logo03e.png" alt="">
             </div>
-            <div class="buttons psb2">
-              pause
+          </a>
+      </div>
+      <!-- /End Navbar -->
+
+      <!-- Hero Image Section -->
+      <section id="home-section" class="home-section full-screen">
+        <div class="parallax-hero overlay full-screen home-image" data-top-bottom="transform: translate3d(0px, -200px, 0px)">
+          <div class="hs-content">
+            <div class="hs-content-inner">
+              <div class="headline">
+                <div class="deco-box txt-box"></div>
+                <h2>Sound Journey</h2>
+
+                <h3 class="subhead">
+                  SOUND MIX + MOTION
+                </h3>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- End Hero Image Section -->
 
-          <br>
+      <!-- Page2 -->
+      <div id="page-2">
+        <!-- Project Section -->
+        <section id="project-info-section" class="project-info-section section6">
+          <div class="container">
+            <div class="section-title">
 
-          <br>
-
-          <h5>Step2; Mixing the sounds</h5>
-          <div class="audiolist">
-            <audio id="bello2">
-              <source src="audio1112.wav" type="audio/wav">
-            </audio>
-            <div class="buttons plb3">
-              play
+              <div class="text-content">
+                <p class="bodytextB col-sm-50">
+                  Motion graphic based on sounds in the surrounding environment
+                </p>
+                <p class="bodytextS col-sm-50">
+                  Spring 2017 | Motion graphic | 4 weeks
+                  <br>
+                  Audition, After Effect
+                </p>
+              </div>
             </div>
-            <div class="buttons psb3">
-              pause
+          </div>
+        </section>
+        <!-- End Project info Section -->
+
+        <!-- Project work Section -->
+        <section id="project-work-section" class="project-info-section section7">
+          <div class="container padding-bottom-30">
+            <h3 style="text-align:center">step 1: recording sound</h3>
+            <img class="img-responsive padding-bottom-120" src="assets/img/img_a02.png" alt="">
+
+            <div class="audiolist">
+              <audio id="sound1">
+                <source src="assets/video/audio1111.wav" type="audio/wav">
+              </audio>
+              <div style="padding-top:10px" class="video-bttns">
+                <div class="video-icon video-psbttn v-ps2">
+                  pause
+                </div>
+                <div class="video-icon video-plbttn v-pl2">
+                  play
+                </div>
+              </div>
             </div>
           </div>
 
-          <br>
+          <div class="container padding-bottom-30">
+            <h3 style="text-align:center">step 2: mixing</h3>
+            <img class="img-responsive padding-bottom-120" src="assets/img/img_a02.png" alt="">
 
-          <h5>Step3; Premiere version</h5>
-          <video id="mv1115" autoplay playsinline loop muted>
-            <source src="mv1116.mp4" type="video/mp4">
-          </video>
+            <div class="audiolist">
+              <audio id="sound2">
+                <source src="assets/video/audio1112.wav" type="audio/wav">
+              </audio>
+              <div style="padding-top:10px"class="video-bttns">
+                <div class="video-icon video-psbttn v-ps3">
+                  pause
+                </div>
+                <div class="video-icon video-plbttn v-pl3">
+                  play
+                </div>
+              </div>
+            </div>
+          </div>
 
-        </div>
+          <div class="container padding-bottom-120">
+            <h3 style="text-align:center">step 3: Motion</h3>
+
+            <div class="video-player">
+              <div class="video-screen">
+                <video id="video1" class="video-responsive" poster="assets/img/img_video_1.jpg">
+                  <source src="assets/video/mv1117.mp4" type="video/mp4">
+                </video>
+              </div>
+              <br>
+              <div class="video-bttns">
+                <div class="video-icon video-psbttn v-ps1">
+                  pause
+                </div>
+                <div class="video-icon video-plbttn v-pl1">
+                  play
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="container">
+            <img class="img-responsive padding-bottom-30" src="assets/img/img_a1.jpg" alt="">
+            <img class="img-responsive padding-bottom-30" src="assets/img/img_a2.png" alt="">
+            <img class="img-responsive padding-bottom-30" src="assets/img/img_a3.jpg" alt="">
+            <img class="img-responsive padding-bottom-30" src="assets/img/img_a4.png" alt="">
+            <img class="img-responsive padding-bottom-120" src="assets/img/img_a5.png" alt="">
+          </div>
+      </section>
+      <!-- End Project info Section -->
+
+        <footer class="footer-section section7">
+          <div class="footer-text">
+            Tom Lim © 2018. All Right Reserved.
+          </div>
+        </footer>
+      </div>
+      <!-- End Page-2 -->
 
       </div>
-
-      <div class="footers"></div>
-      <!-- new end -->
-
-
+      <!-- End Page Wrapper -->
 
   </body>
 </html>
