@@ -19,7 +19,7 @@
   <style>
   /* hero-images */
   .parallax-hero{
-    background-image: url(assets/img/img_0_hero_2.png);
+    background-image: url(assets/img/img_0_hero_3.png);
   }
 
   .headline{
@@ -34,11 +34,21 @@
     color: white;
     background-color: rgba(236,84,50,1);
   }
-
   .video-icon:hover{
     color: black;
     filter: drop-shadow(1em .3em 0em rgba(250,227,189,1)) drop-shadow(-1em -.3em 0em rgba(250,227,189,1));
   }
+
+
+  .button-slides{
+    color: white;
+    background-color: rgba(236,84,50,1);
+  }
+  .button-slides:hover{
+    color: black;
+    background-color: rgba(250,227,189,1)
+  }
+
 
   #process-section{
     background-color: rgba(250,227,189,1);
@@ -128,6 +138,22 @@
       <!-- Project work Section -->
       <section id="project-work-section" class="project-info-section section7">
         <div class="container">
+          <h3>cause; Factory farming</h3>
+          <img class="img-responsive padding-bottom-120" src="assets/img/img_cause.jpg" alt="">
+        </div>
+
+        <div class="container padding-bottom-120">
+          <h3>Chicken Pasture & Photography style</h3>
+          <div class="img-slideshow">
+            <img style="width: 100%; height=auto; display: block;" class="img-slides img-responsive padding-bottom-0" src="assets/img/img_slide_1.jpg" alt="">
+            <img style="width: 100%; height=auto; display: none;" class="img-slides img-responsive padding-bottom-0" src="assets/img/img_slide_2.jpg" alt="">
+
+            <div class="button-slides bttn-slides-left" onclick="plusDivs(-1)">❮</div>
+            <div class="button-slides bttn-slides-right" onclick="plusDivs(1)">❯</div>
+          </div>
+        </div>
+
+        <div class="container">
           <h3>Manifesto</h3>
           <img class="img-responsive padding-bottom-120" src="assets/img/img_a02.png" alt="">
         </div>
@@ -209,9 +235,7 @@
     <!-- End Project info Section -->
 
       <footer class="footer-section section7">
-        <div class="footer-text">
-          Tom Lim © 2018. All Right Reserved.
-        </div>
+        <div class="footer-text"></div>
       </footer>
     </div>
     <!-- End Page-2 -->

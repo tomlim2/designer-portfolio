@@ -32,11 +32,42 @@
   #linkbtn{
     color: black;
   }
+  #page-2{
+    background-color: black;
+  }
   /* End Invert Version Sets */
 
-  #pics{
-
+  /* Ver6 Sets*/
+  .parallax-hero{
+    background-image: url(assets/img/img_hero_1.png);
   }
+
+  .headline{
+    color: white;
+  }
+
+  .deco-box{
+    background: white;
+  }
+
+  .video-icon{
+    /* color: white;
+    background-color: #406eb3; */
+  }
+
+  .video-icon:hover{
+    /* color: black;
+    filter: drop-shadow(6px 6px 0px rgba(250,227,189,1)) drop-shadow(-6px -6px 0px rgba(250,227,189,1)); */
+  }
+
+  #process-section{
+    background-color: rgba(250,227,189,1);
+  }
+
+  #img-link:hover{
+    filter: drop-shadow(2em .5em 0px rgba(92,202,232,1)) drop-shadow(-2em -.5em 0px rgba(92,202,232,1));
+  }
+  /* End Ver6 Sets */
   </style>
 
   <script>
@@ -46,60 +77,78 @@
 </head>
 
 <body>
-  <div class="headerNav">
-      <a href="../../index.html">
-        <div class="logobox">
-          <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
-          <img class="logo1 logoname" style="opacity: 0.9;" src="../../assets/imgs/logo03f.png" alt="">
+  <!-- Page Wrapper -->
+  <div id="page">
+    <!-- Navbar -->
+    <div class="headerNav">
+        <a href="../../index.html">
+          <div class="logobox">
+            <img class="logo1 logospinning" src="../../assets/imgs/logo03d.png" alt="">
+            <img class="logo1 logoname" src="../../assets/imgs/logo03f.png" alt="">
+          </div>
+        </a>
+    </div>
+    <!-- /End Navbar -->
+
+    <!-- Hero Image Section -->
+    <section id="home-section" class="home-section full-screen">
+      <div class="parallax-hero full-screen home-image" data-top-bottom="transform: translate3d(0px, -200px, 0px)">
+        <div class="hs-content">
+          <div class="hs-content-inner">
+            <div class="headline">
+              <div class="deco-box txt-box"></div>
+              <h2>Smile Factory</h2>
+
+              <h3 class="subhead">
+                Interactive poster
+              </h3>
+            </div>
+          </div>
         </div>
-      </a>
-  </div>
-
-  <div class="columnBox"></div>
-  <!-- new -->
-  <div class="column1">
-    <div class="section intro">
-      <a href="../intr1pj2/index.html">
-        <iframe id="iframe1" src="../intr1pj2/index.html" frameborder=0></iframe>
-      </a>
-
-      <div class="headline">
-        <h2>Smile Factory</h2>
-        <h3>
-          Spring 2016 | CSS Animation | 4 weeks
-          <br>
-          html, css, javascript
-        </h3>
       </div>
+    </section>
+    <!-- End Hero Image Section -->
 
-      <div class="text-content">
-        <!-- <p class="bodytextB">
-        I don't want people hungry, but I want chickens
-        </p> -->
-        <p class="bodytextS">
-          Satire on communication
-        </p>
-      </div>
+    <!-- Page2 -->
+    <div id="page-2">
+      <!-- Project Section -->
+      <section id="project-info-section" class="project-info-section section6">
+        <div class="container">
+          <div class="section-title">
+            <div class="text-content">
+              <p class="bodytextB col-sm-50">
+                Satire on communication
+              </p>
+              <p class="bodytextS col-sm-50">
+                Spring 2016 | CSS Animation | 4 weeks
+                <br>
+                html, css, javascript
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Project info Section -->
+
+      <!-- Project work Section -->
+      <section id="project-work-section" class="project-info-section section7">
+        <div class="container">
+          <a href="assets/web/intr1pj2/index.html">
+            <img id="img-link" width="100%" height="auto" class="img-responsive padding-bottom-120" src="assets/img/img_link_1.jpg" alt="">
+          </a>
+        </div>
+
+      </section>
+
+    <!-- End Project info Section -->
+
+      <footer class="footer-section section7">
+        <div class="footer-text"></div>
+      </footer>
+    </div>
+    <!-- End Page-2 -->
 
     </div>
-    <div class="section">
-      <h3>Process</h3>
-      <div class="column2">
-        <img id="pics2C" src="img_4.png" alt="">
-        <img id="pics2L" src="img_2.png" alt="">
-        <img id="pics2R" src="img_5.png" alt="">
-        <h5>story: ready to be normal??</h5>
-        <img id="pics2C" src="img_3.png" alt="">
-        <h5>core timeline for css animation</h5>
-        <img id="pics2C" src="img_6.png" alt="">
-        <h5>CSS test</h5>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="footers"></div>
-
-  <!-- new end -->
+    <!-- End Page Wrapper -->
 </body>
 </html>
