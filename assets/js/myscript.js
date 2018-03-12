@@ -29,7 +29,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
       var num = $(window).scrollTop();
           $(".logospinning").css({
-            "transform": "rotate("+ num/2 + "deg)",
+            "transform": "rotate("+ num + "deg)",
             });
 
       });
@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 
 
-    $(".footer-text").append("(C) TOM LIM 2018");
+    $(".footer-text").append("© Tom Lim 2018 — DEVELOPMENT : Tom lim");
 
 
 });
