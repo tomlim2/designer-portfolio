@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 
 
-    $(".footers").append("(C) TOM LIM 2018");
+    $(".footer-text").append("(C) TOM LIM 2018");
 
 
 });
