@@ -62,22 +62,68 @@ $(document).ready(function(){
 
 
 // Slideshow
-  var slideIndex = 1;
+var slideIndex = 1;
 
-  showDivs(slideIndex);
+showDivs(slideIndex);
 
-  function plusDivs(n) {
-  showDivs(slideIndex += n);
-  }
+function plusDivs(n) {
+showDivs(slideIndex += n);
+}
 
-  function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("img-slides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-  }
+function showDivs(n) {
+var i;
+var x = document.getElementsByClassName("img-slides");
+if (n > x.length) {slideIndex = 1}
+if (n < 1) {slideIndex = x.length}
+for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+}
+x[slideIndex-1].style.display = "block";
+}
+
+
 // End Slideshow
+//
+// var sliderObjects = [];
+// createSliderObjects();
+//
+// function plusDivs(obj, n) {
+//   var parentDiv = $(obj).parent();
+//   var matchedDiv;
+//   $.each(sliderObjects, function(i, item) {
+//     if ($(parentDiv[0]).attr('id') == $(item).attr('id')) {
+//       matchedDiv = item;
+//       return false;
+//     }
+//   });
+//   matchedDiv.slideIndex=matchedDiv.slideIndex+n;
+//   showDivs(matchedDiv, matchedDiv.slideIndex);
+// }
+//
+// function createSliderObjects() {
+//   var sliderDivs = $('.slideshows');
+//   $.each(sliderDivs, function(i, item) {
+//     var obj = {};
+//     obj.id = $(item).attr('id');
+//     obj.divContent = item;
+//     obj.slideIndex = 1;
+//     obj.slideContents = $(item).find('.img-slides');
+//     showDivs(obj, 1);
+//     sliderObjects.push(obj);
+//   });
+// }
+//
+// function showDivs(divObject, n) {
+//   debugger;
+//   var i;
+//   if (n > divObject.slideContents.length) {
+//     divObject.slideIndex = 1
+//   }
+//   if (n < 1) {
+//     divObject.slideIndex = divObject.slideContents.length
+//   }
+//   for (i = 0; i < divObject.slideContents.length; i++) {
+//     divObject.slideContents[i].style.display = "none";
+//   }
+//   divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
+// }

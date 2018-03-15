@@ -336,7 +336,9 @@ p{
 
     float: left;
   }
+@keyframes identifier {
 
+}
   .video-icon{
     text-align: center;
     border-radius: 2%;
@@ -358,6 +360,7 @@ p{
   .video-icon:hover{
     color: black;
     background-color: white;
+    
     filter: drop-shadow(1em .3em 0em rgba(92,202,232,1)) drop-shadow(-1em -.3em 0em rgba(92,202,232,1));
   }
 
