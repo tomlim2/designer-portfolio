@@ -153,6 +153,7 @@ img.img-hover {
   top: 50%;
   left: -1%;
   transform: translate(0%,-50%);
+
 }
 .bttn-slides-right{
   position: absolute;
@@ -255,7 +256,7 @@ img.img-hover {
   width: 100%;
 
   text-transform: uppercase;
-  color: rgba(92,202,232,1);
+  color: rgba(92,180,202,1);
 }
 .hs-content-inner{
   position: relative;
@@ -290,8 +291,8 @@ p{
 }
 
 .home-section.overlay:before, .overlay:before {
-    background-color: rgba(0,0,0,0.6);;
-    opacity: .2;
+    background-color: rgba(240,240,240,0.8);;
+    opacity: .1;
 }
 .overlay:before {
     content: "";
@@ -360,7 +361,7 @@ p{
   .video-icon:hover{
     color: black;
     background-color: white;
-    
+
     filter: drop-shadow(1em .3em 0em rgba(92,202,232,1)) drop-shadow(-1em -.3em 0em rgba(92,202,232,1));
   }
 
