@@ -78,16 +78,17 @@ li{
   transition: 0.3s all;
   background-color: rgba(92,202,232,1);
   position: absolute;
-  bottom: 30px;
+  bottom: 35px;
   border-top-right-radius: 1%;
   border-bottom-right-radius: 1%;
-  padding: 1px 20px 5px 20px;
+  padding: 5px 30px 8px 20px;
 
   z-index: 900;
 }
 
 .portfolio-item:hover .portfolio-item-info{
   opacity: 1;
+  transform: translate(-.4em, .4em);
 }
 
 .portfolio-item-img{
@@ -96,8 +97,9 @@ li{
 }
 
 
+
 .portfolio-item-img:hover{
-  filter: drop-shadow(.5em .5em 0em rgba(92,202,232,1)) drop-shadow(-.5em -.5em 0em rgba(92,202,232,1));
+  filter: drop-shadow(-.5em .5em 0em rgba(92,202,232,1)) drop-shadow(.5em -.5em 0em rgba(92,202,232,1));
   z-index: 10;
 }
 
