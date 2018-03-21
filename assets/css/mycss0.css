@@ -109,7 +109,7 @@ h5 {
 
   text-transform: capitalize;
 
-  filter: drop-shadow(.12rem .12rem 0px rgba(0,0,0,0.8));
+  filter: drop-shadow(.12rem .12rem 1px rgba(0,0,0,0.8));
 
   /* opacity: .98; */
 }
