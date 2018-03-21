@@ -11,6 +11,7 @@ $(document).ready(function(){
         $(".headerNav").removeClass("fixed");
       }
     });
+
     $(window).scroll(function(){
       var num = $(window).scrollTop();
           $(".logoC").css({
@@ -25,6 +26,7 @@ $(document).ready(function(){
             "transform": "translateY(" + Math.max(- num, -200) + "px)",
             });
       });
+
 
     $(window).scroll(function(){
       var num = $(window).scrollTop();

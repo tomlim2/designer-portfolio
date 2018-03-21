@@ -42,6 +42,7 @@ li{
 .section6{
   padding-top: 120px;
   padding-bottom: 120px;
+
 }
 
 .section7{
@@ -175,6 +176,7 @@ img.img-hover {
 
 
 .container{
+
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -228,7 +230,7 @@ img.img-hover {
 
 
 .full-screen{
-  height: 98vh;
+  height: 96vh;
   width: 100%;
 }
 
@@ -454,11 +456,12 @@ p{
 
   .container{
     width: 1053px;
+
   }
 
   .hs-content-inner{
     padding: 0 100px;
-    font-size: 6.2em;
+    font-size: 6em;
 
   }
 
