@@ -53,10 +53,10 @@ h3 {
   margin: 0;
 
   font-weight: 400;
-  font-size: .875rem;
+  font-size: .8rem;
   text-transform: uppercase;
 
-  letter-spacing: .1em;
+  letter-spacing: .05em;
 
 }
 
@@ -234,8 +234,8 @@ h5 {
 @media screen and (min-width: 1200px) {
 
   #thumbnail{
-    width: 480px;
-    height: 320px;
+    width: 510px;
+    height: 340px;
     animation-play-state: paused;
   }
 }
