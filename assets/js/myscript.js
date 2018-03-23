@@ -40,12 +40,13 @@ $(document).ready(function(){
       $("html, body").animate({
         scrollTop: $("#page").offset().top
       },1100);
-    })
+    });
+    
     $("#bttn-project").click(function(){
       $("html, body").animate({
         scrollTop: $("#portfolio-section").offset().top
       },1100);
-    })
+    });
 
 
     var getRandomColor = function(){
