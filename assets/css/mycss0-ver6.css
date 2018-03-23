@@ -75,7 +75,7 @@ li{
 
 .portfolio-item-info{
   opacity: 0;
-  transition: 0.4s all;
+  transition: 0.5s all;
   background-color: rgba(92,202,232,1);
   position: absolute;
   bottom: 35px;
