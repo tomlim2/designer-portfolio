@@ -71,12 +71,13 @@ li{
 .portfolio-item{
   float: left;
   margin: 8px;
+  overflow: hidden;
 }
 
 .portfolio-item-info{
-  opacity: 0;
-  transition: 0.5s all;
-  background-color: rgba(92,202,232,0.8);
+  opacity: 1;
+  transition: 0.4s all;
+  background-color: rgba(92,202,232,0.9);
   position: absolute;
   bottom: 35px;
   border-top-right-radius: 1%;
@@ -84,7 +85,7 @@ li{
   padding: 5px 30px 8px 20px;
 
   transform-origin: top left;
-  transform: rotateY(90deg);
+  transform: translateX(-400px);
 
   z-index: 900;
 }
@@ -96,7 +97,20 @@ li{
 }
 
 .portfolio-item-title{
-  filter: drop-shadow(.05em .05em .5px rgba(255,255,255,0.2));
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.portfolio-item-detail{
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.4s;
+}
+.portfolio-item:hover .portfolio-item-title{
+  opacity: 1;
+}
+.portfolio-item:hover .portfolio-item-detail{
+  opacity: 1;
 }
 
 .portfolio-item-img{
@@ -107,7 +121,7 @@ li{
 
 
 .portfolio-item-img:hover{
-  filter: drop-shadow(-.5em .5em 0em rgba(92,202,232,1)) drop-shadow(.5em -.5em 0em rgba(92,202,232,1));
+
   z-index: 10;
 }
 
