@@ -113,8 +113,6 @@ li{
 }
 
 .txt-box2{
-  opacity: 1;
-
   width: 20px;
   height: 4px;
 
@@ -122,27 +120,23 @@ li{
   left: -2px;
 }
 
+.portfolio-item-info{
+  opacity: 0;
+  transition: 0.3s;
+}
 
 .portfolio-item-title{
-  opacity: 0;
-  transition: 0.3s;
-
 }
 .portfolio-item-detail{
-  opacity: 0;
   padding-left: 3px;
-  transition: 0.3s;
-  transition-delay: 0.2s;
 }
-.portfolio-item:hover .portfolio-item-title{
+.portfolio-item:hover .portfolio-item-info{
   opacity: 1;
 }
 .portfolio-item:hover .portfolio-item-img-cover{
   opacity: 0.2;
 }
-.portfolio-item:hover .portfolio-item-detail{
-  opacity: 1;
-}
+
 
 .portfolio-item-img{
   position: relative;
