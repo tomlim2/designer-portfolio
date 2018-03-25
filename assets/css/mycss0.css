@@ -232,8 +232,8 @@ h5 {
 @media screen and (min-width: 1200px) {
 
   #thumbnail{
-    width: 510px;
-    height: 340px;
+    width: 554px;
+    height: auto;
     animation-play-state: paused;
   }
 }

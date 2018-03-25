@@ -1,5 +1,4 @@
 
-
 li{
   list-style-type: none;
 }
@@ -246,6 +245,10 @@ img.img-hover {
   margin-left: auto;
 
   display: table;
+}
+
+.container-home{
+
 }
 
 
@@ -521,6 +524,9 @@ p{
   .container{
     width: 1053px;
 
+  }
+  .container-home{
+    width: 1140px;
   }
 
   .hs-content-inner{
