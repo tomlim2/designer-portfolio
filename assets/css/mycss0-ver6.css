@@ -99,12 +99,12 @@ li{
 
 
 .portfolio-item-title{
-  transition: 0.54s all cubic-bezier(0,.2,.4,1);
+  transition: 0.53s all cubic-bezier(0,.2,.4,1);
   transform: translateX(-400px);
 
 }
 .portfolio-item-detail{
-  transition: 0.58s all cubic-bezier(0,.2,.4,1);
+  transition: 0.56s all cubic-bezier(0,.2,.4,1);
   transform: translateX(-400px);
 }
 .portfolio-item:hover .portfolio-item-info{
