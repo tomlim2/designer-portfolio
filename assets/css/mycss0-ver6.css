@@ -296,7 +296,7 @@ img.img-hover {
 }
 
 .home-image{
-  background-color: black;
+
   /* background-image: url(../imgs/bg2.jpg); */
 }
 
@@ -309,7 +309,8 @@ img.img-hover {
   width: 100%;
 
   text-transform: uppercase;
-  color: rgba(92,180,202,1);
+  /* color: black; */
+  color: rgba(0,0,0,0.8);
 
 }
 .hs-content-inner{
