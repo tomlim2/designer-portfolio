@@ -99,19 +99,22 @@ li{
 
 
 .portfolio-item-title{
+  transition: 0.52s all cubic-bezier(0,.2,.4,1);
+  transform: translateX(-400px);
 
 }
 .portfolio-item-detail{
-
+  transition: 0.6s all cubic-bezier(0,.2,.4,1);
+  transform: translateX(-400px);
 }
 .portfolio-item:hover .portfolio-item-info{
   transform: translateX(0px);
 }
 .portfolio-item:hover .portfolio-item-title{
-
+  transform: translateX(0px);
 }
 .portfolio-item:hover .portfolio-item-detail{
-
+  transform: translateX(0px);
 }
 
 
