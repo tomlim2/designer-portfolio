@@ -76,69 +76,48 @@ li{
   /* border: 4px solid rgba(80,170,200,1); */
 }
 
-.portfolio-item-img-cover{
-  position: absolute;
-  z-index: 200;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(0,0,0,1);
-  opacity: 0;
-}
-
 .portfolio-item-info{
-  opacity: 0;
 
-  transition: 0.4s all;
+  transition: 0.5s all cubic-bezier(0,.2,.4,1);
 
-  color: white;
+  color: black;
+  background-color: white;
 
   position: absolute;
   bottom: 22px;
-  left: 10px;
+
   border-top-right-radius: 1%;
   border-bottom-right-radius: 1%;
   padding: 5px 30px 8px 20px;
 
-  transform-origin: top left;
+  transform-origin: right;
+  transform: translateX(-400px);
 
   z-index: 900;
 }
 
-.deco-box2{
-  transform: matrix(1, 1, 0, 1, 0, 0);
-  background: white;
-  position: absolute;
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  transition: 0.2s all;
-}
 
-.txt-box2{
-  width: 10px;
-  height: 16px;
-
-  top: 37px;
-  left: 9px;
-}
 
 .portfolio-item-title{
+
 }
 .portfolio-item-detail{
-  padding-left: 5px;
+
 }
 .portfolio-item:hover .portfolio-item-info{
-  opacity: 1;
+  transform: translateX(0px);
 }
-.portfolio-item:hover .portfolio-item-img-cover{
-  opacity: 0.3;
+.portfolio-item:hover .portfolio-item-title{
+
+}
+.portfolio-item:hover .portfolio-item-detail{
+
 }
 
 
 .portfolio-item-img{
   position: relative;
-  transition: 0.3s;
+  transition: 0.3s cubic-bezier(0,.2,.4,1) all;
 }
 
 
@@ -202,7 +181,7 @@ img.img-hover {
   cursor: pointer;
   white-space: nowrap;
 
-  transition: 0.3s all;
+  transition: 0.3s all cubic-bezier(0,.2,.4,1);
   color: white;
   background-color: black;
 
@@ -328,7 +307,7 @@ img.img-hover {
 
   text-transform: uppercase;
   color: rgba(92,180,202,1);
-  
+
 }
 .hs-content-inner{
   position: relative;
@@ -398,7 +377,7 @@ p{
 
 
 .next-img{
-  transition: 0.3s all;
+  transition: 0.3s all cubic-bezier(0,.2,.4,1);
 }
 
 .next-img:hover{
@@ -421,7 +400,7 @@ p{
   width: auto;
   height: auto;
 
-  transition: 0.2s all;
+  transition: 0.2s all cubic-bezier(0,.2,.4,1);
 
   z-index: 100;
 }
@@ -485,7 +464,7 @@ p{
 
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.2s all linear;
+    transition: 0.2s all cubic-bezier(0,.2,.4,1);
     font-size: 1em;
   }
 
