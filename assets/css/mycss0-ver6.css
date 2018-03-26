@@ -91,7 +91,7 @@ li{
   padding: 5px 30px 8px 20px;
 
   transform-origin: right;
-  transform: translateX(-400px);
+  transform: translateX(-300px);
 
   z-index: 900;
 }
@@ -104,7 +104,7 @@ li{
 
 }
 .portfolio-item-detail{
-  transition: 0.6s all cubic-bezier(0,.2,.4,1);
+  transition: 0.58s all cubic-bezier(0,.2,.4,1);
   transform: translateX(-400px);
 }
 .portfolio-item:hover .portfolio-item-info{
