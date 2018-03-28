@@ -33,7 +33,6 @@ $(document).ready(function(){
           $(".logospinning").css({
             "transform": "rotate("+ num + "deg)",
             });
-
       });
 
     $(".logobox").click(function(){
@@ -41,7 +40,7 @@ $(document).ready(function(){
         scrollTop: $("#page").offset().top
       },1100);
     });
-    
+
     $("#bttn-project").click(function(){
       $("html, body").animate({
         scrollTop: $("#portfolio-section").offset().top
@@ -71,7 +70,7 @@ showDivs(slideIndex);
 
 function plusDivs(n) {
 showDivs(slideIndex += n);
-}
+};
 
 function showDivs(n) {
 var i;
@@ -81,8 +80,9 @@ if (n < 1) {slideIndex = x.length}
 for (i = 0; i < x.length; i++) {
    x[i].style.display = "none";
 }
-x[slideIndex-1].style.display = "block";
-}
+
+  x[slideIndex-1].style.display = "block";
+};
 
 
 // End Slideshow
