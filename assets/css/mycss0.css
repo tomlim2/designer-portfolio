@@ -119,6 +119,11 @@ h5 {
   animation: headlineprss 0.8s forwards cubic-bezier(0,.2,.4,1);
   padding: 0px 8px;
 }
+#headline-color{
+  background-color: rgba(45,45,46,1);
+  padding-left: 10px;
+  padding-right: 40px;
+}
 
 @keyframes headlineprss {
   0%{
