@@ -57,7 +57,9 @@ $(document).ready(function(){
 
 
 
-    $(".footer-text").append("© Tom Lim 2018 — DEVELOPMENT : Tom lim");
+    $(".footer-text").append(
+      "E-mail: tomandlim@gmail.com <br> © Tom Lim 2018 — Development : Tom Lim"
+    );
 
 
 });
