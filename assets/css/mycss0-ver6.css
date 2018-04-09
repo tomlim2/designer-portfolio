@@ -91,7 +91,7 @@ li{
   padding: 5px 30px 8px 20px;
 
   transform-origin: right;
-  transform: translateX(-300px);
+  transform: translateX(-100%);
 
   z-index: 900;
 }
@@ -100,12 +100,12 @@ li{
 
 .portfolio-item-title{
   transition: 0.53s all cubic-bezier(0,.2,.4,1);
-  transform: translateX(-400px);
+  transform: translateX(-100%);
 
 }
 .portfolio-item-detail{
   transition: 0.56s all cubic-bezier(0,.2,.4,1);
-  transform: translateX(-400px);
+  transform: translateX(-100%);
 }
 .portfolio-item:hover .portfolio-item-info{
   transform: translateX(0px);
