@@ -267,14 +267,13 @@ img.img-hover {
   position: relative;
   min-height: 1px;
 }
-
-.col-sm-33{
+.col-sm-30{
+  width: 32%;
+  padding: 0.65% 0.65%;
   float: left;
-  width: 33%;
-  padding: 0px 0px;
 }
 
-.col-sm-30,.col-sm-70,.col-sm-50{
+.col-sm-70,.col-sm-50{
   float: left;
 }
 
@@ -315,7 +314,7 @@ img.img-hover {
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  
+
   width: 100%;
   padding: 0 30px;
   font-weight: 700;
@@ -451,6 +450,7 @@ p{
 
     float: left;
   }
+
 @keyframes identifier {
 
 }
@@ -462,7 +462,7 @@ p{
     font-weight: 900;
 
     color: white;
-    background-color: black;
+    background-color: rgba(102,212,242,1);
 
     width: 60px;
 
@@ -476,7 +476,7 @@ p{
     color: black;
     background-color: white;
 
-    filter: drop-shadow(1em .3em 0em rgba(92,202,232,1)) drop-shadow(-1em -.3em 0em rgba(92,202,232,1));
+    filter: drop-shadow(1em .3em 0em rgba(0,0,0,1)) drop-shadow(-1em -.3em 0em rgba(0,0,0,1));
   }
 
   .video-psbttn{
@@ -549,18 +549,15 @@ p{
     padding-bottom: 120px;
   }
 
-  .col-sm-30{
-    width: 30%;
-  }
 
   .col-sm-70{
     width: 70%;
   }
 
   .col-sm-50{
-    width: 49.4%;
-    padding-left: 0.3%;
-    padding-right: 0.3%;
+    width: 48.7%;
+    padding: .65% .65%;
+
   }
 
   .img-50{
