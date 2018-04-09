@@ -306,7 +306,6 @@ img.img-hover {
   display: table;
   height: 100%;
   width: 100%;
-
   text-transform: uppercase;
   /* color: black; */
   color: rgba(255,255,255,0.9);
@@ -316,7 +315,7 @@ img.img-hover {
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  text-align: left;
+  text-align: center;
   width: 100%;
   padding: 0 30px;
   font-weight: 700;
