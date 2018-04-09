@@ -112,14 +112,15 @@ h5 {
 
 .mainhead{
   animation: headlineprss 0.6s forwards cubic-bezier(0,.2,.4,1);
-  transform: translateY(-880px);
-  animation-delay: 0.08s;
+  transform: translateY(40vw);
+
 }
 
 .subhead{
   animation: headlineprss 0.6s forwards cubic-bezier(0,.2,.4,1);
   padding: 0px 8px;
-  transform: translateY(-880px);
+  transform: translateY(40vw);
+  animation-delay: 0.1s;
 }
 
 #headline-color{
@@ -130,23 +131,21 @@ h5 {
 
 @keyframes headlineprss {
   0%{
-    transform: translateY(-880px);
+    transform: translateY(40vw);
   }
-  10%{
-    transform: translateY(-880px);
-  }
+
   100%{
     transform: translateY(0px);
   }
 }
 
 .headline--stroke{
-  width: 5px;
-  height: 30%;
+  width: 6px;
+  height: 35.5vw;
   background-color: white;
   position: absolute;
-  left: 50%;
-  margin-left: -2.5px;
+  left: 70px;
+
   bottom: -2%;
   transform-origin: 50% 0%;
   -webkit-transform-origin: 50% 0%;
@@ -157,13 +156,11 @@ h5 {
 
 @keyframes headline--strokeprss {
   0%{
-    transform: scale(1,0) matrix(1, 1, 0, 1, 0, 0);
+    transform: scale(1,0);
   }
-  10%{
-    transform: scale(1,0) matrix(1, 1, 0, 1, 0, 0);
-  }
+
   100%{
-    transform: scale(1,1) matrix(1, 1, 0, 1, 0, 0);
+    transform: scale(1,1);
   }
 }
 
@@ -186,7 +183,8 @@ h5 {
 .logobox{
   position: absolute;
   right: 100px;
-
+  width: auto;
+  height: 110px;
   cursor: pointer;
 }
 
@@ -194,7 +192,13 @@ h5 {
   position: absolute;
   width: auto;
   height: 110px;
+  fill: rgba(92,202,232,1);
+  transition: 0.3s all;
+}
 
+.logo1:hover{
+  fill: rgba(80,170,200,1);
+  
 }
 
 .logoname{
@@ -219,6 +223,12 @@ h5 {
 
 .logospinning{
   z-index: 10;
+  transform-origin: center;
+  position: absolute;
+  width: 63.5px;
+  height: 110px;
+
+
 }
 
 
