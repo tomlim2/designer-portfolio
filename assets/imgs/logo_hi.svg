@@ -10,7 +10,7 @@
              attributeName="cx"
              from="30.16"
              to="450"
-             dur="5s"
+             dur="1s"
              begin="click"
              fill="freeze"
              id="circ-anim"/>
