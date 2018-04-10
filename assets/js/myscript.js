@@ -35,7 +35,7 @@ $(document).ready(function(){
             });
       });
 
-    $(".logobox").click(function(){
+    $(".logospinning").click(function(){
       $("html, body").animate({
         scrollTop: $("#page").offset().top
       },1100);

@@ -185,7 +185,7 @@ h5 {
   right: 100px;
   width: auto;
   height: 110px;
-  cursor: pointer;
+
 }
 
 .logo1{
@@ -193,28 +193,32 @@ h5 {
   width: auto;
   height: 110px;
   fill: rgba(92,202,232,1);
-  transition: 0.3s all;
+  transition: 0.7s all cubic-bezier(0,.2,.4,1);;
+  cursor: pointer;
 }
 
 .logo1:hover{
-  fill: rgba(80,170,200,1);
-  
+  transform: rotate(1440deg);
+
 }
 
-.logoname{
-  right: -0.5px;
+.logo-name{
+  position: absolute;
+  width: 85px;
+  height: auto;
+  fill:#231f20;
+  right: 14px;
+  bottom: 3px;
   transition: 0.6s all;
-  transform: translateX(20px);
-  opacity: 0;
 
   transform-origin: right;
 
-
+  overflow: visible;
 }
 
 .logobox:hover .logoname{
   opacity: 1;
-  transform: rotateY(0deg);
+
 }
 
 
@@ -250,14 +254,6 @@ h5 {
 /*1stindex*/
 
 
-#thumbnail{
-  width: 100%;
-  height: auto;
-
-  transition: all 0.2s cubic-bezier(0,.2,.4,1);
-}
-
-
 .img-phone{
   width: 180px;
   height: auto;
@@ -278,10 +274,7 @@ h5 {
     font-size: 6rem;
   }
 
-  #thumbnail{
-    width: 630px;
-    height: 420px;
-  }
+
 
   .img-phone{
     width: 270px;
@@ -292,11 +285,7 @@ h5 {
 }
 @media screen and (min-width: 1200px) {
 
-  #thumbnail{
-    width: 554px;
-    height: auto;
-    animation-play-state: paused;
-  }
+
 }
 
 @media screen and (min-width: 1800px) {

@@ -69,7 +69,7 @@ li{
 
 .portfolio-item{
   float: left;
-  margin: 8px;
+  margin: 15px;
   overflow: hidden;
 }
 .portfolio-border{
@@ -119,21 +119,33 @@ li{
 
 
 .portfolio-item-img{
+
   position: relative;
   transition: 0.3s cubic-bezier(0,.2,.4,1) all;
 }
 
+#thumbnail{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s cubic-bezier(0,.2,.4,1);
+}
 
 
+.img-hover, .img-ori{
+  padding: 0;
+  margin: 0;
+}
 .portfolio-item-img:hover{
-
+  opacity: 1;
   z-index: 10;
 }
 
 .portfolio-item:hover .img-hover{
   opacity: 1;
-
 }
+
 
 /* img control */
 .img-responsive{
@@ -214,12 +226,6 @@ img.img-hover {
 
 
 /* End Slides */
-
-
-
-.portfolio-item-img:after{
-
-}
 
 
 .container{
@@ -538,9 +544,17 @@ p{
   }
 }
 @media screen and (min-width: 900px) {
-
+  #thumbnail{
+    width: 630px;
+    height: 420px;
+  }
 }
 @media screen and (min-width: 1200px) {
+  #thumbnail{
+    width: 540px;
+    height: 360px;
+  }
+
   .padding-bottom-30{
     padding-bottom: 30px;
   }
@@ -577,10 +591,6 @@ p{
     padding: 0 100px;
     font-size: 6em;
 
-  }
-
-  .portfolio-item-img{
-    height: 369.33px;
   }
 
 @media screen and (min-width: 1800px) {
