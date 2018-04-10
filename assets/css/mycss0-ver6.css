@@ -274,9 +274,9 @@ img.img-hover {
   min-height: 1px;
 }
 .col-sm-30{
-  width: 32%;
-  padding: 0.65% 0.65%;
   float: left;
+  width: 48.7%;
+  padding: .65% .65%;
 }
 
 .col-sm-70,.col-sm-50{
@@ -572,6 +572,11 @@ p{
     width: 48.7%;
     padding: .65% .65%;
 
+  }
+
+  .col-sm-30{
+    width: 32%;
+    padding: 0.65% 0.65%;
   }
 
   .img-50{
