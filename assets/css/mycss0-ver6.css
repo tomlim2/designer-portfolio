@@ -489,7 +489,7 @@ p{
     display: none;
   }
 
-  
+
 
   .video-plbttn{
 
@@ -530,6 +530,10 @@ p{
   padding-bottom: 10px;
 }
 
+.padding-bottom-60{
+  padding-bottom: 20px;
+}
+
 .padding-bottom-120{
   padding-bottom: 40px;
 }
@@ -559,6 +563,10 @@ p{
 
   .padding-bottom-30{
     padding-bottom: 30px;
+  }
+
+  .padding-bottom-60{
+    padding-bottom: 60px;
   }
 
   .padding-bottom-120{
