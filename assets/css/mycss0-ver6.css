@@ -69,7 +69,7 @@ li{
 
 .portfolio-item{
   float: left;
-  margin: 15px;
+  margin: 5px;
   overflow: hidden;
 }
 .portfolio-border{
@@ -94,6 +94,8 @@ li{
   transform: translateX(-100%);
 
   z-index: 900;
+
+  font-size: .8em;
 }
 
 
@@ -106,6 +108,8 @@ li{
 .portfolio-item-detail{
   transition: 0.56s all cubic-bezier(0,.2,.4,1);
   transform: translateX(-100%);
+
+  font-size: .92em;
 }
 .portfolio-item:hover .portfolio-item-info{
   transform: translateX(0px);
@@ -340,8 +344,8 @@ img.img-hover {
 .section-text{
   margin-bottom: 10.5px;
   font-weight: 700;
-  font-size: 2.4em;
-
+  font-size: 1.8em;
+  padding-right: 120px;
   line-height: 1.5;
   color: white;
 }
@@ -557,8 +561,8 @@ p{
 }
 @media screen and (min-width: 1200px) {
   #thumbnail{
-    width: 540px;
-    height: 360px;
+    width: 366px;
+    height: 244px;
   }
 
   .padding-bottom-30{
