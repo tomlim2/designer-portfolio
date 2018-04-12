@@ -53,16 +53,16 @@ $(document).ready(function(){
         opacity: 1
       },200);
     });
-    $(".logospinning").mouseleave(function(){
-      $(".logo-name").delay(200).animate({
-        right: 10,
-        opacity: 1
-      },400);
-      $(".hi--1").animate({
-        right: -40,
-        opacity: 0
-      },200);
-    });
+    // $(".logospinning").mouseleave(function(){
+    //   $(".logo-name").delay(200).animate({
+    //     right: 10,
+    //     opacity: 1
+    //   },400);
+    //   $(".hi--1").animate({
+    //     right: -40,
+    //     opacity: 0
+    //   },200);
+    // });
 
 
     $("#bttn-project").click(function(){
