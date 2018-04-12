@@ -41,6 +41,30 @@ $(document).ready(function(){
       },1100);
     });
 
+
+    $(".logospinning").mouseenter(function(){
+      $(".logo-name").animate({
+        right: -50,
+        opacity: 0
+      },400);
+
+      $(".hi--1").delay(400).animate({
+        right: -14,
+        opacity: 1
+      },200);
+    });
+    $(".logospinning").mouseleave(function(){
+      $(".logo-name").delay(200).animate({
+        right: 10,
+        opacity: 1
+      },400);
+      $(".hi--1").animate({
+        right: -40,
+        opacity: 0
+      },200);
+    });
+
+
     $("#bttn-project").click(function(){
       $("html, body").animate({
         scrollTop: $("#portfolio-section").offset().top
@@ -63,25 +87,3 @@ $(document).ready(function(){
 
 
 });
-
-
-// Slideshow
-var slideIndex = 1;
-
-showDivs(slideIndex);
-
-function plusDivs(n) {
-showDivs(slideIndex += n);
-};
-
-function showDivs(n) {
-var i;
-var x = document.getElementsByClassName("img-slides");
-if (n > x.length) {slideIndex = 1}
-if (n < 1) {slideIndex = x.length}
-for (i = 0; i < x.length; i++) {
-   x[i].style.display = "none";
-}
-
-  x[slideIndex-1].style.display = "block";
-};
