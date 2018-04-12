@@ -124,10 +124,14 @@ h5 {
 
   overflow: visible;
   position: absolute;
+  fill:#231f20;
+
   right: -40px;
   bottom: 10px;
 
   opacity: 0;
+
+  cursor: zoom-in;
 }
 
 .logospinning{

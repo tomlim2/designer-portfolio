@@ -39,6 +39,37 @@ $(document).ready(function(){
       $("html, body").animate({
         scrollTop: $("#page").offset().top
       },1100);
+
+      $(".logo-name").delay(200).animate({
+        right: 10,
+        opacity: 1
+      },400);
+
+      $(".hi--1").animate({
+        right: -40,
+        opacity: 0
+      },200);
+
+      $(".portfolio-section").css({
+        "background-color": "white",
+        // "font-size": "200%"
+      });
+
+      $("#about-section").css({
+        "background-color": "rgba(80,170,200,1)",
+        // "font-size": "200%"
+      });
+
+      $(".footer-section").css({
+        "background-color": "black",
+        // "font-size": "200%"
+      });
+
+      $(".logo1").css({
+        "fill": "rgba(92,202,232,1)",
+        // "font-size": "200%"
+      });
+
     });
 
 
@@ -53,16 +84,19 @@ $(document).ready(function(){
         opacity: 1
       },200);
     });
-    // $(".logospinning").mouseleave(function(){
-    //   $(".logo-name").delay(200).animate({
-    //     right: 10,
-    //     opacity: 1
-    //   },400);
-    //   $(".hi--1").animate({
-    //     right: -40,
-    //     opacity: 0
-    //   },200);
-    // });
+
+    $(".hi--1").click(function(){
+      $(".portfolio-section, #about-section, .footer-section").css({
+        "background-color": getRandomColor,
+        // "font-size": "200%"
+      });
+
+      $(".logo1").css({
+        "fill": getRandomColor,
+        // "font-size": "200%"
+      });
+
+    });
 
 
     $("#bttn-project").click(function(){
@@ -73,8 +107,8 @@ $(document).ready(function(){
 
 
     var getRandomColor = function(){
-      var color2 = ["#F48583","#D5E59F","#5ccae8"];
-      var randomColor = Math.floor(Math.random() * 3);
+      var color2 = ["#F48583","#D5E59F","#5ccae8","#f9de09","#da74b5","#ff7d1b","#a14397"];
+      var randomColor = Math.floor(Math.random() * 7);
       return color2[randomColor];
     };
 
