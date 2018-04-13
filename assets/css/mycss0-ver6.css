@@ -83,17 +83,17 @@ h5 {
 /*header*/
 .logobox{
   position: absolute;
-  right: -30px;
+  right: -45px;
   top: 15px;
   width: auto;
-  height: 94px;
+  height: 76px;
 
 }
 
 .logo1{
   position: absolute;
   width: auto;
-  height: 94px;
+  height: 76px;
   fill: rgba(92,202,232,1);
   transition: 0.7s all cubic-bezier(0,.2,.4,1);
   cursor: pointer;
@@ -107,9 +107,9 @@ h5 {
 .logo-name{
   position: absolute;
   width: auto;
-  height: 56px;
+  height: 44px;
   fill:#231f20;
-  right: 10px;
+  right: 8px;
   bottom: 3px;
 
   transform-origin: 100% 100%;
@@ -120,7 +120,7 @@ h5 {
 
 .hi--1{
   width: auto;
-  height: 42px;
+  height: 30px;
 
   overflow: visible;
   position: absolute;
@@ -138,8 +138,8 @@ h5 {
   z-index: 10;
   transform-origin: center;
   position: absolute;
-  width: 54.27px;
-  height: 94px;
+  width: 43.87px;
+  height: 76px;
 }
 
 
@@ -439,7 +439,7 @@ li{
 
 .bodytextS{
   line-height: 1.5;
-  font-size: 1em;
+  font-size: .98em;
 }
 
 .section-title{
@@ -535,11 +535,10 @@ li{
   content: " ";
 }
 
-.section-text{
+.about-text{
   margin-bottom: 10.5px;
   font-weight: 700;
   font-size: 1.8em;
-  padding-right: 120px;
   line-height: 1.5;
   color: white;
 }
@@ -659,6 +658,7 @@ p{
 @keyframes identifier {
 
 }
+
   .video-icon{
     text-align: center;
     border-radius: 2%;
@@ -790,7 +790,7 @@ p{
 
 
   .col-sm-70{
-    width: 70%;
+    width: 60%;
   }
 
   .col-sm-50{

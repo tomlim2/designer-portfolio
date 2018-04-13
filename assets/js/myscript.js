@@ -41,12 +41,12 @@ $(document).ready(function(){
       },1100);
 
       $(".logo-name").delay(200).animate({
-        right: 10,
+        right: 8,
         opacity: 1
       },400);
 
       $(".hi--1").animate({
-        right: -40,
+        right: -30,
         opacity: 0
       },200);
 
@@ -75,12 +75,12 @@ $(document).ready(function(){
 
     $(".logospinning").mouseenter(function(){
       $(".logo-name").animate({
-        right: -50,
+        right: -40,
         opacity: 0
       },400);
 
       $(".hi--1").delay(400).animate({
-        right: -14,
+        right: -10,
         opacity: 1
       },200);
     });
