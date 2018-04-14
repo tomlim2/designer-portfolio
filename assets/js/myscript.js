@@ -3,17 +3,19 @@ $(document).ready(function(){
 	var windowHeight = $(window).height();
 
   function randomNum(m,n) {
-		//minumum number
 		m = parseInt(m);
-
-		//maximum number
 		n = parseInt(n);
 
-		// get a random number
 		return Math.floor( Math.random() * (n - m + 1) ) + m;
 	};
 
-  var xPos = randomNum(1, windowWidth);
+  var getRandomNum = function() {
+		var num = ["510","370","300","230","160","90","20"];
+		var randomNum = Math.floor(Math.random() * 7);
+
+
+    return num[randomNum];
+	};
 
 
   var getRandomColor = function(){
@@ -93,12 +95,17 @@ $(document).ready(function(){
 
       $(".footer-section").css({
         "background-color": "black",
-        // "font-size": "200%"
+        "color": "white",
       });
 
       $(".logo1").css({
         "fill": "rgba(92,202,232,1)",
         // "font-size": "200%"
+      });
+
+      $(".portfolio-item").css({
+        "width": 510 + "px",
+        "height": 287 + "px",
       });
 
     });
@@ -120,6 +127,7 @@ $(document).ready(function(){
       $(".portfolio-item-info, .portfolio-section, #about-section, .footer-section").css({
         "background-color": getRandomColor,
         "color":getRandomColor2,
+
         // "font-size": "200%"
       });
 
@@ -128,8 +136,10 @@ $(document).ready(function(){
         // "font-size": "200%"
       });
 
-
-
+      $(".portfolio-item").css({
+        "width": + randomNum(20,50) + "%",
+        "height": + randomNum(150,287) + "px",
+      });
     });
 
 
