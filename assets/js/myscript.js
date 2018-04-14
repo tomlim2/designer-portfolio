@@ -1,4 +1,33 @@
 $(document).ready(function(){
+  var windowWidth = $(window).width();
+	var windowHeight = $(window).height();
+
+  function randomNum(m,n) {
+		//minumum number
+		m = parseInt(m);
+
+		//maximum number
+		n = parseInt(n);
+
+		// get a random number
+		return Math.floor( Math.random() * (n - m + 1) ) + m;
+	};
+
+  var xPos = randomNum(1, windowWidth);
+
+
+  var getRandomColor = function(){
+    var color = ["#F48583","#D5E59F","#5ccae8","#f5b76a","#16c2b2","#e6e386","#ba85b3"];
+    var randomColor = Math.floor(Math.random() * 7);
+    return color[randomColor];
+  };
+
+  var getRandomColor2 = function(){
+    var color = ["black","white","#083d5d","#842672","#f23d34","#efe9dd"];
+    var randomColor = Math.floor(Math.random() * 6);
+    return color[randomColor];
+  };
+
 
 
   var scrlls1img= 0;
@@ -50,13 +79,15 @@ $(document).ready(function(){
         opacity: 0
       },200);
 
-      $(".portfolio-section").css({
+      $(".portfolio-section, .portfolio-item-info").css({
         "background-color": "white",
+        "color": "black",
         // "font-size": "200%"
       });
 
       $("#about-section").css({
         "background-color": "rgba(80,170,200,1)",
+        "color": "white",
         // "font-size": "200%"
       });
 
@@ -86,8 +117,9 @@ $(document).ready(function(){
     });
 
     $(".hi--1").click(function(){
-      $(".portfolio-section, #about-section, .footer-section").css({
+      $(".portfolio-item-info, .portfolio-section, #about-section, .footer-section").css({
         "background-color": getRandomColor,
+        "color":getRandomColor2,
         // "font-size": "200%"
       });
 
@@ -106,15 +138,6 @@ $(document).ready(function(){
         scrollTop: $("#portfolio-section").offset().top
       },1100);
     });
-
-
-    var getRandomColor = function(){
-      var color2 = ["#F48583","#D5E59F","#5ccae8","#f9de09","#da74b5","#ff7d1b","#a14397"];
-      var randomColor = Math.floor(Math.random() * 7);
-      return color2[randomColor];
-    };
-
-
 
 
     $(".footer-text").append(
