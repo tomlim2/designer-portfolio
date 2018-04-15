@@ -83,8 +83,8 @@ h5 {
 /*header*/
 .logobox{
   position: absolute;
-  right: -45px;
-  top: 15px;
+  right: -18px;
+  top: 20px;
   width: auto;
   height: 76px;
 
@@ -147,10 +147,48 @@ h5 {
 .headerNav{
   position: absolute;
   z-index: 1000;
+  left: 50%;
 }
 
 .fixed{
   position: fixed;
+}
+
+.nav--whole{
+  margin-top: 16px;
+  display: block;
+}
+
+.nav--bttn{
+  position: relative;
+  float: left;
+  width: 50px;
+
+  padding: 35px 0px;
+
+  margin-left: 10px;
+
+  background-image: url(../imgs/logo.svg);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  font-size: .8em;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all .3s;
+
+  filter: drop-shadow(1px 1px 1px black)
+}
+
+.nav--bttn:hover{
+  color: white;
 }
 
 
@@ -174,6 +212,7 @@ h5 {
 li{
   list-style-type: none;
 }
+
 
 #page{
   position: relative;
@@ -654,11 +693,6 @@ p{
 
     float: left;
   }
-
-@keyframes identifier {
-
-}
-
   .video-icon{
     text-align: center;
     border-radius: 2%;
@@ -742,6 +776,11 @@ p{
     width: 500px;
   }
 
+  .headerNav{
+    width: 500px;
+    margin-left: -250px;
+  }
+
   .hs-content-inner{
     padding: 0 100px;
     font-size: 4.7em;
@@ -811,8 +850,13 @@ p{
 
   .container{
     width: 1053px;
-
   }
+
+  .headerNav{
+    width: 1053px;
+    margin-left: -541px;
+  }
+
   .container-home{
     width: 1100px;
   }

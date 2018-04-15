@@ -12,20 +12,18 @@ $(document).ready(function(){
   var getRandomNum = function() {
 		var num = ["510","370","300","230","160","90","20"];
 		var randomNum = Math.floor(Math.random() * 7);
-
-
     return num[randomNum];
 	};
 
 
   var getRandomColor = function(){
-    var color = ["#F48583","#D5E59F","#5ccae8","#f5b76a","#16c2b2","#e6e386","#ba85b3"];
+    var color = ["#F48583","#D5E59F","#5ccae8","#f5f114","#ea77b0","#7e83ba","#1c8f92"];
     var randomColor = Math.floor(Math.random() * 7);
     return color[randomColor];
   };
 
   var getRandomColor2 = function(){
-    var color = ["black","white","#083d5d","#842672","#f23d34","#efe9dd"];
+    var color = ["black","white","#151f28","#1b3b48","#3f294f","#511553"];
     var randomColor = Math.floor(Math.random() * 6);
     return color[randomColor];
   };
@@ -103,10 +101,10 @@ $(document).ready(function(){
         // "font-size": "200%"
       });
 
-      $(".portfolio-item").css({
-        "width": 510 + "px",
-        "height": 287 + "px",
-      });
+      // $(".portfolio-item").css({
+      //   "width": 510 + "px",
+      //   "height": 287 + "px",
+      // });
 
     });
 
@@ -136,10 +134,11 @@ $(document).ready(function(){
         // "font-size": "200%"
       });
 
-      $(".portfolio-item").css({
-        "width": + randomNum(20,50) + "%",
-        "height": + randomNum(150,287) + "px",
-      });
+      // $(".portfolio-item").css({
+      //   "width": + randomNum(20,50) + "%",
+      //   "height": + randomNum(150,287) + "px",
+      // });
+
     });
 
 
