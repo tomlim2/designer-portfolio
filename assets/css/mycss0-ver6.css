@@ -19,11 +19,11 @@ a{
   text-decoration: none;
   transition: all 0.2s;
   transform-origin: center;
-  color: #183432;
+  color: rgba(92,202,232,1);
 }
 
 a:hover{
-
+  color: #183432;
 }
 
 a:active {
@@ -737,20 +737,20 @@ p{
 
 .footer-section{
   background: black;
+  text-align: center;
   color: white;
   overflow-x: hidden;
 }
 
 .footer-text{
   display: inline-block;
-  letter-spacing:0.2em;
-  text-transform: uppercase;
-  font-size: .7em;
+  letter-spacing:0.1em;
+
+  font-size: .8em;
   line-height: 1.6em;
   margin-right: -0.23em;
   padding: 14px 0;
   font-weight: 600;
-
 }
 .padding-bottom-0{
   padding-bottom: 0px;
