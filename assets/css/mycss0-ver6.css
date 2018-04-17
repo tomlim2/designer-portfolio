@@ -471,14 +471,14 @@ li{
 
 .bodytextB{
   line-height: 1.5;
-  font-size: 1em;
+  font-size: 1.6rem;
   font-weight: 700;
 
 }
 
 .bodytextS{
   line-height: 1.5;
-  font-size: .98em;
+  font-size: 1rem;
 }
 
 .section-title{
@@ -511,6 +511,13 @@ li{
   position: relative;
   min-height: 1px;
 }
+
+.col-sm-15{
+  float: left;
+  width: 15%;
+  padding: 2.5%;
+}
+
 .col-sm-30{
   float: left;
   width: 48.7%;
@@ -737,7 +744,7 @@ p{
 
 .footer-section{
   background: black;
-  text-align: center;
+  
   color: white;
   overflow-x: hidden;
 }
@@ -788,7 +795,7 @@ p{
 }
 @media screen and (min-width: 900px) {
   h2{
-    font-size: 2.4rem;
+    font-size: 3.4rem;
   }
 
   .img-phone{
@@ -827,6 +834,9 @@ p{
     padding-bottom: 120px;
   }
 
+  .col-sm-15{
+    width: 15%;
+  }
 
   .col-sm-70{
     width: 60%;
