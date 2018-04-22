@@ -240,15 +240,6 @@ li{
   background-position: 50% 50%;
 }
 
-#bttn-project{
-  text-decoration: underline;
-  cursor: pointer;
-}
-#bttn-project:hover{
-  background-color: rgba(92,202,232,1);
-  color: black;
-}
-
 .section6{
   padding-top: 120px;
   padding-bottom: 120px;
@@ -486,17 +477,6 @@ li{
   text-align: left;
   padding-bottom: 20px;
   z-index: 20;
-}
-
-.section-title-more{
-  color: rgba(12, 12, 23, 0.9);
-  display: inline-block;
-  position: relative;
-
-  font-weight: 500;
-
-  margin-right: -0.65em;
-  font-size: .8em;
 }
 
 .col-sm-6{
@@ -744,7 +724,7 @@ p{
 
 .footer-section{
   background: black;
-  
+
   color: white;
   overflow-x: hidden;
 }
