@@ -401,10 +401,10 @@ li{
 
 .headline--stroke{
   width: 6px;
-  height: 17vh;
+  height: 102px;
   background-color: white;
   position: absolute;
-  left: 96px;
+  left: 30px;
 
   bottom: -2%;
   transform-origin: 50% 0%;
@@ -763,6 +763,12 @@ p{
     width: 500px;
   }
 
+  .headline--stroke{
+    left: 96px;
+    width: 6px;
+    height: 102px;
+  }
+
   .headerNav{
     width: 500px;
     margin-left: -250px;
@@ -778,6 +784,10 @@ p{
     font-size: 3.4rem;
   }
 
+  .headline--stroke{
+    height: 118px;
+  }
+
   .img-phone{
     width: 270px;
     margin-left: -135px;
@@ -789,7 +799,7 @@ p{
 
   #thumbnail{
     width: 640px;
-    height: 360px;
+    height: 36  0px;
   }
 }
 @media screen and (min-width: 1200px) {
