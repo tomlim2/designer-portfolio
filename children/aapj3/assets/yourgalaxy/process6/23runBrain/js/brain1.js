@@ -40,9 +40,6 @@ var recursiveTree = function (ctx, startX, startY, length, angle, depth, branchW
   		subBranches;
 
 
-
-
-
 	ctx.beginPath();
 	ctx.moveTo(startX,startY);
 	endX = startX + length * Math.cos(angle);

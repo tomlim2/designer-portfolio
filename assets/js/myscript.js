@@ -71,12 +71,12 @@ $(document).ready(function(){
 
       $(".logo-name").delay(200).animate({
         right: 8,
-        opacity: 1
+        opacity: 1,
       },400);
 
       $(".hi--1").animate({
         right: -30,
-        opacity: 0
+        opacity: 0,
       },200);
 
       $(".portfolio-section, .portfolio-item-info").css({

@@ -307,18 +307,22 @@ li{
   transform: translateX(-100%);
 
 }
+
 .portfolio-item-detail{
   transition: 0.56s all cubic-bezier(0,.2,.4,1);
   transform: translateX(-100%);
 
   font-size: .92em;
 }
+
 .portfolio-item:hover .portfolio-item-info{
   transform: translateX(0px);
 }
+
 .portfolio-item:hover .portfolio-item-title{
   transform: translateX(0px);
 }
+
 .portfolio-item:hover .portfolio-item-detail{
   transform: translateX(0px);
 }
