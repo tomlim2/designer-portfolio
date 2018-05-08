@@ -304,7 +304,7 @@ li{
   content: "";
   display: block;
   position: absolute;
-  right: -8px;
+  right: 0;
   top: 0;
 
   width: 8px;
@@ -320,8 +320,8 @@ li{
   right: 0;
   bottom: 0;
 
-  width: 20%;
-  height: 6px;
+  width: 16px;
+  height: 8px;
   background: rgba(92,202,232,1);;
 }
 
@@ -595,6 +595,29 @@ li{
   font-weight: 700;
   font-size: 1.8em;
   line-height: 1.5;
+}
+.about-text::before{
+  content: '';
+  display: block;
+
+  width: 18px;
+  height: 8px;
+
+  background: white;
+
+  margin-bottom: 10px;
+
+}
+.about-text::after{
+  content: '';
+  display: block;
+
+  width: 8px;
+  height: 8px;
+
+  background: white;
+
+  margin-top: 20px;
 }
 
 p{
