@@ -300,6 +300,31 @@ li{
   font-size: .8em;
 }
 
+.portfolio-item-info::before{
+  content: "";
+  display: block;
+  position: absolute;
+  right: -8px;
+  top: 0;
+
+  width: 8px;
+  height: 100%;
+  background: rgba(92,202,232,1);;
+
+}
+
+.portfolio-item-info::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 20%;
+  height: 6px;
+  background: rgba(92,202,232,1);;
+}
+
 
 
 .portfolio-item-title{
