@@ -17,9 +17,12 @@ div{
 
 a{
   text-decoration: none;
-  transition: all 0.2s;
   transform-origin: center;
   color: rgba(92,202,232,1);
+
+  transition-duration: 200ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0,.2,.4,1);
 }
 
 a:hover{
@@ -95,7 +98,11 @@ h5 {
   width: auto;
   height: 76px;
   fill: rgba(92,202,232,1);
-  transition: 0.7s all cubic-bezier(0,.2,.4,1);
+
+  transition-duration: 700ms;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0,.2,.4,1);
+
   cursor: pointer;
 }
 
@@ -182,7 +189,10 @@ h5 {
 
   cursor: pointer;
 
-  transition: all .3s;
+  transition-duration: 300ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0,.2,.4,1);
+
 
   filter: drop-shadow(1px 1px 1px black)
 }
@@ -204,7 +214,7 @@ h5 {
   position: relative;
   left: 50%;
   margin-left: -90px;
-  transition: 0.3s all;
+
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -280,7 +290,9 @@ li{
 
 .portfolio-item-info{
 
-  transition: 0.5s all cubic-bezier(0,.2,.4,1);
+  transition-duration: 500ms;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0,.2,.4,1);
 
   color: black;
   background-color: white;
@@ -328,13 +340,20 @@ li{
 
 
 .portfolio-item-title{
-  transition: 0.53s all cubic-bezier(0,.2,.4,1);
+  transition-duration: 530ms;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0,.2,.4,1);
+
   transform: translateX(-100%);
 
 }
 
 .portfolio-item-detail{
-  transition: 0.56s all cubic-bezier(0,.2,.4,1);
+  transition-duration: 560ms;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0,.2,.4,1);
+
+
   transform: translateX(-100%);
 
   font-size: .92em;
@@ -355,7 +374,10 @@ li{
 
 .portfolio-item-img{
   position: relative;
-  transition: 0.3s cubic-bezier(0,.2,.4,1) all;
+
+  transition-duration: 300ms;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0,.2,.4,1);
 }
 
 #thumbnail{
@@ -363,7 +385,6 @@ li{
   height: auto;
   padding: 0;
   margin: 0;
-  transition: all 0.3s cubic-bezier(0,.2,.4,1);
 }
 
 
@@ -376,6 +397,10 @@ li{
   position: absolute;
   backface-visibility: hidden;
   opacity: 0;
+
+  transition-duration: 200ms;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0,.2,.4,1);
 }
 
 .portfolio-item-img:hover{
@@ -661,7 +686,9 @@ p{
 
 
 .next-img{
-  transition: 0.3s all cubic-bezier(0,.2,.4,1);
+  transition-duration: 300ms;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0,.2,.4,1);
 }
 
 .next-img:hover{
@@ -684,7 +711,9 @@ p{
   width: auto;
   height: auto;
 
-  transition: 0.2s all cubic-bezier(0,.2,.4,1);
+  transition-duration: 200ms;
+  transition-property: background-color, color;
+  transition-timing-function: cubic-bezier(0,.2,.4,1);
 
   z-index: 100;
 }
