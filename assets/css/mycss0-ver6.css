@@ -868,42 +868,53 @@ p{
 /* process-section */
 
 #process-section{
-  padding-top: 0;
+  padding-top: 120px;
 }
 
-#process-title{
+#process-section::before{
+  content: "<!-- start Process -->";
+  position: absolute;
+
+  width: 400px;
+  padding: 10px 40px;
+  background: rgba(92,202,232,1);
+
+  left: 0;
+
+  margin-top: -4em;
+  transform: rotate(-.8deg);
+
+  opacity: 1;
+
   margin-bottom: 1em;
   font-weight: 800;
   font-size: 1.2em;
   text-transform: uppercase;
+}
+
+#process-section::after{
+  content: "<!-- end process -->";
+  position: absolute;
+  width: 400px;
+  padding: 10px 40px;
+  background: rgba(92,202,232,1);;
+
+  transform: rotate(-.7deg);
+  right: 0;
+
+  opacity: 1;
+
+  margin-bottom: 1em;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+
+#process-title{
+
 
   z-index: 10;
-}
-#process-title::before{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1.4em;
-  background: rgba(92,202,232,1);;
-
-  right: 0;
-  margin-top: 0px;
-
-  opacity: .2;
-}
-
-#process-title::after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background: rgba(92,202,232,1);;
-
-  left: 0;
-  margin-top: 1.6em;
-
-  opacity: .9;
-
 }
 
 
