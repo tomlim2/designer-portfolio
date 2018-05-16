@@ -872,7 +872,7 @@ p{
 }
 
 #process-section::before{
-  content: "<!-- start Process -->";
+  content: "/* start Process */";
   position: absolute;
 
   width: 400px;
@@ -890,10 +890,12 @@ p{
   font-weight: 800;
   font-size: 1.2em;
   text-transform: uppercase;
+
+  letter-spacing: 0.15em;
 }
 
 #process-section::after{
-  content: "<!-- end process -->";
+  content: "/* end process */";
   position: absolute;
   width: 400px;
   padding: 10px 40px;
@@ -908,6 +910,8 @@ p{
   font-weight: 800;
   font-size: 1.2em;
   text-transform: uppercase;
+
+  letter-spacing: 0.15em;
 }
 
 
