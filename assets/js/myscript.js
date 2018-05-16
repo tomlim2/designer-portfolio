@@ -79,7 +79,7 @@ $(document).ready(function(){
         opacity: 0,
       },200);
 
-      $(".portfolio-section, .portfolio-item-info").css({
+      $(".portfolio-section").css({
         "background-color": "white",
         "color": "black",
         // "font-size": "200%"
@@ -122,7 +122,7 @@ $(document).ready(function(){
     });
 
     $(".hi--1").click(function(){
-      $(".portfolio-item-info, .portfolio-section, #about-section, .footer-section").css({
+      $(".portfolio-section, #about-section, .footer-section").css({
         "background-color": getRandomColor,
         "color":getRandomColor2,
 
