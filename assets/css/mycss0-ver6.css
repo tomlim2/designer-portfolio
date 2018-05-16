@@ -11,17 +11,20 @@ body {
 }
 
 div{
-  margin: 0px;
-  padding: 0px;
+
 }
 
-a{
+.pointcolor {
+  color: rgba(92,202,232,1);
+}
+
+a {
   text-decoration: none;
   transform-origin: center;
   color: rgba(92,202,232,1);
 
   transition-duration: 200ms;
-  transition-property: color;
+  transition-property: transform color;
   transition-timing-function: cubic-bezier(0,.2,.4,1);
 }
 
@@ -29,8 +32,12 @@ a:hover{
   color: #183432;
 }
 
-a:active {
-    background-color: hotpink;
+#img-link{
+  transition: 200ms transform cubic-bezier(0,.2,.4,1);
+}
+
+#img-link:hover{
+  transform: translate(.2em, .2em);
 }
 
 
@@ -79,6 +86,14 @@ h5 {
   font-size: 0.9em;
   margin-top: 0px;
   margin-bottom: 30px;
+}
+
+#caption {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.9em;
+  padding-top: 1em;
+  padding-bottom: 5em;
 }
 
 /* end general */
@@ -253,7 +268,6 @@ li{
 .section6{
   padding-top: 120px;
   padding-bottom: 120px;
-
 }
 
 .section7{
@@ -533,35 +547,6 @@ li{
   z-index: 20;
 }
 
-.col-sm-6{
-  float: left;
-  width: 50%;
-  position: relative;
-  min-height: 1px;
-}
-
-.col-sm-7{
-  float: left;
-  position: relative;
-  min-height: 1px;
-}
-
-.col-sm-15{
-  float: left;
-  width: 15%;
-  padding: 2.5%;
-}
-
-.col-sm-30{
-  float: left;
-  width: 48.7%;
-  padding: .65% .65%;
-}
-
-.col-sm-70,.col-sm-50{
-  float: left;
-}
-
 
 .full-screen{
   height: 92vh;
@@ -653,6 +638,7 @@ p{
     background-color: rgba(0,0,0,.9);;
     opacity: .2;
 }
+
 .overlay:before {
     content: "";
     width: 100%;
@@ -660,9 +646,6 @@ p{
     position: absolute;
     top: 0;
   left: 0;
-}
-:before,:after{
-  box-sizing: border-box;
 }
 
 #about-section{
@@ -775,15 +758,16 @@ p{
 
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.2s all cubic-bezier(0,.2,.4,1);
+    transition: 200ms cubic-bezier(0,.2,.4,1);
     font-size: 1em;
+    transition-property: transform, color, background-color;
   }
 
   .video-icon:hover{
     color: black;
     background-color: white;
 
-    filter: drop-shadow(1em .3em 0em rgba(0,0,0,1)) drop-shadow(-1em -.3em 0em rgba(0,0,0,1));
+    transform: translate(.2em, .2em);
   }
 
   .video-psbttn{
@@ -801,7 +785,7 @@ p{
 /* end video control  */
 
 
-
+/* footer */
 
 .footer-section{
   background: black;
@@ -820,6 +804,10 @@ p{
   padding: 14px 0;
   font-weight: 600;
 }
+
+/* end footer */
+
+/* control */
 .padding-bottom-0{
   padding-bottom: 0px;
 }
@@ -837,6 +825,90 @@ p{
 .padding-bottom-120{
   padding-bottom: 40px;
 }
+
+.col-sm-set{
+  position: relative;
+}
+
+.col-sm-6{
+  float: left;
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+}
+
+.col-sm-7{
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+
+.col-sm-15{
+  float: left;
+  width: 15%;
+  padding: 2.5%;
+}
+
+.col-sm-30{
+  float: left;
+  width: 49%;
+  padding-right: 1%;
+}
+
+.col-sm-70,.col-sm-60,.col-sm-50{
+  float: left;
+}
+
+.col-sm-60-center, .col-sm-60-caption,{
+  margin: 0;
+}
+
+/* end control */
+
+/* process-section */
+
+#process-section{
+  padding-top: 0;
+}
+
+#process-title{
+  margin-bottom: 1em;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-transform: uppercase;
+
+  z-index: 10;
+}
+#process-title::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.4em;
+  background: rgba(92,202,232,1);;
+
+  right: 0;
+  margin-top: 0px;
+
+  opacity: .2;
+}
+
+#process-title::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: rgba(92,202,232,1);;
+
+  left: 0;
+  margin-top: 1.6em;
+
+  opacity: .9;
+
+}
+
+
+
+/* end process-section */
 
 
 @media screen and (min-width: 600px) {
@@ -860,6 +932,7 @@ p{
     font-size: 4.7em;
   }
 }
+
 @media screen and (min-width: 900px) {
   h2{
     font-size: 3.4rem;
@@ -910,18 +983,28 @@ p{
   }
 
   .col-sm-70{
-    width: 60%;
+    width: 70%;
   }
 
   .col-sm-50{
-    width: 48.7%;
-    padding: .65% .65%;
+    width: 49%;
+    padding-right: 1%;
+  }
+  .col-sm-60{
+    width: 60%;
+  }
+  .col-sm-60-center{
+    margin-right: 20%;
+    margin-left: 20%;
+  }
 
+  .col-sm-60-caption{
+    margin-left: 20%;
   }
 
   .col-sm-30{
     width: 32%;
-    padding: 0.65% 0.65%;
+    padding-right: 1%;
   }
 
   .img-50{
