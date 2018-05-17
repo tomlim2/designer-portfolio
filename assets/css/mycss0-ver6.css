@@ -58,7 +58,7 @@ h1{
 h2{
   margin: 0;
   font-weight: 800;
-  font-size: 2.4rem;
+  font-size: 2rem;
   letter-spacing: .02em;
 
   line-height: 1.08;
@@ -209,15 +209,14 @@ li{
 
 #page-2{
   position: relative;
-  overflow-x: hidden;
+
   width: 100%;
 
-  box-sizing: border-box;
   z-index: 10;
 
   background-color: white;
-}
 
+}
 
 .home-section{
   position: relative;
@@ -274,7 +273,7 @@ li{
   border-top-right-radius: 1%;
   border-bottom-right-radius: 1%;
   padding: 5px 0px 8px 20px;
-  width: 40%;
+  width: 60%;
   height: auto;
 
   transform-origin: right;
@@ -413,7 +412,7 @@ li{
 
   position: absolute;
 
-  filter: drop-shadow(.05em .05em .01em rgba(0, 0, 0, .2));
+  filter: drop-shadow(.05em .05em .02em rgba(0, 0, 0, .2));
 }
 
 .headline::before{
@@ -902,13 +901,21 @@ p{
 }
 
 @media screen and (min-width: 900px) {
+  .headline::before{
+    width: 320px;
+    height: 110px;
+  }
   h2{
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
 
   .img-phone{
     width: 270px;
     margin-left: -135px;
+  }
+
+  .portfolio-item-info{
+    width: 42%;
   }
 
   .portfolio-item-img{
