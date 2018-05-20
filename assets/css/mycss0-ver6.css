@@ -171,6 +171,7 @@ h5 {
 .headerNav{
   position: absolute;
   z-index: 1000;
+  top: 10px;
   left: 50%;
 }
 
