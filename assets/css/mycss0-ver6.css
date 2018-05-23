@@ -429,14 +429,14 @@ li{
 
 
 .mainhead{
-  animation: headlineprss 0.6s forwards cubic-bezier(0,.2,.4,1);
+  animation: headlineprss 0.6s forwards;
   transform: translateX(-40vh);
 
   filter: drop-shadow(.05em .05em .01em rgba(0, 0, 0, .2));
 }
 
 .subhead{
-  animation: headlineprss 0.6s forwards cubic-bezier(0,.2,.4,1);
+  animation: headlineprss 0.6s forwards ;
   padding: 0px 2px;
   transform: translateX(-40vh);
   animation-delay: 0.1s;
