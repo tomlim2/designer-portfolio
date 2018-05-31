@@ -1,31 +1,20 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Tom Lim</title>
   <meta charset="utf-8" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800" rel="stylesheet">
-
-
   <link rel="icon" href="favicon.gif" type="image/gif" sizes="30x30">
+  <link rel="stylesheet" href="assets/css/mycss-ver8.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="assets/css/loadFont.css" type="text/css" media="screen" />
 
-  <link rel="stylesheet" href="assets/css/mycss0-ver6.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="assets/css/decocss.css" type="text/css" media="screen" />
-
-  <script type="text/javascript" src="assets/js/myscript.js"></script>
-
-  <!-- <script type="text/javascript" src="assets/js/music.js"></script> -->
-
+  <script type="text/javascript" src="assets/js/mainpage.js"></script>
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
   <style>
-  /* Ver6 Sets*/
   .parallax-hero{
     background-image:  url("assets/imgs/img_hero_5.png");
     background-blend-mode: multiply;
-    /* animation: parallaxprss 20s infinite linear; */
   }
   @keyframes parallaxprss {
     0%{
@@ -36,354 +25,217 @@
     }
   }
   #myCanvas{
-    border-top: solid #93E8D3 .5em;
-    border-bottom: solid #93E8D3 .5em;
-    background: #BBE9DE;
-    display: inline-block;
-    filter: drop-shadow(1em 1em 10 black);
-    box-shadow: 0px 10px #52C2CD;
+    border-bottom: solid rgba(10, 10, 10, 1) 1em;
   }
-
   </style>
-
-  <script>
-  </script>
-
-
 </head>
-
 <body>
-  <!-- Navbar -->
-  <nav class="headerNav">
-    <div class="logobox">
-      <div class="logospinning">
-        <svg class="logo1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.96 96.92">
-          <polygon class="" points="0 32.31 0 96.92 55.95 64.61 55.95 0 0 32.31"/>
-        </svg>
-      </div>
-      <div class="logo-name-box">
-        <svg class="logo-name" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.04 47.47">
-            <path class="logo-name-letters name-t" d="M8.33,21.57H4.24V4.13H0V.56H12.57V4.13H8.33Z"/>
-            <path class="logo-name-letters name-o" d="M25.23,22.13c-6.41,0-10.4-4.9-10.4-11.09S19,0,25.23,0,35.62,4.79,35.62,11,31.64,22.13,25.23,22.13ZM25.23,4c-3.88,0-6.16,3.43-6.16,6.83,0,3.23,1.61,7.22,6.16,7.22s6.16-4,6.16-7.22C31.39,7.47,29.1,4,25.23,4Z"/>
-            <path class="logo-name-letters name-m1" d="M54.24,8.53h-.06L49.42,21.85H48L43.4,8.53h-.06l-1.87,13H37.35L40.89,0h2.9L49,13.85,53.93,0h3L60,21.57H55.91Z"/>
-
-            <polygon class="logo-name-letters name-l" points="11.73 43.62 6.79 43.62 5.93 43.62 5.93 26.17 1.84 26.17 1.84 47.19 6.79 47.19 11.73 47.19 12.57 47.19 12.57 43.62 11.73 43.62"/>
-            <polygon class="logo-name-letters name-i" points="31.84 29.74 31.84 26.17 27.27 26.17 23.18 26.17 18.62 26.17 18.62 29.74 23.18 29.74 23.18 43.62 18.62 43.62 18.62 47.19 23.18 47.19 27.27 47.19 31.84 47.19 31.84 43.62 27.27 43.62 27.27 29.74 31.84 29.74"/>
-            <path class="logo-name-letters name-m2" d="M54.24,34.14h-.06L49.42,47.47H48L43.4,34.14h-.06l-1.87,13H37.35l3.54-21.58h2.9L49,39.47l5-13.86h3L60,47.19H55.91Z"/>
-        </svg>
-
-        <svg class="hi--1 js_play_sound" data-source="example4(261.6, 'square')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.95 41.45">
-          <title>hi!</title>
-          <path class="hi-hi hi-h" d="M6.84,0V19.45h.1a7.52,7.52,0,0,1,6.26-2.78c6.45,0,8.3,4.54,8.3,10.11V41.45H14.66V28.74c0-2.89.15-6.6-3.71-6.6-4.06,0-4.11,4.55-4.11,7.43V41.45H0V0Z"/>
-          <path class="hi-hi hi-i" d="M33.58,41.45H26.74v-24h6.84Z"/>
-          <circle class="hi-hi hi-circle" cx="30.16" cy="7.38" r="4.06">
-            <animateTransform attributeName="transform"
-                     type="translate"
-                     attributeType="XML"
-                     dur="1.15s"
-                     values="0 -10 ; 0 6 ; 0 -10"
-                     keyTimes="0 ; 0.5 ; 1"
-                     repeatCount="indefinite"
-                     calcMode="spline"
-                     keySplines="0.6 0.08 0.8 0.60;
-                                 0.2 0.40 0.4 0.92" />
-          </circle>
-        </svg>
-      </div>
-
-    </div>
+  <nav id="nav">
+     <a href="index.html"><span id="menu" class="home here">work</span></a> |
+     <a href="index.html"><span id="logo">about: Tom</span></a>
   </nav>
-  <!-- /End Navbar -->
+
   <canvas id="myCanvas"></canvas>
-  <!-- Page Wrapper -->
-  <div id="page">
-
-
-
-
-    <!-- Page2 -->
-    <div id="page-2">
-      <!-- Portfolio Section -->
-      <section style="padding-top:50px;" id="portfolio-section" class="portfolio-section section6">
-        <div class="container container-home">
-
-          <!-- <div class="bodytextB">
-              Portfolio
-          </div> -->
-
-          <ul id="portfolio-box" class="portfolio-box">
-            <li class="portfolio-item item--1 col-sm-7">
-              <a href="children/concept2017/index.html">
-                <div class="portfolio-item-img portfolio-border">
-                  <img class="img-hover" id="thumbnail" src="children/concept2017/img_thumb.png" alt="portfolio">
-                  <img class="img-ori" id="thumbnail" src="children/concept2017/img_thumb.gif" alt="portfolio">
-
-                </div>
-                <div class="portfolio-item-img-cover"></div>
-              </a>
-
-              <div class="portfolio-item-info">
-
-                <h1 class="portfolio-item-title">
-                  Concept, Curiosity
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  Key Visuals
-                </h3>
-              </div>
-            </li>
-
-            <li class="portfolio-item item--2 col-sm-7">
-              <a href="children/gd3/index.html">
-                <div class="portfolio-item-img portfolio-border">
-                  <img class="img-hover" id="thumbnail" src="children/gd3/img_thumbnail.png" alt="portfolio">
-                  <img class="img-ori" id="thumbnail" src="children/gd3/img_thumbnail4.gif" alt="portfolio">
-                </div>
-                <div class="portfolio-item-img-cover"></div>
-              </a>
-              <div class="portfolio-item-info">
-                <h1 class="portfolio-item-title">
-                  Olivia
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  Brainding
-                </h3>
-              </div>
-            </li>
-
-            <li class="portfolio-item item--3 col-sm-7">
-              <a href="children/mo1/index.html">
-              <div class="portfolio-item-img portfolio-border">
-                <img class="img-hover" id="thumbnail" src="children/mo1/img_thumb.png" alt="portfolio">
-                <img class="img-ori" id="thumbnail" src="children/mo1/img_thumb.gif" alt="portfolio">
-
-              </div>
-              <div class="portfolio-item-img-cover"></div>
-              </a>
-
-              <div class="portfolio-item-info">
-                <h1 class="portfolio-item-title">
-                  Technologic
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  Type in Motion
-                </h3>
-              </div>
-            </li>
-
-            <li class="portfolio-item item--7 col-sm-7">
-              <a href="children/intr2pj3home/index.html">
-                <div class="portfolio-item-img portfolio-border">
-                  <img class="img-hover" id="thumbnail" src="children/intr2pj3home/img_thumb2.png" alt="portfolio">
-                  <img class="img-ori" id="thumbnail" src="children/intr2pj3home/img_thumb2.gif" alt="portfolio">
-                </div>
-                <div class="portfolio-item-img-cover"></div>
-              </a>
-              <div class="portfolio-item-info">
-                <h1 class="portfolio-item-title">
-                  Alexander Calder
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  Microsite
-                </h3>
-              </div>
-            </li>
-
-            <li class="portfolio-item item--9 col-sm-7">
-              <a href="children/exppj2/index.html">
-                <div class="portfolio-item-img portfolio-border">
-                  <img class="img-hover" id="thumbnail" src="children/exppj2/img_thumb2.gif" alt="portfolio">
-                  <img class="img-ori" id="thumbnail" src="children/exppj2/img_thumb2.png" alt="portfolio">
-                </div>
-                <div class="portfolio-item-img-cover"></div>
-              </a>
-              <div class="portfolio-item-info">
-                <h1 class="portfolio-item-title">
-                  aug.art
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  AR
-                </h3>
-              </div>
-            </li>
-
-            <li class="portfolio-item item--10 col-sm-7">
-              <a href="children/exppj3/index.html">
-                <div class="portfolio-item-img portfolio-border">
-                  <img class="img-hover" id="thumbnail" src="children/exppj3/img_thumb3.png" alt="portfolio">
-                  <img class="img-ori" id="thumbnail" src="children/exppj3/img_thumb4.png" alt="portfolio">
-                </div>
-                <div class="portfolio-item-img-cover"></div>
-              </a>
-              <div class="portfolio-item-info">
-                <h1 class="portfolio-item-title">
-                  Dream
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  VR
-                </h3>
-              </div>
-            </li>
-
-
-
-            <li class="portfolio-item item--8 col-sm-7">
-              <a href="children/aapj3/index.html">
-                <div class="portfolio-item-img portfolio-border">
-                  <img class="img-hover" id="thumbnail" src="children/aapj3/img_thumb.png" alt="portfolio">
-                  <img class="img-ori" id="thumbnail" src="children/aapj3/img_thumb.gif" alt="portfolio">
-
-                </div>
-                <div class="portfolio-item-img-cover"></div>
-              </a>
-              <div class="portfolio-item-info">
-                <h1 class="portfolio-item-title">
-                  Brain Bot
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  Interactive Poster
-                </h3>
-              </div>
-            </li>
-
-            <li class="portfolio-item item--4 col-sm-7">
-              <a href="children/mo2/index.html">
-                <div class="portfolio-item-img portfolio-border">
-                  <img class="img-hover" id="thumbnail" src="children/mo2/img_thumb.png" alt="portfolio">
-                  <img class="img-ori" id="thumbnail" src="children/mo2/img_thumb2.gif" alt="portfolio">
-
-                </div>
-                <div class="portfolio-item-img-cover"></div>
-              </a>
-              <div class="portfolio-item-info">
-                <h1 class="portfolio-item-title">
-                  Sound Journal
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  Sound Mixing Motion
-                </h3>
-              </div>
-            </li>
-
-            <li class="portfolio-item item--6 col-sm-7">
-              <a href="children/hy1/index.html">
-                <div class="portfolio-item-img portfolio-border">
-                  <img class="img-hover" id="thumbnail" src="children/hy1/img_thumb4.jpg" alt="portfolio">
-                  <img class="img-ori" id="thumbnail" src="children/hy1/img_thumb3.jpg" alt="portfolio">
-
-                </div>
-                <div class="portfolio-item-img-cover"></div>
-              </a>
-              <div class="portfolio-item-info">
-                <h1 class="portfolio-item-title">
-                  Noisy Berry!!
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  Interactive Book
-                </h3>
-              </div>
-            </li>
-
-            <li class="portfolio-item item--5 col-sm-7">
-              <a href="">
-                <div class="portfolio-item-img portfolio-border">
-                  <img class="img-hover" id="thumbnail" src="assets/imgs/coming soon2.svg" alt="portfolio">
-                  <img class="img-ori" id="thumbnail" src="assets/imgs/coming soon.svg" alt="portfolio">
-                </div>
-                <div class="portfolio-item-img-cover"></div>
-              </a>
-              <div class="portfolio-item-info">
-                <h1 class="portfolio-item-title">
-                  Interactive
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  Codings
-                </h3>
-              </div>
-            </li>
-
-            <li class="portfolio-item item--5 col-sm-7">
-              <a href="children/ani1/index.html">
-                <div class="portfolio-item-img portfolio-border">
-                  <img class="img-hover" id="thumbnail" src="children/ani1/img_thumb2.jpg" alt="portfolio">
-                  <img class="img-ori" id="thumbnail" src="children/ani1/img_thumb.gif" alt="portfolio">
-                </div>
-                <div class="portfolio-item-img-cover"></div>
-              </a>
-              <div class="portfolio-item-info">
-                <h1 class="portfolio-item-title">
-                  Test Animations
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  Hand-drawing
-                </h3>
-              </div>
-            </li>
-
-            <li class="portfolio-item item--5 col-sm-7">
-              <a href="children/23dmo/index.html">
-                <div class="portfolio-item-img portfolio-border">
-                  <img class="img-hover" id="thumbnail" src="children/23dmo/img_thumb2.gif" alt="portfolio">
-                  <img class="img-ori" id="thumbnail" src="children/23dmo/img_thumb.gif" alt="portfolio">
-                </div>
-                <div class="portfolio-item-img-cover"></div>
-              </a>
-              <div class="portfolio-item-info">
-                <h1 class="portfolio-item-title">
-                  Test Motions
-                </h1>
-                <h3 class="portfolio-item-detail">
-                  2D / 3D Motions
-                </h3>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </section>
-      <!-- End Portfolio Section -->
-
-      <!-- About Section -->
-        <section id="about-section" class="about-section section6">
-            <div class="container">
-
-              <div class="about-text col-sm-70">
-
-                  Hi, I am Tom, a graphic designer living in San Francisco.
-                  <br>
-                  I make websites, 2D/3D motion, logo, typeface and brand identity.
-              </div>
-
-                <div class="col-sm-70">
-                  <br>
-                  <span style="font-size:1.0em;">
-                    <span style="color:white; font-weight: 700;">
-                      >>
-                    </span>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">
-                      <strong style="color:black;">tomandlim@gmail.com</strong>
-                    </a>
-                  </span>
-                </div>
-
+  <div id="page-wrapper">
+    <div id="page-size">
+      <section id="portfolio-box">
+        <a href="children/concept2017/index.html">
+        <div class="pt pt1">
+          <img class="pt-thumb" src="children/concept2017/img_thumb.gif" alt="">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Curiosity
+              </h1>
+              <h2 class="info-detail">
+                Key Visuals
+              </h2>
             </div>
-        </section>
-      <!-- End About Section -->
-
-      <footer class="footer-section section7">
-        <div class="container">
-          <div class="footer-text">
-            e-mail: <a style="color:white;"href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
-            <br>Development : Tom Lim
-            <br> © Tom Lim 2018
           </div>
         </div>
-      </footer>
-    </div>
-    <!-- End Page-2 -->
+        </a>
+        <a href="children/gd3/index.html">
+        <div class="pt pt2">
+          <img class="pt-thumb pt-thumb-long" src="children/gd3/img_thumbnail4.gif" alt="">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Olivia
+              </h1>
+              <h2 class="info-detail">
+                Brainding
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children/intr2pj3home/index.html">
+        <div class="pt pt5">
+          <img class="pt-thumb" src="children/intr2pj3home/img_thumb2.gif" alt="">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Alexander Calder
+              </h1>
+              <h2 class="info-detail">
+                Microsite
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children/mo1/index.html">
+        <div class="pt pt3">
+          <img class="pt-thumb" src="children/mo1/img_thumb.gif" alt="">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Technologic
+              </h1>
+              <h2 class="info-detail">
+                Type in Motion
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children/exppj3/index.html">
+        <div class="pt pt8">
+          <img class="pt-thumb" src="children/exppj2/img_hero_1.jpg" alt="portfolio">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                aug.art
+              </h1>
+              <h2 class="info-detail">
+                AR
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
 
+
+        <a href="children/exppj3/index.html">
+        <div class="pt pt7">
+          <img class="pt-thumb" src="children/exppj3/img_thumb4.png" alt="portfolio">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Dream
+              </h1>
+              <h2 class="info-detail">
+                VR
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+          <a href="children/hy1/index.html">
+        <div class="pt pt11">
+          <img class="pt-thumb" src="children/hy1/img_thumb3.jpg" alt="">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Noisy Berry
+              </h1>
+              <h2 class="info-detail">
+                Book & Web
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+
+        <a href="children//index.html">
+        <div class="pt pt4">
+          <img class="pt-thumb" src="children/mo2/img_thumb2.gif" alt="portfolio">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Sound Journal
+              </h1>
+              <h2 class="info-detail">
+                Sound Mixing Motion
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+
+        <a href="children/ani1/index.html">
+        <div class="pt pt12">
+          <img class="pt-thumb" src="children/ani1/img_thumb.gif" alt="portfolio">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Animation
+              </h1>
+              <h2 class="info-detail">
+                Hand-drawing
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+
+        <a href="children/23dmo/index.html">
+        <div class="pt pt10">
+          <img class="pt-thumb" src="children/23dmo/img_thumb.gif" alt="portfolio">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Motion
+              </h1>
+              <h2 class="info-detail">
+                2D 3D motion graphic
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children//index.html">
+        <div class="pt pt9">
+          <img class="pt-thumb" src="assets/imgs/coming soon2.svg" alt="portfolio">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Interactive
+              </h1>
+              <h2 class="info-detail">
+                HTML CSS JAVASCRIPT WebGL
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+      </section>
+      <section id='about-section'>
+        <div class="about">
+          ABOUT
+          <br>-<br>
+          Hi, I am Tom, a graphic designer living in San Francisco.
+          <br>
+          I make websites, 2D/3D motion, and branding.
+          <br><br>
+          :>
+        </div>
+        <div class="contact">
+          CONTACT
+          <br>-<br>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
+        </div>
+      </section>
     </div>
-    <!-- End Page Wrapper -->
+    <footer class="footer-section">
+      <div class="footer-text">
+        E-mail: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
+        <br>© Tom Lim 2018 --- Development : Tom Lim
+
+      </div>
+    </footer>
+  </div>
+
     <script type="text/javascript" src="assets/js/canvas3.js"></script>
 </body>
 </html>
