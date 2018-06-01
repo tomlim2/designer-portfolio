@@ -162,12 +162,14 @@ nav a:hover{
 }
 
 #about-section{
-  font-family: 'fs-m';
   padding: 1em;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  grid-gap: 1em;
+}
+.about-wrapper{
+  font-family: 'fs-m';
   border-top: solid rgba(10, 10, 10, 1) .1em;
+  grid-template-columns: repeat(1,1fr);
+  display: grid;
+  grid-gap: 1em;
   line-height: 1.6em;
 }
 
@@ -190,8 +192,13 @@ nav a:hover{
   }
 
   #about-section{
+
+  }
+  .about-wrapper{
+    border-top: solid rgba(10, 10, 10, 1) .1em;
     grid-template-columns: repeat(8,1fr);
   }
+
   .about{
     grid-column: 1/4;
   }
