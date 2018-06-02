@@ -76,10 +76,11 @@ nav #pj-name{
   display:block;
   position: absolute;
   background-color: rgba(10,10,10,1);
-  padding: 1em;
+  padding: 1em 2em 1em 2em;
   color: rgba(180,180,180,1);
   bottom: 0;
   z-index: 100;
+  text-transform: uppercase;
 }
 .prePage::before{
   content: "previous";
