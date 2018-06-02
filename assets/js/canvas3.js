@@ -59,13 +59,11 @@ var getRandomColor = colorArray[Math.floor( Math.random () * colorArray.length )
  	function (event) {
  		mouse.x = event.x;
  		mouse.y = event.y;
-
  	})
 
  window.addEventListener('resize', function () {
  	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight*0.5;
-
 	init();
  })
 
@@ -117,8 +115,6 @@ function Circle (x, y, dx, dy, radius) {
 		this.draw();
 	}
 }
-
-
 
 var circleArray = [];
 

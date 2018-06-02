@@ -11,15 +11,15 @@ body {
 }
 
 footer{
+  position: relative;
   padding: 1.2em;
-
   text-align: center;
   background-color: rgba(10, 10, 10, 1);
   color: rgba(244,244,244,1);
-
   line-height: 1.8em;
   font-size: .9em;
   letter-spacing: 0.05em;
+  z-index: 200;
 }
 footer a{
   color: rgba(244,244,244,0.6);
@@ -76,39 +76,42 @@ h4 {
 }
 
 h5 {
-  font-family: 'fs-l';
-  font-size: 0.9em;
+  font-family: 'fs-em';
+  font-size: 1em;
+  margin: 0;
 }
 
+.bold{
+  font-family: 'fs-eb';
+}
 
 /* end general */
 
 /*header*/
 nav{
-  position: fixed;
-  text-align: center;
-  background-color: rgba(10, 10, 10, 1);
-  z-index: 100;
   width: 100%;
   padding: 1em;
-}
-
-nav span{
+  z-index: 100;
   font-family: 'fs-m';
   font-size: 1em;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-
+  background-color: rgba(10, 10, 10, 1);
 }
 
-nav .here{
+#nav{
+  position: fixed;
+  text-align: right;
+  z-index: 100;
+}
+#nav .here{
   color: rgba(250,250,250,1);
 }
 
-nav a{
+#nav a{
   color: rgba(155,155,155,1);
 }
-nav a:hover{
+#nav a:hover{
   color: rgba(250,250,250,1);
 }
 
@@ -116,9 +119,9 @@ nav a:hover{
   overflow: hidden;
   width: 100%;
 }
-#page-size{
-
-  /* background-color: black; */
+#page-wrapper-2{
+  position: relative;
+  background-color: white;
 }
 #portfolio-box{
   padding: 1em;
@@ -162,9 +165,11 @@ nav a:hover{
 }
 
 #about-section{
-  padding: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .about-wrapper{
+  padding-top: 1em;
   font-family: 'fs-m';
   border-top: solid rgba(10, 10, 10, 1) .1em;
   grid-template-columns: repeat(1,1fr);
