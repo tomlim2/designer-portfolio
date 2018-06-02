@@ -9,7 +9,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-
 footer{
   position: relative;
   padding: 1.2em;
@@ -27,15 +26,11 @@ footer a{
 footer a:hover{
   color: rgba(244,244,244,1);
 }
-
 div{
-
 }
-
 *,*::before,*::after{
   box-sizing: border-box;
 }
-
 .id {
   color: rgba(0,0,0,1);
   transition-timing-function: cubic-bezier(0,.2,.4,1);
@@ -50,7 +45,6 @@ a {
 a:hover{
   color: rgba(180, 180, 180, 1);
 }
-
 h1{
   margin: 0;
   font-family: 'fs-m';
@@ -59,7 +53,6 @@ h1{
   letter-spacing: 0.05em;
   margin-bottom: 0.07em;
 }
-
 h2{
   margin: 0;
   font-family: 'fs-h';
@@ -68,13 +61,6 @@ h2{
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-
-h3 {
-}
-
-h4 {
-}
-
 h5 {
   font-family: 'fs-em';
   font-size: 1em;
@@ -152,7 +138,7 @@ nav{
   transition: 300ms cubic-bezier(0,.2,.4,1);
   transition-property: opacity transform;
   opacity: 0;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .pt-info{
   position: relative;
@@ -173,10 +159,6 @@ nav{
   grid-gap: 1em;
   line-height: 1.6em;
 }
-
-.a-s p{
-}
-
 @media screen and (min-width: 1100px) {
   #portfolio-box{
     grid-template-columns: repeat(2,1fr);
@@ -188,7 +170,7 @@ nav{
     opacity: 1;
   }
   .pt:hover .pt-thumb{
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0;
   }
 
