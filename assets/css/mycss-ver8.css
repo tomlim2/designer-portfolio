@@ -61,6 +61,15 @@ h2{
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+h3{
+  margin: 0;
+  font-family: 'fs-h';
+  font-weight: normal;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 10, 0.5);
+}
 h5 {
   font-family: 'fs-em';
   font-size: 1em;
