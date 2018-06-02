@@ -58,10 +58,9 @@ nav #pj-name{
   background: white;
 }
 .description p{
+  padding: 1em;
   font-size: 1.4em;
   line-height: 1.6em;
-  padding-right: 1em;
-  padding-top: 1em;
 }
 .pj-img{
   display: block;
@@ -92,8 +91,6 @@ nav #pj-name{
   .description p{
     font-size: 1.4em;
     line-height: 1.6em;
-    padding-right: 4em;
-    padding-left: 1em;
-    padding-top: 1em;
+    padding: 1em;
   }
 }
