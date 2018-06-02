@@ -48,7 +48,7 @@ a {
 }
 
 a:hover{
-  color: rgba(100, 100, 100, 1);
+  color: rgba(180, 180, 180, 1);
 }
 
 h1{
@@ -79,10 +79,6 @@ h5 {
   font-family: 'fs-em';
   font-size: 1em;
   margin: 0;
-}
-
-.bold{
-  font-family: 'fs-h';
 }
 
 /* end general */
