@@ -15,6 +15,7 @@
   width: 1280px;
   height: 720px;
   border: inherit;
+  display: block;
 }
 
 #project-box-2c div, #project-box-3c div,#project-box-4c div{
