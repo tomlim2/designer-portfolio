@@ -125,7 +125,6 @@ $(document).ready(function() {
       });
 
 // petal3 end
-
 // petal4
       var petal4mv1 = 0;
       var petal4mv2 = 4580;
@@ -141,9 +140,6 @@ $(document).ready(function() {
           }
       });
 // petal4 end
-
-
-
   });
 
 

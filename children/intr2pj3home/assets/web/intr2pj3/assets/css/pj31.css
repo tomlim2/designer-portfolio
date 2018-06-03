@@ -45,9 +45,10 @@ h3{
 
 .bgimage{
   position: absolute;
+  left: -10px;
   width: 6600px;
   height: 768px;
-  background-image: url(../img/bg0.png);
+  background-image: url(../img/bg0.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -253,9 +254,9 @@ h3{
   left: 100px;
   top: 53%;
   margin-top: -296px;
-  width: 1088px;
+  width: 1096px;
   height: 542px;
-  background-image: url(../img/test6.png);
+  background-image: url(../img/test6.svg);
   z-index: 6;
 }
 
@@ -277,9 +278,9 @@ h3{
 .petal2{
   left: 100px;
   top: 44px;
-  width: 856px;
+  width: 858px;
   height: 720px;
-  background-image: url(../img/test5.png);
+  background-image: url(../img/test5.svg);
   z-index: 4;
 }
 
@@ -289,7 +290,7 @@ h3{
   margin-left: -840px;
   width: 1505px;
   height: 1770px;
-  background-image: url(../img/test4.png);
+  background-image: url(../img/test4.svg);
   z-index: 3;
 }
 
@@ -298,6 +299,6 @@ h3{
   top: 34px;
   width: 1000px;
   height: 978px;
-  background-image: url(../img/test3.png);
+  background-image: url(../img/test3.svg);
   z-index: 2;
 }
