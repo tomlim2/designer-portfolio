@@ -13,26 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="../../assets/js/jsver8.js"></script>
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  <script>
-  $(document).ready(function(){
-    $(".v-pl1").click(function(){
-      $(this).hide();
-      $(".v-ps1").show();
-      $("#video1")[0].play();
-    });
 
-    $(".v-ps1").click(function(){
-      $(this).hide();
-      $(".v-pl1").show();
-      $("#video1")[0].pause();
-    });
-
-    $("#video1").on('ended',function(){
-      $(".v-pl1").show();
-      $(".v-ps1").hide();
-    });
-  });
-  </script>
 </head>
 <body>
   <nav id="nav">
@@ -91,8 +72,9 @@
             <img class='pj-img' src="assets/img/img_square_4.png" alt="">
           </div>
           <div class="aa1">
-            <img class='pj-img' src="assets/img/img_thumb2.gif" alt="">
+            <video class='pj-img' src="assets/video/mv1115.mov" autoplay loop muted poster="assets/img/img_square_1.png"></video>
           </div>
+
           <div class="aa2">
             <img class='pj-img' src="assets/img/img_finding_1.jpg" alt="">
           </div>
@@ -208,13 +190,21 @@
         <section class="section-wrapper prevNext">
           <div  id="project-box-2c" class="">
             <div class="prePage">
-              <a href="../mo1/index.html">
+              <a href="../concept2017/index.html">
                 <img class='pj-img' src="../mo1/img_thumb.gif" alt="">
               </a>
             </div>
             <div class="nextPage">
+<<<<<<< HEAD
+<<<<<<< HEAD
               <a href="../exppj3/index.html">
+                <img class='pj-img' src="../exppj3/img_thumb.gif" alt="">
+=======
+=======
+>>>>>>> parent of a269afd... af
+              <a href="../intr2pj3home/index.html">
                 <img class='pj-img' src="../exppj3/img_thumb4.png" alt="">
+>>>>>>> parent of a269afd... af
               </a>
             </div>
           </div>
