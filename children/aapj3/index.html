@@ -4,295 +4,183 @@
 <head>
   <title>brain bot</title>
   <meta charset="utf-8" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800" rel="stylesheet">
-
-  <link rel="stylesheet" href="../../assets/css/mycss0-ver6.css" type="text/css" media="screen">
-
-  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
+  <link rel="stylesheet" href="../../assets/css/loadFont.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="../../assets/css/mycss-ver8.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="../../assets/css/mycss-pj.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="assets/css/grid.css" type="text/css" media="screen">
+  <link rel="icon" href="../../favicon.gif" type="image/gif" sizes="30x30">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   <script type="text/javascript" src="../../assets/js/myscript.js"></script>
-
   <style>
   /* Invert Version Sets  */
-  .logo-name{
-    fill: #f1f2f2;
-  }
-
-  body{
-    background-color: black;
-    color: white;
-  }
-
-  .buttons{
-    background-color: white;
-  }
-  #linkbtn{
-    color: black;
-  }
-
-  #page-2{
-    background-color: black;
-  }
-
-  .bigDeco{
-    background-color: black;
-  }
-  /* End Invert Version Sets */
-
-  /* Ver6 Sets*/
-  .parallax-hero{
-    background-image: url(assets/img/img_hero_1.gif);
-  }
-
-  .headline{
-    color: white;
-  }
-
-  .deco-box{
-    background: white;
-  }
-
-  .video-icon{
-    /* color: white;
-    background-color: #406eb3; */
-    filter: drop-shadow(.1em .1em 0px white);
-  }
-
-  .video-icon:hover{
-    /* color: black;
-    filter: drop-shadow(6px 6px 0px rgba(250,227,189,1)) drop-shadow(-6px -6px 0px rgba(250,227,189,1)); */
-  }
-
-  #img-link:hover{
-
-  }
-  /* End Ver6 Sets */
-
   </style>
-
-  <script>
-  $(document).ready(function(){
-    $(".playbttn").click(function(){
-
-      $(this).hide();
-      $(".psbttn").show();
-      $("#mv1115")[0].play();
-
-    });
-
-    $(".psbttn").click(function(){
-      $(this).hide();
-      $(".playbttn").show();
-      $("#mv1115")[0].pause();
-
-    });
-
-    $("#mv1115").on('ended',function(){
-
-      $(".playbttn").show();
-      $(".psbttn").hide();
-
-    });
-  });
-  </script>
-
-
 </head>
 
 <body>
-  <!-- Page Wrapper -->
-  <div id="page">
-    <!-- Navbar -->
-    <nav class="headerNav">
-        <a href="../../index.html">
-          <div class="logobox">
-            <div class="logospinning">
-              <svg class="logo1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.96 96.92">
-                <polygon class="" points="0 32.31 0 96.92 55.95 64.61 55.95 0 0 32.31"/>
-              </svg>
-            </div>
+  <nav id="nav">
+     <a href="../../index.html"><span id="menu" class="home">home</span></a> |
+     <a href="../../index.html"><span id="logo">about: Tom</span></a>
+  </nav>
+  <div class="pj-title">
+       <h1>BrainBot</h1>
+       <h2>Coding Drawing Rendering</h2>
+   </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="hero-wrapper full-screen">
+      <div class="hero-img full-screen"></div>
+    </div>
+    <div id="page-wrapper-2">
+      <section class="section-wrapper">
+        <div id="project-box-2c">
+          <div class="description">
+            <p>
+              Processing art; Generating unlimitied unique brains
+            </p>
 
-            <svg class="logo-name" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.04 47.47">
-              <title>logo-name</title>
-                <path class="name name-t" d="M8.33,21.57H4.24V4.13H0V.56H12.57V4.13H8.33Z"/>
-                <path class="name name-o" d="M25.23,22.13c-6.41,0-10.4-4.9-10.4-11.09S19,0,25.23,0,35.62,4.79,35.62,11,31.64,22.13,25.23,22.13ZM25.23,4c-3.88,0-6.16,3.43-6.16,6.83,0,3.23,1.61,7.22,6.16,7.22s6.16-4,6.16-7.22C31.39,7.47,29.1,4,25.23,4Z"/>
-                <path class="name name-m1" d="M54.24,8.53h-.06L49.42,21.85H48L43.4,8.53h-.06l-1.87,13H37.35L40.89,0h2.9L49,13.85,53.93,0h3L60,21.57H55.91Z"/>
-
-                <polygon class="name name-l" points="11.73 43.62 6.79 43.62 5.93 43.62 5.93 26.17 1.84 26.17 1.84 47.19 6.79 47.19 11.73 47.19 12.57 47.19 12.57 43.62 11.73 43.62"/>
-                <polygon class="name name-i" points="31.84 29.74 31.84 26.17 27.27 26.17 23.18 26.17 18.62 26.17 18.62 29.74 23.18 29.74 23.18 43.62 18.62 43.62 18.62 47.19 23.18 47.19 27.27 47.19 31.84 47.19 31.84 43.62 27.27 43.62 27.27 29.74 31.84 29.74"/>
-                <path class="name name-m2" d="M54.24,34.14h-.06L49.42,47.47H48L43.4,34.14h-.06l-1.87,13H37.35l3.54-21.58h2.9L49,39.47l5-13.86h3L60,47.19H55.91Z"/>
-            </svg>
           </div>
-        </a>
-    </nav>
-    <!-- /End Navbar -->
+          <div class="menufesto">
+            <img class='pj-img' src="assets/img/imgRender0.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="section-wrapper">
+        <div id="project-box-3c">
+          <div class="">
+            <img class='pj-img' src="assets/img/imgRender1.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/imgRender2.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/imgRender3.png" alt="">
+          </div>
+          <div class="r1">
+            <img class='pj-img' src="assets/img/imgRender5_large.jpg" alt="">
+          </div>
+          <div class="r2">
+            <img class='pj-img' src="assets/img/imgRender4.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/imgRender6.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/imgRender7.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/imgRender8.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/imgRender9.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/imgRender10.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="section-wrapper">
+        <div id="project-box-3c">
+          <div class="w1">
+            <a href="assets/yourgalaxy/index.html">
+              <img class='pj-img' src="assets/img/img_web_1b.png" alt="">
+            </a>
+          </div>
+          <div class="w2">
+            <img class='pj-img' src="assets/img/img_web_2.png" alt="">
+          </div>
+          <div class="w3">
+            <img class='pj-img' src="assets/img/img_web_3.png" alt="">
+          </div>
+        </div>
+      </section>
 
-    <!-- Hero Image Section -->
-    <section id="home-section" class="home-section full-screen">
-      <div class="parallax-hero full-screen home-image" data-top-bottom="transform: translate3d(0px, -200px, 0px)">
-        <div class="hs-content">
-          <div class="hs-content-inner">
-            <div id="headline" class="headline">
-              <h2 class="mainhead">
-                Brain Bot
-              </h2>
-
-              <h3 class="subhead">
-                Drawing with coding;
-              </h3>
+      <section class="section-wrapper">
+        <div class="section-title">
+          <h3>+ process</h3>
+        </div>
+        <div id="project-box-4c">
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d01.gif" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d02.gif" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d03.gif" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d04.gif" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d04.gif" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d04a0.gif" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d04a1.gif" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d04a2.gif" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d05.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d06.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d06a.gif" alt="">
+          </div>
+          <div class="pr1">
+            <img class='pj-img' src="assets/img/process/img_d06b.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d07.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d08.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d09.png" alt="">
+          </div>
+          <div class="pr2">
+            <img class='pj-img' src="assets/img/process/img_d10.png" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d10a.jpg" alt="">
+          </div>
+          <div class="">
+            <img class='pj-img' src="assets/img/process/img_d10b.jpg" alt="">
+          </div>
+          <div class="pr3">
+            <img class='pj-img' src="assets/img/process/img_d11.png" alt="">
+          </div>
+        </section>
+        <section class="section-wrapper prevNext">
+          <div  id="project-box-2c" class="">
+            <div class="prePage">
+              <a href="../exppj3/index.html">
+                <img class='pj-img' src="../exppj3/img_thumb.gif" alt="">
+              </a>
+            </div>
+            <div class="nextPage">
+              <a href="../ani1/index.html">
+                <img class='pj-img' src="../ani1/img_thumb.gif" alt="">
+              </a>
             </div>
           </div>
         </div>
+      </section>
+    </div>
+    <footer class="footer-section">
+      <div class="footer-text">
+        E-mail: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
+        <br>© Tom Lim 2018 --- Development : Tom Lim
       </div>
-    </section>
-    <!-- End Hero Image Section -->
-
-    <!-- Page2 -->
-    <div id="page-2">
-      <!-- Project Section -->
-      <section id="project-info-section" class="project-info-section section6">
-        <div class="container">
-          <div class="section-title">
-            <div class="col-sm-50 bodytextB padding-bottom-30">
-              Using website as a tool to make images
-            </div>
-            <div class="col-sm-50 bodytextS">
-              Processing art
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Project info Section -->
-
-      <!-- Project work Section -->
-      <section id="project-work-section" class="project-info-section section7">
-        <div class="container">
-          <img width="100%" height="auto" class="img-responsive padding-bottom-0" src="assets/img/img_concept_1.png" alt="">
-        </div>
-        <div class="container padding-bottom-120">
-          <h3>Concept</h3>
-          <div class="bodytextB col-sm-70">
-            Generating unlimitied brains; Galaxy
-          </div>
-        </div>
-
-
-        <div class="container">
-          <h3>Galaxy Bot; Personalize</h3>
-          <a href="assets/yourgalaxy/index.html">
-            <img id="img-link" width="100%" height="auto" class="img-responsive padding-bottom-30" src="assets/img/img_web_1b.png" alt="">
-          </a>
-
-          <a href="assets/yourgalaxy/index.html">
-            <div class="video-bttns padding-bottom-120">
-              <div class="video-icon">
-                link
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="container">
-          <h3>Exmamples</h3>
-          <img width="100%" height="auto" class="img-responsive padding-bottom-30" src="assets/img/img_web_2.png" alt="">
-          <img width="100%" height="auto" class="img-responsive padding-bottom-120" src="assets/img/img_web_3.png" alt="">
-        </div>
-
-      </section>
-      <!-- End Project info Section -->
-
-      <!-- process-section -->
-      <section id="process-section" class="section6">
-        <div class="container">
-          <img width="100%" height="auto" class="col-sm-50 img-responsive padding-bottom-0" src="assets/img/process/img_d01.gif" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_d02.gif" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_d03.gif" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_d04.gif" alt="">
-          <div id="caption">
-            first time to hack canvas coding
-          </div>
-
-          <img width="100%" height="auto" class="col-sm-50 img-responsive padding-bottom-0" src="assets/img/process/img_d04a0.gif" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_d04a2.gif" alt="">
-          <div id="caption">
-            trying animation, but it was difficult to control
-          </div>
-
-          <img width="100%" height="auto" class="col-sm-50 img-responsive padding-bottom-0" src="assets/img/process/img_d05.png" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_d06.png" alt="">
-          <div id="caption">
-            go back to focus on the shape
-          </div>
-
-          <img width="100%" height="auto" class="col-sm-50 img-responsive padding-bottom-0" src="assets/img/process/img_d06a.gif" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_d06b.png" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_d08.png" alt="">
-          <img width="100%" height="auto" class="col-sm-50 img-responsive padding-bottom-0" src="assets/img/process/img_d07.png" alt="">
-          <div id="caption">
-            thanks for Jared who helped coding the color
-          </div>
-
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_d10.png" alt="">
-          <img width="100%" height="auto" class="col-sm-50 img-responsive padding-bottom-0" src="assets/img/process/img_d09.png" alt="">
-          <div id="caption">
-            thanks for Juile who said "It looks like a nerve system"
-          </div>
-
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_d10a.jpg" alt="">
-          <img width="100%" height="auto" class="col-sm-50 img-responsive padding-bottom-0" src="assets/img/process/img_d10b.jpg" alt="">
-          <div id="caption">
-            how to package?
-          </div>
-
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_wow21.png" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_wow22.png" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_wow1.png" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_wow2.png" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_wow4.png" alt="">
-          <img width="100%" height="auto" class="img-responsive col-sm-50 padding-bottom-0" src="assets/img/process/img_wow3.png" alt="">
-          <div id="caption">
-            rendering code
-          </div>
-
-        </div>
-      </section>
-      <!-- end process-section -->
-
-
-    <!-- Next section -->
-      <section id="next-section" class="next-section section6">
-          <div class="container">
-            <a href="../intr2pj3home/index.html">
-              <div class="singnav col-sm-50">
-                <div class="next-text next-left">Alexander Calder <</div>
-                <img width="100%" height="auto" class="img-responsive next-img" src="../intr2pj3home/img_thumb2.png" alt="">
-              </div>
-            </a>
-            <a href="../exppj2/index.html">
-              <div class="singnav col-sm-50">
-                <div class="next-text next-right">> aug art</div>
-                <img width="100%" height="auto" class="img-responsive next-img" src="../exppj2/img_thumb2.png" alt="">
-              </div>
-            </a>
-          </div>
-      </section>
-    <!-- End Next section -->
-
-      <footer class="footer-section section7">
-        <div class="container">
-          <div class="footer-text">
-            e-mail: <a style="color:white;"href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
-            <br>Development : Tom Lim
-            <br> © Tom Lim 2018
-          </div>
-        </div>
-      </footer>
-    </div>
-    <!-- End Page-2 -->
-
-    </div>
-    <!-- End Page Wrapper -->
+    </footer>
+  </div>
 
 </body>
 </html>
