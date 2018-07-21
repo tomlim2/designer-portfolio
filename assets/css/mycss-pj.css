@@ -49,6 +49,11 @@ nav #pj-name{
 #project-box .description{
   background: white;
 }
+
+.margin-top-gap-1em{
+  margin-top: 1em;
+}
+
 .section-title{
   padding-bottom: .5em;
   display: inline-block;
