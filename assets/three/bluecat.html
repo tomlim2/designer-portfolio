@@ -50,7 +50,7 @@
 				//
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
-				window.addEventListener( 'resize', onWindowResize, false );
+				window.addEventListener('resize',onWindowResize,false);
 
 				fillScene();
 
@@ -108,7 +108,6 @@
 				camera.updateProjectionMatrix();
 
 				renderer.setSize( window.innerWidth, window.innerHeight );
-				composer.setSize( window.innerWidth, window.innerHeight );
 			}
 
 			function onDocumentMouseMove( event ) {
