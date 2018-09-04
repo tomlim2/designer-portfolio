@@ -25,8 +25,20 @@
   }
   #myCanvas{
     border-bottom: solid rgba(10, 10, 10, 1) 2em;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 94vh;
+  }
+  #intro{
+    position: absolute;
+    width: 50%;
+    color: white;
+
+    padding: 2vw;
+    text-transform: uppercase;
+    bottom: 10vh;
   }
   </style>
 </head>
@@ -35,8 +47,14 @@
      <a href="index.html"><span id="menu" class="home here">home</span></a> |
      <a href="index.html"><span id="logo">about: Tom</span></a>
   </nav>
+  <div class="">
 
-  <iframe id='myCanvas'src="assets/three/bluecat.html" frameborder="0" allowfullscreen></iframe>
+    <iframe id='myCanvas'src="assets/three/bluecat.html" frameborder="0" allowfullscreen></iframe>
+    <div id="intro">
+      <h1>Tom's Portfolio</h1>
+    </div>
+  </div>
+
 
   <div id="page-wrapper">
     <div id="page-size">
