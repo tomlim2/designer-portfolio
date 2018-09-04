@@ -89,8 +89,9 @@
 					objLoader.setMaterials( materials );
 					objLoader.setPath( '3d/obj/lowpolyisland/' );
 					objLoader.load( '3_lowpolyisland2_forweb.obj', function ( object ) {
-						object.position.set(-10,-5,0);
-						object.scale.set(30,30,30);
+						object.position.set(20,-15,0);
+						object.rotation.set(0,180*Math.PI/180,0);
+						object.scale.set(40,40,40);
 						object1.add( object );
 					});
 				});
@@ -124,8 +125,8 @@
 
 				camera.lookAt( scene.position );
 
-				var time = Date.now();
-				object1.rotation.y += -0.005;
+				// var time = Date.now();
+				// object1.rotation.y += -0.005;
 				renderer.render( scene, camera );
 			}
 
