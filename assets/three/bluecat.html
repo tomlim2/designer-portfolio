@@ -48,7 +48,7 @@
 				container.appendChild( renderer.domElement );
 
 				//
-				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+				// document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
 				window.addEventListener('resize',onWindowResize,false);
 
@@ -89,24 +89,18 @@
 					objLoader.setMaterials( materials );
 					objLoader.setPath( '3d/obj/lowpolyisland/' );
 					objLoader.load( '3_lowpolyisland2_forweb.obj', function ( object ) {
-
 						object.position.set(-10,-5,0);
 						object.scale.set(30,30,30);
 						object1.add( object );
-
 					});
-
 				});
 			}
 
-			function onWindowResize() {
-
+			function onWindowResize(){
 				windowHalfX = window.innerWidth / 2;
 				windowHalfY = window.innerHeight / 2;
-
 				camera.aspect = window.innerWidth / window.innerHeight;
 				camera.updateProjectionMatrix();
-
 				renderer.setSize( window.innerWidth, window.innerHeight );
 			}
 
