@@ -120,13 +120,13 @@
 			}
 
 			function render() {
-				camera.position.x += ( mouseX - camera.position.x ) * .06;
-				camera.position.y += ( - mouseY - camera.position.y ) * .06;
+				// camera.position.x += ( mouseX - camera.position.x ) * .06;
+				// camera.position.y += ( - mouseY - camera.position.y ) * .06;
 
 				camera.lookAt( scene.position );
 
-				// var time = Date.now();
-				// object1.rotation.y += -0.005;
+				var time = Date.now();
+				object1.rotation.y += -0.005;
 				renderer.render( scene, camera );
 			}
 
