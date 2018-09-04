@@ -31,6 +31,7 @@
     height: 94vh;
     overflow: hidden;
     border-bottom: solid rgba(10, 10, 10, 1) 2em;
+    background: black;
   }
   #intro{
     position: absolute;
@@ -41,6 +42,15 @@
     text-transform: uppercase;
     bottom: 8vh;
   }
+  #myCanvas{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    left: 50%;
+    top: 50%;
+    margin-left: -960px;
+    margin-top: -540px;
+  }
   </style>
 </head>
 <body>
@@ -50,7 +60,7 @@
   </nav>
   <div class="container">
 
-    <iframe id='myCanvas' width="100%" height="100%" src="assets/three/bluecat.html" frameborder="0" allowfullscreen></iframe>
+    <iframe id='myCanvas' src="assets/three/bluecat.html" frameborder="0" allowfullscreen></iframe>
     <div id="intro">
       <h1>Tom's Portfolio</h1>
     </div>
