@@ -23,28 +23,23 @@
       filter: hue-rotate(360deg);
     }
   }
-  .container{
+  #container{
     position: relative;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 94vh;
-    overflow: hidden;
-    border-bottom: solid rgba(10, 10, 10, 1) 2em;
-    background: black;
+    /* border-bottom: solid rgba(10, 10, 10, 1) 2em; */
   }
-  #intro{
+  #intro_text{
     position: absolute;
+    z-index: 1000;
     width: 50%;
     color: white;
 
     padding: 1vw;
     text-transform: uppercase;
-    bottom: 0vh;
+    bottom: 5vh;
   }
-  #myCanvas{
-    position: relative;
-  }
+
   </style>
 </head>
 <body>
@@ -52,10 +47,14 @@
      <a href="index.html"><span id="menu" class="home here">home</span></a> |
      <a href="index.html"><span id="logo">about: Tom</span></a>
   </nav>
-  <div class="container">
+  <div id="myCanvas">
+    <div id="container"></div>
+    <script src="assets/js/three/build/three.js"></script>
+    <script src="assets/js/three/loaders/OBJLoader.js"></script>
+    <script src="assets/js/three/loaders/MTLLoader.js"></script>
+    <script src="assets/js/three/bluecat.js"></script>
 
-    <iframe id='myCanvas' width="100%" height="100%" src="assets/three/bluecat.html" frameborder="0"></iframe>
-    <div id="intro">
+    <div id="intro_text">
       <h1>Tom's Portfolio</h1>
     </div>
   </div>
