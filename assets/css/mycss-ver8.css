@@ -1,6 +1,11 @@
 /*general*/
-::selection{
-  background: gray;
+::-moz-selection {
+   background-color: gray;
+   color: #fff;
+}
+::selection {
+    background-color: gray;
+    color: #fff;
 }
 body {
   font-family: 'fs-bk';
