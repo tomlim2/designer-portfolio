@@ -1,5 +1,6 @@
 var container;
 var camera, scene, renderer;
+var particleLight;
 var mouseX = 0, mouseY = 0;
 var windowHalfX = window.innerWidth / 2;
 var windowHalfY = window.innerHeight / 2;
@@ -34,13 +35,13 @@ function fillScene(){
   camera.position.z = 250;
 
   // scene
-
-  var pointLight2 = new THREE.PointLight( 0xffffff * Math.random(), .9 );
-  pointLight2.position.set(-200,200,200);
-  scene.add( pointLight2 );
-
+  particleLight = new THREE.Object3D();
   var pointLight = new THREE.PointLight( 0xffffff, 0.8 );
-  camera.add( pointLight );
+  var prticle = new THREE.Mesh( new THREE.SphereBufferGeometry( 1, 8, 8 ), new THREE.MeshBasicMaterial( { color: 0xffffff } ) );
+  particleLight.add(pointLight, prticle);
+  scene.add( particleLight );
+
+  // camera.add( new THREE.AmbientLight( 0x222222 )  );
   scene.add( camera );
 
   // texture
@@ -95,7 +96,10 @@ function render() {
 
   camera.lookAt( scene.position );
 
-  // var time = Date.now();
+  var timer = Date.now() * 0.0001;
+  particleLight.position.x = Math.sin( timer * 7 ) * 80;
+  particleLight.position.y = Math.cos( timer * 5 ) * 160;
+  particleLight.position.z = Math.cos( timer * 3 ) * 80;
   // object1.rotation.y += -0.005;
   renderer.render( scene, camera );
 }
