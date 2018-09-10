@@ -20,8 +20,11 @@ function init() {
   renderer = new THREE.WebGLRenderer();
   renderer.setPixelRatio( window.devicePixelRatio );
   renderer.setSize( window.innerWidth, window.innerHeight*0.94 );
-  renderer.gammaInput = true;
-  renderer.gammaOutput = true;
+  // renderer.gammaInput = true;
+  // renderer.gammaOutput = true;
+  // renderer.shadowMap.enabled = true;
+  // renderer.toneMapping = THREE.ReinhardToneMapping;
+
   container.appendChild( renderer.domElement );
   //
   document.addEventListener( 'mousemove', onDocumentMouseMove, false );
@@ -74,7 +77,7 @@ function fillScene(){
   particleLight3.add( new THREE.Mesh( new THREE.SphereBufferGeometry( 1, 8, 8 ), new THREE.MeshBasicMaterial( { color: 0xf7592a } ) ) );
   scene.add( particleLight3 );
 
-  // camera.add( new THREE.AmbientLight( 0x222222 )  );
+  // camera.add( new THREE.AmbientLight( 0x222222 ) );
   scene.add( camera );
 
   // texture
