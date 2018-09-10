@@ -63,17 +63,16 @@ function fillScene(){
 
   // scene
   particleLight1 = new THREE.Object3D();
-  var pointLight = new THREE.PointLight( 0x14c0b2, 1.6, 50, 0.8  );
+  var pointLight = new THREE.PointLight( 0x14c0b2, 1.6, 100, 0.8  );
   var prticle = new THREE.Mesh( new THREE.SphereBufferGeometry( 1, 8, 8 ), new THREE.MeshBasicMaterial( { color: 0x14c0b2 } ) );
-  particleLight1.position.set(0,0,50);
   particleLight1.add(pointLight, prticle);
   scene.add( particleLight1 );
   //
-  particleLight2 = new THREE.PointLight( 0x0040ff, 1.6, 50, 0.8 );
+  particleLight2 = new THREE.PointLight( 0x0040ff, 1.6, 100, 0.8 );
   particleLight2.add( new THREE.Mesh( new THREE.SphereBufferGeometry( 1, 8, 8 ), new THREE.MeshBasicMaterial( { color: 0x0040ff } ) ) );
   scene.add( particleLight2 );
 
-  particleLight3 = new THREE.PointLight( 0xf7592a, 1.6, 50, 0.8 );
+  particleLight3 = new THREE.PointLight( 0xf7592a, 1.6, 100, 0.8 );
   particleLight3.add( new THREE.Mesh( new THREE.SphereBufferGeometry( 1, 8, 8 ), new THREE.MeshBasicMaterial( { color: 0xf7592a } ) ) );
   scene.add( particleLight3 );
 
