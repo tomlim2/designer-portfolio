@@ -87,14 +87,14 @@ function fillScene(){
 
   var mtlLoader = new THREE.MTLLoader();
   mtlLoader.setPath( 'assets/js/three/3d/' );
-  mtlLoader.load( '3_lowpolyisland4_forweb.mtl', function( materials ) {
+  mtlLoader.load( '3_lowpolyisland2_forweb_v3.mtl', function( materials ) {
 
     materials.preload();
 
     var objLoader = new THREE.OBJLoader();
     objLoader.setMaterials( materials );
     objLoader.setPath( 'assets/js/three/3d/' );
-    objLoader.load( '3_lowpolyisland4_forweb.obj', function ( object ) {
+    objLoader.load( '3_lowpolyisland2_forweb_v3.obj', function ( object ) {
       object.position.set(60,-20,0);
       object.rotation.set(0,180*Math.PI/180,0);
       object.scale.set(85,85,85);
