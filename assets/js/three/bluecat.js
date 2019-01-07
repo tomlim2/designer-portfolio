@@ -28,7 +28,8 @@ function init() {
   container.appendChild( renderer.domElement );
   //
   document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-
+  document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+  document.addEventListener( 'touchmove', onDocumentTouchMove, false );
   window.addEventListener('resize', onWindowResize,false);
 
   fillScene();
@@ -117,19 +118,27 @@ function onDocumentMouseMove( event ) {
   mouseX = (  event.clientX - windowHalfX  )/2;
   mouseY = (  event.clientY - windowHalfY  )/2;
 }
-
-//
-
+function onDocumentTouchStart( event ) {
+  if ( event.touches.length === 1 ) {
+    event.preventDefault();
+    mouseX = event.touches[ 0 ].pageX - windowHalfX;
+    mouseY = event.touches[ 0 ].pageY - windowHalfY;
+  }
+}
+function onDocumentTouchMove( event ) {
+  if ( event.touches.length === 1 ) {
+    event.preventDefault();
+    mouseX = event.touches[ 0 ].pageX - windowHalfX;
+    mouseY = event.touches[ 0 ].pageY - windowHalfY;
+  }
+}
 function animate() {
   requestAnimationFrame( animate );
   render();
-
 }
-
 function render() {
   camera.position.x += ( mouseX - camera.position.x ) * .06;
   camera.position.y += ( - mouseY - camera.position.y ) * .06;
-
   camera.lookAt( scene.position );
 
   var timer = Date.now() * 0.00012;
