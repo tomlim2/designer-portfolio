@@ -9,10 +9,12 @@
   <link rel="stylesheet" href="assets/css/loadFont.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="assets/css/mycss-ver8.css" type="text/css" media="screen" />
   <script type="text/javascript" src="assets/js/mainpage.js"></script>
-  <script type="text/javascript" src="assets/js/myscript.js"></script>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   <style>
+  .parallax-hero{
+    background-image:  url("assets/imgs/img_hero_5.png");
+    background-blend-mode: multiply;
+  }
   @keyframes parallaxprss {
     0%{
       filter: hue-rotate(0deg);
@@ -29,7 +31,7 @@
   }
   #intro_text{
     position: absolute;
-    z-index: 10;
+    z-index: 1000;
     width: 50%;
     color: white;
 
@@ -42,31 +44,8 @@
 </head>
 <body>
   <nav id="nav">
-    <a href="index.html"><span id="menu" class="home">home</span></a> |
-    <a><span id="logo">about: Tom</span></a>
-    <section class='about-section'>
-      <div class="about-wrapper">
-        <div class="a-s about">
-          <p>
-            Hi, I am Tom, a visual designer living in San Francisco.
-            <br>
-            I make websites, 2D/3D motion, and branding.
-            <br><br>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank" >
-              tomandlim@gmail.com
-            </a>
-            <br>
-            <a href="https://www.instagram.com/tommlimm/" target="_blank" style='margin-top:1.5em'>
-              <img src="assets/imgs/Instagram_simple_icon.svg" alt="">
-            </a>
-          </p>
-        </div>
-        <div class="a-s contact">
-          <p>
-          </p>
-        </div>
-      </div>
-    </section>
+     <a href="index.html"><span id="menu" class="home here">home</span></a> |
+     <a href="index.html"><span id="logo">about: Tom</span></a>
   </nav>
   <div id="myCanvas">
     <div id="container"></div>
@@ -95,43 +74,28 @@
   <div id="page-wrapper">
     <div id="page-size">
       <section id="portfolio-box">
-        <a href="children/cp1/index.html">
-          <div class="pt pt9">
-            <img class="pt-thumb" src="https://lh3.googleusercontent.com/-bsXtDU7fq40/XDNefg0WK5I/AAAAAAAAAX0/vNDrMo-NDCYHL5ScW5oWAeNscuHAsRKgQCL0BGAs/w1060-d-h596-rw/Untitled-1.gif" alt="portfolio">
-            <div class="pt-info-wrapper">
-              <div class="pt-info">
-                <h1 class="info-title">
-                  Climate Change
-                </h1>
-                <h2 class="info-detail">
-                  Infographic
-                </h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="children/vrcube/index.html">
-          <div class="pt pt9">
-            <img class="pt-thumb" src="children/vrcube/img_thumb.gif" alt="portfolio">
-            <div class="pt-info-wrapper">
-              <div class="pt-info">
-                <h1 class="info-title">
-                  CUBE
-                </h1>
-                <h2 class="info-detail">
-                  Interactive Virtual Reality Experience
-                </h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="children/3dsw/index.html">
-        <div class="pt pt10">
-          <img class="pt-thumb" src="https://lh3.googleusercontent.com/-TMX06icxyfg/XCQKK_kPv0I/AAAAAAAAANg/MdbSR2Si9i8JSYI7F3TwBCu3MkZA6gd_wCJoC/w1060-h596-n/img_thumb.gif" alt="portfolio">
+        <a href="children//index.html">
+        <div class="pt pt9">
+          <img class="pt-thumb" src="children/intr0/gif_thumb.gif" alt="portfolio">
           <div class="pt-info-wrapper">
             <div class="pt-info">
               <h1 class="info-title">
-                36 Days of type
+                Coming soon
+              </h1>
+              <h2 class="info-detail">
+                WebGL
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children/3dsw/index.html">
+        <div class="pt pt10">
+          <img class="pt-thumb" src="children/3dsw/img_thumb.gif" alt="portfolio">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Testing 3D
               </h1>
               <h2 class="info-detail">
                 Personal Project
@@ -150,6 +114,21 @@
               </h1>
               <h2 class="info-detail">
                 Coding Drawing Rendering
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children/ani1/index.html">
+        <div class="pt pt12">
+          <img class="pt-thumb" src="children/ani1/img_thumb.gif" alt="portfolio">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Animation
+              </h1>
+              <h2 class="info-detail">
+                Hand-drawing
               </h2>
             </div>
           </div>
@@ -246,6 +225,29 @@
           </div>
         </div>
         </a>
+      </section>
+      <section id='about-section'>
+        <div class="about-wrapper">
+          <div class="a-s about">
+            ABOUT
+            <br>-<br>
+            <p>
+              Hi, I am Tom, a graphic designer living in San Francisco.
+              <br>
+              I make websites, 2D/3D motion, and branding.
+              <br><br>
+              :>
+            </p>
+          </div>
+          <div class="a-s contact">
+            CONTACT
+            <br>-<br>
+            <p>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
+            </p>
+
+          </div>
+        </div>
       </section>
     </div>
     <footer class="footer-section">
