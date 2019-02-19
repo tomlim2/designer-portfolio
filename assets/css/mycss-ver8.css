@@ -66,7 +66,7 @@ a img{
 
 a:hover{
   color: rgba(180, 180, 180, 1);
-  text-decoration: underline;
+  text-decoration: none;
 }
 h1{
   margin: 0;
