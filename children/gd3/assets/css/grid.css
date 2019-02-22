@@ -3,10 +3,10 @@
 }
 
 #project-box-2c div, #project-box-3c div,#project-box-4c div{
-  background-color: #e9e3c5;
+  /* background-color: #e9e3c5; */
 }
 #project-box-2c div:nth-child(odd), #project-box-3c div:nth-child(odd), #project-box-4c div:nth-child(odd){
-  background-color: #eae5da;
+  /* background-color: #eae5da; */
 }
 .photostyle{
   display: grid;

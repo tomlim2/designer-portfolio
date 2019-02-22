@@ -9,7 +9,8 @@
 }
 body {
   font-family: 'fs-bk';
-  color: rgba(10, 10, 10, 1);
+  color: rgba(240, 240, 240, 1);
+  background-color: rgba(0, 0, 0, 1);
   margin: 0px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -57,7 +58,7 @@ div{
 a {
   text-decoration: none;
   transform-origin: center;
-  color: rgba(10, 10, 10, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 a img{
@@ -90,7 +91,7 @@ h3{
   font-weight: normal;
   font-size: 1em;
   letter-spacing: 0.05em;
-  color: rgba(10, 10, 10, 1);
+  color: rgba(240, 240, 240, 1);
 }
 h4{
 
@@ -146,7 +147,7 @@ nav{
 }
 #page-wrapper-2{
   position: relative;
-  background-color: white;
+  background-color: rgba(0,0,0,1);
 }
 #portfolio-box{
   padding: 1em;
@@ -184,6 +185,7 @@ nav{
   transform: scale(1.1);
 }
 .pt-info{
+  color: rgba(235,235,235,1);
   position: relative;
   top: 50%;
   margin-top: -20px;
@@ -227,6 +229,7 @@ nav{
   }
 
   .pt:hover .pt-info-wrapper{
+
     transform: scale(1);
     opacity: 1;
   }
