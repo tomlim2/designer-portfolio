@@ -163,6 +163,7 @@ nav{
   overflow: hidden;
   position: relative;
 }
+
 .pt-thumb{
   display: block;
   width: 100%;
@@ -229,7 +230,6 @@ nav{
   }
 
   .pt:hover .pt-info-wrapper{
-
     transform: scale(1);
     opacity: 1;
   }

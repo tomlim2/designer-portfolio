@@ -46,11 +46,15 @@ nav #pj-name{
 #project-box-2c div,#project-box-3c div,#project-box-4c div{
   overflow: hidden;
 }
-#project-box-2c,#project-box-3c,#project-box-4c{
+#project-box-2c,#project-box-3c,#project-box-4c,#project-box-storyboard{
   display: grid;
   grid-template-columns: repeat(1,1fr);
   grid-auto-rows: auto;
   grid-gap: 1em;
+}
+#project-box-storyboard{
+  background-color: rgba(255,255,255,1);
+  border-radius: 5px;
 }
 
 #project-box .description{
@@ -133,9 +137,13 @@ nav #pj-name{
     grid-template-columns: repeat(2,1fr);
     grid-auto-rows: calc(48vw/16*9);
   }
-  #project-box-3c{
+  #project-box-3c, #project-box-storyboard{
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: calc(32vw/16*9);
+  }
+  #project-box-storyboard{
+    padding: 3em;
+
   }
   #project-box-4c{
     grid-template-columns: repeat(4,1fr);

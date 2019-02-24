@@ -4,11 +4,10 @@
 }
 
 #project-box-2c div, #project-box-3c div,#project-box-4c div{
-  /* background-color: rgba(0,0,0,.8); */
   color: white;
 }
+
 #project-box-2c div:nth-child(odd), #project-box-3c div:nth-child(odd), #project-box-4c div:nth-child(odd){
-  /* background-color: rgba(0,0,0,1); */
   color: white;
 }
 
