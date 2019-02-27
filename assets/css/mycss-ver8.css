@@ -8,7 +8,7 @@
     color: #fff;
 }
 body {
-  font-family: 'fs-bk';
+  font-family: 'ft-body';
   color: rgba(240, 240, 240, 1);
   background-color: rgba(0, 0, 0, 1);
   margin: 0px;
@@ -71,7 +71,7 @@ a:hover{
 }
 h1{
   margin: 0;
-  font-family: 'fs-m';
+  font-family: 'ft-h2';
   font-weight: normal;
   font-size: 3.2em;
   letter-spacing: 0.05em;
@@ -79,7 +79,7 @@ h1{
 }
 h2{
   margin: 0;
-  font-family: 'fs-h';
+  font-family: 'ft-h2';
   font-weight: normal;
   font-size: 0.9em;
   letter-spacing: 0.07em;
@@ -87,7 +87,7 @@ h2{
 }
 h3{
   margin: 0;
-  font-family: 'fs-h';
+  font-family: 'ft-h2';
   font-weight: normal;
   font-size: 1em;
   letter-spacing: 0.05em;
@@ -97,7 +97,7 @@ h4{
 
 }
 h5 {
-  font-family: 'fs-m';
+  font-family: 'ft-h2';
   font-size: 1em;
   letter-spacing: 0.02em;
   margin: 0;
@@ -105,7 +105,7 @@ h5 {
 }
 
 .strong{
-  font-family: 'fs-h';
+  opacity: 0.8;
 }
 
 /* end general */
@@ -115,7 +115,7 @@ nav{
   width: 100%;
   padding: 1em;
   z-index: 100;
-  font-family: 'fs-m';
+  font-family: 'ft-h2';
   font-size: 1em;
   letter-spacing: 0.05em;
 
@@ -213,7 +213,7 @@ nav{
 }
 .about-wrapper{
   padding-top: 1em;
-  font-family: 'fs-m';
+  font-family: 'ft-h2';
   border-top: solid rgba(10, 10, 10, 1) .1em;
   grid-template-columns: repeat(1,1fr);
   display: grid;
