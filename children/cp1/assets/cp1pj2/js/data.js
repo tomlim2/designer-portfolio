@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  $('.Bttn').click(function(){
+    $('.container').toggleClass('hidden');
+  });
   $.ajax({
       type: "GET",
       url: "csv/extreme_data.csv",

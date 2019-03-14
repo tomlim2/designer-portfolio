@@ -15,6 +15,7 @@
         height: 100vh;
         position: absolute;
         pointer-events: none;
+        transition: opacity 400ms linear;
       }
       canvas{
         cursor: grab;
@@ -70,15 +71,39 @@
         font-size: .7em;
         text-align: right;
       }
+      .Bttn{
+        position: absolute;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        margin-left: -16px;
+        bottom: 100px;
+        border: 6px white double;
+        border-radius: 50%;
+        display:inline;
+        padding: 4px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        cursor: pointer;
+        opacity: 0.8;
+        background-color: gray;
+      }
+      .hidden{
+        opacity: 0;
+      }
     </style>
   </head>
   <body>
+    <div class="Bttn">
+
+    </div>
     <div class="container">
       <div class="title">
         Something is happening;
         <br>
         <span id="emtext">Gobal Land Temperature Anomalies</span>
-
+        <br><br>
       </div>
       <div class="grids">
         <div class="grid">
