@@ -14,7 +14,6 @@ function processData(allText) {
   var allTextLines = allText.split(/\r\n|\n/);
   var headers = allTextLines[1].split(',');
 
-
   for (var i=2; i<allTextLines.length; i++) {
       var data = allTextLines[i].split(',');
       if (data.length == headers.length) {
