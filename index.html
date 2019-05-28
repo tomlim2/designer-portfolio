@@ -8,7 +8,6 @@
   <link rel="icon" href="favicon.gif" type="image/gif" sizes="30x30">
   <link rel="stylesheet" href="assets/css/loadFont.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="assets/css/mycss-ver8.css" type="text/css" media="screen" />
-  <script type="text/javascript" src="assets/js/mainpage.js"></script>
   <script type="text/javascript" src="assets/js/myscript.js"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,8 +39,9 @@
 </head>
 <body>
   <nav id="nav">
-    <a href="index.html"><span id="menu" class="home">home</span></a> |
-    <a><span id="logo">about: Tom</span></a>
+    <a href="index.html"><img id="logo" src="assets/imgs/logo.svg" alt=""></a>
+    <a href="index.html"><span id="menu" class="home"></span></a> |
+    <a><span id="menu-about"></span></a>
     <section class='about-section'>
       <div class="about-wrapper">
         <div class="a-s about"></div>
@@ -49,162 +49,212 @@
       </div>
     </section>
   </nav>
-
-
   <div id="page-wrapper">
+    <div id="hero-container">
+      <div class="side-info side-left">
+        Demo Reel
+      </div>
+      <div class="side-info side-right">
+        2019
+      </div>
+      <iframe id='video-full-screen' src="https://player.vimeo.com/video/323372233" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+    </div>
     <div id="page-size">
-      <section id="portfolio-box">
-        <a href="children/concept2017/index.html">
-        <div class="pt pt1">
-          <img class="pt-thumb" src="children/concept2017/img_thumb.gif" alt="">
-          <div class="pt-info-wrapper">
-            <div class="pt-info">
-              <h1 class="info-title">
-                Curiosity
-              </h1>
-              <h2 class="info-detail">
-                Key Visuals
-              </h2>
-            </div>
-          </div>
+      <!-- motion -->
+      <section id="portfolio-scetion">
+        <div class="sort">
+          Motion Graphics
         </div>
-        </a>
-        <a href="children/vrcube/index.html">
-          <div class="pt pt9">
-            <img class="pt-thumb" src="children/vrcube/img_thumb.gif" alt="portfolio">
-            <div class="pt-info-wrapper">
-              <div class="pt-info">
-                <h1 class="info-title">
-                  CUBE
-                </h1>
-                <h2 class="info-detail">
-                  Interactive Virtual Reality Experience
-                </h2>
+        <div class="content">
+          <div id="portfolio-box">
+            <a href="children/3dsw/index.html">
+            <div class="pt pt10">
+              <img class="pt-thumb" src="children/3dsw/img_thumb.gif" alt="portfolio">
+              <div class="pt-info-wrapper">
+                <div class="pt-info">
+                  <h1 class="info-title">
+                    36 Days of type
+                  </h1>
+                  <h2 class="info-detail">
+                    Personal Project
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
-        </a>
-        <a href="children/3dsw/index.html">
-        <div class="pt pt10">
-          <img class="pt-thumb" src="children/3dsw/img_thumb.gif" alt="portfolio">
-          <div class="pt-info-wrapper">
-            <div class="pt-info">
-              <h1 class="info-title">
-                36 Days of type
-              </h1>
-              <h2 class="info-detail">
-                Personal Project
-              </h2>
-            </div>
-          </div>
-        </div>
-        </a>
-        <a href="children/mo1/index.html">
-        <div class="pt pt3">
-          <img class="pt-thumb" src="children/mo1/img_thumb.gif" alt="">
-          <div class="pt-info-wrapper">
-            <div class="pt-info">
-              <h1 class="info-title">
-                Technologic
-              </h1>
-              <h2 class="info-detail">
-                Type in Motion
-              </h2>
-            </div>
+            </a>
+            <a href="children/mo1/index.html">
+              <div class="pt pt3">
+                <img class="pt-thumb" src="children/mo1/img_thumb.gif" alt="">
+                <div class="pt-info-wrapper">
+                  <div class="pt-info">
+                    <h1 class="info-title">
+                      Technologic
+                    </h1>
+                    <h2 class="info-detail">
+                      Type in Motion
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-        </a>
-        <a href="children/gd3/index.html">
-        <div class="pt pt2">
-          <img class="pt-thumb pt-thumb-long" src="children/gd3/img_thumbnail4.gif" alt="">
-          <div class="pt-info-wrapper">
-            <div class="pt-info">
-              <h1 class="info-title">
-                Olivia
-              </h1>
-              <h2 class="info-detail">
-                Brainding
-              </h2>
-            </div>
-          </div>
-        </div>
-        </a>
+      </section>
 
-        <a href="children/exppj2/index.html">
-        <div class="pt pt8">
-          <img class="pt-thumb" src="children/exppj2/img_hero_1.jpg" alt="portfolio">
-          <div class="pt-info-wrapper">
-            <div class="pt-info">
-              <h1 class="info-title">
-                aug.art
-              </h1>
-              <h2 class="info-detail">
-                AR
-              </h2>
-            </div>
-          </div>
+      <!-- graphic -->
+      <section id="portfolio-scetion">
+        <div class="sort">
+          Graphic Design
         </div>
-        </a>
-        <a href="children/exppj3/index.html">
-        <div class="pt pt7">
-          <img class="pt-thumb" src="children/exppj3/img_thumb.png" alt="portfolio">
-          <div class="pt-info-wrapper">
-            <div class="pt-info">
-              <h1 class="info-title">
-                Dream
-              </h1>
-              <h2 class="info-detail">
-                VR
-              </h2>
-            </div>
-          </div>
-        </div>
-        </a>
-        <a href="children/intr2pj3home/index.html">
-        <div class="pt pt5">
-          <img class="pt-thumb" src="children/intr2pj3home/img_thumb.gif" alt="">
-          <div class="pt-info-wrapper">
-            <div class="pt-info">
-              <h1 class="info-title">
-                Alexander Calder
-              </h1>
-              <h2 class="info-detail">
-                Microsite
-              </h2>
-            </div>
-          </div>
-        </div>
-        </a>
-        <a href="children/cp1/index.html">
-          <div class="pt pt9">
-            <img class="pt-thumb" src="children/cp1/img_thumb.gif" alt="portfolio">
+        <div id="portfolio-box">
+          <a href="children/concept2017/index.html">
+          <div class="pt pt1">
+            <img class="pt-thumb" src="children/concept2017/img_thumb.gif" alt="">
             <div class="pt-info-wrapper">
               <div class="pt-info">
                 <h1 class="info-title">
-                  Climate Change
+                  Curiosity
                 </h1>
                 <h2 class="info-detail">
-                  Infographic
+                  Key Visuals
                 </h2>
               </div>
             </div>
           </div>
-        </a>
-        <a href="children/aapj3/index.html">
-        <div class="pt pt11">
-          <img class="pt-thumb" src="children/aapj3/img_thumbverR.gif" alt="">
-          <div class="pt-info-wrapper">
-            <div class="pt-info">
-              <h1 class="info-title">
-                Brain Bot
-              </h1>
-              <h2 class="info-detail">
-                Coding Drawing Rendering
-              </h2>
+          </a>
+          <a href="children/gd3/index.html">
+          <div class="pt pt2">
+            <img class="pt-thumb pt-thumb-long" src="children/gd3/img_thumbnail4.gif" alt="">
+            <div class="pt-info-wrapper">
+              <div class="pt-info">
+                <h1 class="info-title">
+                  Olivia
+                </h1>
+                <h2 class="info-detail">
+                  Brainding
+                </h2>
+              </div>
             </div>
           </div>
+          </a>
         </div>
-        </a>
+      </section>
+
+      <!-- interaction -->
+      <section id="portfolio-scetion">
+        <div class="sort">
+          Interactive
+        </div>
+        <div id="portfolio-box">
+          <a href="children/cp1/index.html">
+            <div class="pt pt9">
+              <img class="pt-thumb" src="children/cp1/img_thumb.gif" alt="portfolio">
+              <div class="pt-info-wrapper">
+                <div class="pt-info">
+                  <h1 class="info-title">
+                    Climate Change
+                  </h1>
+                  <h2 class="info-detail">
+                    Data Visualization
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="children/intr2pj3home/index.html">
+            <div class="pt pt5">
+              <img class="pt-thumb" src="children/intr2pj3home/img_thumb.gif" alt="">
+              <div class="pt-info-wrapper">
+                <div class="pt-info">
+                  <h1 class="info-title">
+                    Alexander Calder
+                  </h1>
+                  <h2 class="info-detail">
+                    Microsite
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- VR -->
+      <section id="portfolio-scetion">
+        <div class="sort">
+          Virtual Reality
+        </div>
+        <div id="portfolio-box">
+          <a href="children/vrcube/index.html">
+            <div class="pt pt9">
+              <img class="pt-thumb" src="children/vrcube/img_thumb.gif" alt="portfolio">
+              <div class="pt-info-wrapper">
+                <div class="pt-info">
+                  <h1 class="info-title">
+                    CUBE
+                  </h1>
+                  <h2 class="info-detail">
+                    Interactive Virtual Reality Experience
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="children/exppj3/index.html">
+          <div class="pt pt7">
+            <img class="pt-thumb" src="children/exppj3/img_thumb.png" alt="portfolio">
+            <div class="pt-info-wrapper">
+              <div class="pt-info">
+                <h1 class="info-title">
+                  Dream
+                </h1>
+                <h2 class="info-detail">
+                  VR
+                </h2>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- interdisplenary -->
+      <section id="portfolio-scetion">
+        <div class="sort">
+          Others
+        </div>
+        <div id="portfolio-box">
+          <a href="children/exppj2/index.html">
+            <div class="pt pt8">
+              <img class="pt-thumb" src="children/exppj2/img_hero_1.jpg" alt="portfolio">
+              <div class="pt-info-wrapper">
+                <div class="pt-info">
+                  <h1 class="info-title">
+                    aug.art
+                  </h1>
+                  <h2 class="info-detail">
+                    Augmented Reality
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="children/aapj3/index.html">
+            <div class="pt pt11">
+              <img class="pt-thumb" src="children/aapj3/img_thumbverR.gif" alt="">
+              <div class="pt-info-wrapper">
+                <div class="pt-info">
+                  <h1 class="info-title">
+                    Brain Bot
+                  </h1>
+                  <h2 class="info-detail">
+                    Generative Design
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
       </section>
     </div>
     <footer class="footer-section">
