@@ -186,6 +186,13 @@ nav{
   transform-origin: 50% 50%;
   transform: rotate(180deg);
 }
+.side-bottom{
+  width: 100%;
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+  bottom: 1em;
+}
 #video-full-screen{
   position: absolute;
   left: 13vw;
