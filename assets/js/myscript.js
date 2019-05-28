@@ -38,8 +38,5 @@ $(document).ready(function(){
     $('.about-section').toggleClass('about-open');
     $( "#menu-about" ).toggleClass("selected");
   });
-  $( ".about" ).append(
-    "<img src=\"assets/imgs/profile.jpg\"/>"
-  );
   $( ".contact" ).append(intro,contact,info1,info2);
 });
