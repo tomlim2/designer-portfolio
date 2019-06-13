@@ -90,6 +90,12 @@ nav #pj-name{
   bottom: inherit;
   height: 5em;
 }
+
+#section-divider{
+  margin: 1.5em 1em 1.5em 1em;
+  height: 0.1em;
+  background-color: var(--color-main)
+}
 .section-wrapper{
   padding: 1em;
 }
@@ -128,11 +134,11 @@ nav #pj-name{
   padding: 1em;
   padding-top:1.5em;
   /* font-size: 1.4em; */
-  line-height: 1.4em;
+  line-height: 1.5em;
 }
 .description p {
   font-size: 0.8em;
-  line-height: 1.4em;
+  line-height: 1.5em;
 }
 .pj-img{
   display: block;
