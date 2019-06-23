@@ -219,10 +219,10 @@ nav{
   border-bottom: 3px solid var(--color-1a);
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 1em;
   color: var(--color-1);
   /* text-decoration: underline; */
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   display: inline-block;
 }
 
@@ -236,12 +236,12 @@ nav{
 #portfolio-box a:hover{
   color: rgba(10, 10, 10, 1);
 }
-#portfolio-box .pt{
+#portfolio-box .item{
   overflow: hidden;
   position: relative;
 }
 
-.pt-thumb{
+.item-thumb{
   display: block;
   width: 100%;
   height: 100%;
@@ -250,7 +250,7 @@ nav{
   transition: 200ms cubic-bezier(0,.2,.4,1);
   transition-property: opacity transform;
 }
-.pt-info-wrapper{
+.item-info-wrapper{
   position: absolute;
   top: 0;
   width: 100%;
@@ -262,13 +262,13 @@ nav{
   opacity: 0;
   transform: scale(1.1);
 }
-.pt-info{
+.item-info{
   color: rgba(10, 10, 10, 1);
   position: relative;
   top: 50%;
   margin-top: -20px;
 }
-.pt-info-thumb{
+.item-info-thumb{
   display: block;
   width: 100%;
   height: 100%;
@@ -317,11 +317,11 @@ nav{
     grid-auto-rows: calc(48vw/16*9);
   }
 
-  .pt:hover .pt-info-wrapper{
+  .item:hover .item-info-wrapper{
     transform: scale(1);
     opacity: 1;
   }
-  .pt:hover .pt-thumb{
+  .item:hover .item-thumb{
     transform: scale(1.1);
     opacity: 0;
   }
