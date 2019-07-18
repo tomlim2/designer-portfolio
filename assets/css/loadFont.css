@@ -10,3 +10,8 @@
   font-family: 'ft-h2';
   src:  url('../other/FS-Medium.otf') format('opentype');
 }
+
+@font-face {
+  font-family: 'ft-body';
+  src:  url('../fonts/SeoulNamsanB.ttf');
+}
