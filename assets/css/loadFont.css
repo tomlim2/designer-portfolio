@@ -1,17 +1,16 @@
 @font-face {
-  font-family: 'ft-body';
+  font-family: 'bodyFont';
   src:  url('../other/FS-Book.otf') format('opentype');
 }
 @font-face {
-  font-family: 'ft-strong';
-  src:  url('../other/ft-body_strong.otf') format('opentype');
-}
-@font-face {
-  font-family: 'ft-h2';
+  font-family: 'titleFont';
   src:  url('../other/FS-Medium.otf') format('opentype');
 }
-
 @font-face {
-  font-family: 'ft-body';
-  src:  url('../fonts/SeoulNamsanB.ttf');
+  font-family: 'bodyFont_ko';
+  src:  url('../fonts/SeoulNamsanDM.ttf');
+}
+@font-face {
+  font-family: 'titleFont_ko';
+  src:  url('../fonts/SeoulNamsanDEB.ttf');
 }

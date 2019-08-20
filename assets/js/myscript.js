@@ -25,12 +25,12 @@ $(document).ready(function(){
         $(".headerNav").removeClass("fixed");
       }
   });
-  var home1 = "Works"
+  var home1 = "works"
   $( ".home" ).append(home1);
-  var menuAbout = "About Me"
+  var menuAbout = "about"
   $( "#menu-about" ).append(menuAbout);
   var intro = "<p>Hi, I am Tom, a visual designer living in San Francisco, and have focused on experimenting mixture of graphic, animation, and programming, so my majority of graphic design work is screen-based media. I make 2D/3D motion, and branding.<br/><br/>-</p>";
-  var contact = "<p><a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com\" target=\"_blank\" >tomandlim@gmail.com</a><br/><a href=\"https://www.instagram.com/tommlimm/\" target=\"_blank\" style='margin-top:1.5em'>instagram</a><br/><br/>-</p>";
+  var contact = "<p><a href=\"https://drive.google.com/file/d/1RVDq7G53ELuPL2Dep6C645qouXTndu4Z/view?usp=sharing\" download>Resume</a><br/><a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com\" target=\"_blank\" >tomandlim@gmail.com</a><br/><a href=\"https://www.instagram.com/tommlimm/\" target=\"_blank\" style='margin-top:1.5em'>instagram</a><br/><br/>-</p>";
   var info1 = "<p><span class=\"empha\">Training</span><br/> BFA Graphic Design with high distinction - California College of the Arts, Spring 2019</p>";
   var info2 = "<p><span class=\"empha\">Awards</span><br/> Student To Watch - Graphic Design USA, Spring 2019</p>";
 
