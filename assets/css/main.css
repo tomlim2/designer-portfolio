@@ -139,7 +139,8 @@ h5 {
   cursor: pointer;
 }
 #nav a:hover{
-  color: var(--color-main);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
 }
 #nav .home {
   margin-right: .5em;
@@ -206,7 +207,7 @@ h5 {
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  text-align: center;
+  /* text-align: center; */
 }
 #portfolio-scetion .sort{
   text-transform: uppercase;
@@ -269,7 +270,7 @@ h5 {
 
 .about-section{
   text-align: left;
-  color: var(--color-1);
+  color: rgba(10, 10, 10, 1);
   height: 0vh;
   font-family: 'titleFont';
   transition-property: border, height;
