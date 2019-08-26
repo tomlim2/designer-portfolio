@@ -141,10 +141,10 @@ h5 {
 #nav a:hover{
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 1);
+  transition-property: color, background-color;
+  transition-duration: 200ms, 400ms;
 }
-#nav .home {
-  margin-right: .5em;
-}
+
 #nav #logo{
   position: absolute;
   left: 1.1em;
