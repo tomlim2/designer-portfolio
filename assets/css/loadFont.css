@@ -3,6 +3,10 @@
   src:  url('../other/FS-Book.otf') format('opentype');
 }
 @font-face {
+  font-family: 'bodyFontIt';
+  src:  url('../other/FS-BookIt.otf') format('opentype');
+}
+@font-face {
   font-family: 'titleFont';
   src:  url('../other/FS-Medium.otf') format('opentype');
 }
