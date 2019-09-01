@@ -34,8 +34,8 @@ h1{
   margin-bottom: 0.07em;
 }
 .item-info h1{
-  font-size: calc(11px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
-  margin-bottom: -3px;
+  font-size: calc(12px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+
 }
 h2{
   margin: 0;
