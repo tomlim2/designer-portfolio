@@ -4,6 +4,7 @@
   --padding-default: 4vw;
   --gap-default: 2vw;
   --gap-description: 2vw;
+  --font-default: calc(9px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
   --color-1: rgba(10,10,10,1);
   --color-1a: rgba(10,10,10,0.5);
   --color-2: rgba(255,255,255,1);
@@ -28,27 +29,26 @@ h1{
   margin: 0;
   font-family: 'titleFont';
   font-weight: normal;
-  font-size: 1.8em;
+  font-size: calc(18px + (38 - 18) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 0.05em;
   margin-bottom: 0.07em;
-  color: var(--color-1);
 }
 .item-info h1{
-  font-size: 1.3em;
+  font-size: calc(11px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: -3px;
 }
 h2{
   margin: 0;
   font-family: 'bodyFontIt';
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: calc(9px + (12 - 9) * ((100vw - 300px) / (1600 - 300)));
+  color: var(--color-1a);
   letter-spacing: 0em;
-  color: var(--color-1);
-  opacity: 0.5;
 }
 h3{
   margin: 0;
-  font-size: 1em;
+  font-family: 'titleFont';
+  font-size: var(--font-default);
   letter-spacing: 0.05em;
   color: var(--color-1);
   display: inline-block;
@@ -58,7 +58,7 @@ h4{
 }
 h5 {
   font-family: 'titleFont';
-  font-size: 1em;
+  font-size: var(--font-default);
   letter-spacing: 0.02em;
   margin: 0;
   margin-right: 2em;
@@ -68,6 +68,8 @@ body {
   font-family: 'bodyFont';
   color: rgba(10, 10, 10, 1);
   background-color: rgba(255, 255, 255, 1);
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  font-size: var(--font-default);
   margin: 0px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -109,7 +111,9 @@ a:hover{
 
 .empha{
   font-family: 'bodyFontIt';
-  color: white;
+  color: var(--color-1);
+  margin-bottom: 0em;
+  text-transform: uppercase;
 }
 
 /* end general */
@@ -117,9 +121,7 @@ a:hover{
 /*header*/
 #nav{
   width: 100%;
-  /* padding: 1em; */
   padding: 1.2em var(--padding-default) 0.8em var(--padding-default);
-  z-index: 100;
   font-size: 0.9em;
   letter-spacing: 0.05em;
   background-color: rgba(255, 255, 255, 1);
@@ -226,10 +228,10 @@ a:hover{
   grid-template-columns: repeat(2,1fr);
   grid-gap: var(--gap-default);
 }
-#portfolio-box.item{
+#portfolio-box .item{
   overflow: hidden;
   position: relative;
-  width: 45vw;
+  width: 100%;
   height: auto;
   margin: 0 0 0 0;
 }
@@ -242,8 +244,6 @@ a:hover{
   float: left;
   background-image: var(--loading);
   background-size: cover;
-
-  transition-property: filter;
   border-radius: 2px;
   overflow: hidden;
 }
@@ -256,21 +256,19 @@ a:hover{
 }
 .item-thumbnail-wrapper:hover .item-thumbnail-img{
   transform: scale(1.02);
-  opacity: 1;
 }
 .item-info-wrapper{
   margin: .5em 0 0 0;
-  padding-left: 1vw;
   opacity: 1;
-  float: left;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: left;
+  bottom: 0px;
+  position: absolute;
+  width: 66%;
+  height: auto;
+  background-color: rgba(255,255,255,1);
 }
 .item-info{
-  color: rgba(10, 10, 10, 1);
   position: relative;
+  padding: 1vw var(--gap-default) 1vw var(--gap-default);
 }
 .item-info-thumb{
   display: block;
@@ -303,7 +301,6 @@ a:hover{
   background-color: var(--color-1);
   color: var(--color-2);
   height: 0vh;
-  font-family: 'titleFont';
   transition-property: height;
   transition-duration: 400ms;
   transition-delay: 0ms;
@@ -314,6 +311,11 @@ a:hover{
   margin-top: 1em;
   width: 100%;
 }
+
+.about-wrapper .empha{
+  color: var(--color-2);
+}
+
 .about-wrapper a{
   color: var(--color-2);
 }
@@ -380,7 +382,7 @@ a:hover{
   position: absolute;
   bottom: 0;
   padding: var(--gap-default) var(--padding-default) var(--gap-default) var(--padding-default);
-  width: 50%;
+  width: 50vw;
   z-index: 90;
   /* height: 7em; */
   background-color: rgba(255,255,255,1);
@@ -423,7 +425,7 @@ a:hover{
 
 .section-title{
   margin-bottom: .5em;
-  padding-top: var(--gap-description);
+  /* padding-top: var(--gap-description); */
   text-transform: uppercase;
 }
 
@@ -474,7 +476,7 @@ a:hover{
   grid-auto-rows: calc(24vw/16*9);
 }
 .description {
-  padding: var(--gap-description);
+  /* padding: var(--gap-description); */
   line-height: 1.5em;
 }
 .description p {
@@ -527,7 +529,7 @@ a:hover{
 }
 
 /* end children */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 700px) {
   .pj-title{
     padding: var(--padding-default);
     width: 100%;
