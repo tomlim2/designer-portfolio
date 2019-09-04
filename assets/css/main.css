@@ -539,7 +539,7 @@ a:hover{
     grid-template-columns: repeat(1,1fr);
     grid-gap: var(--padding-default);
   }
-  #project-box-1c,#project-box-2c,#project-box-2c-description,#project-box-3c,#project-box-4c,#project-box-storyboard{
+  #project-box-2c,#project-box-2c-description,#project-box-3c,#project-box-4c,#project-box-storyboard{
     grid-template-columns: repeat(1,1fr);
     grid-auto-rows: auto;
   }
