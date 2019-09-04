@@ -267,7 +267,6 @@ a:hover{
   background-color: rgba(255,255,255,1);
 }
 .item-info{
-  position: relative;
   padding: 1vw var(--gap-default) 1vw var(--gap-default);
 }
 .item-info-thumb{
