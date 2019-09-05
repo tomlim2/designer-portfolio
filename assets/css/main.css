@@ -42,7 +42,6 @@ h2{
   font-family: 'bodyFontIt';
   text-transform: uppercase;
   font-size: calc(9px + (12 - 9) * ((100vw - 300px) / (1600 - 300)));
-  color: var(--color-1a);
   letter-spacing: 0em;
 }
 h3{
@@ -229,7 +228,6 @@ a:hover{
   grid-gap: var(--gap-default);
 }
 #portfolio-box .item{
-  overflow: hidden;
   position: relative;
   width: 100%;
   height: auto;
@@ -260,11 +258,13 @@ a:hover{
 .item-info-wrapper{
   margin: .5em 0 0 0;
   opacity: 1;
+  left: 10px;
   bottom: 0px;
   position: absolute;
-  width: 66%;
+  width: 61%;
   height: auto;
   background-color: rgba(255,255,255,1);
+  /* color: rgba(255,255,255,1); */
 }
 .item-info{
   padding: 1vw var(--gap-default) 1vw var(--gap-default);
