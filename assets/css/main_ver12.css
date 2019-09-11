@@ -1,14 +1,240 @@
-header{
-
+body{
+  font-family: 'bodyFont';
+  color: var(--color-body);
+  line-height: 1.5em;
 }
-main{
+
+p{
+  padding: .5vmax 0 .5vmax 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5{
+  margin: 0;
+  display: inline-block;
+  font-family: 'titleFont';
+  line-height: 1.2em;
+  color: var(--color-pri);
+  text-transform: none;
+}
+
+h1{
+  font-size: calc(28px + (38 - 28) * ((100vw - 300px) / (1600 - 300)));
+  letter-spacing: 0em;
+  margin-bottom: 0.07em;
+  text-transform: uppercase;
+}
+
+h2{
+  font-family: 'bodyFontIt';
+  font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
+  letter-spacing: 0em;
+}
+h3{
+  font-size: var(--font-default);
+  letter-spacing: 0em;
+  text-transform: uppercase;
+}
+h4{
+  font-family: 'bodyFontTitle';
+}
+h5 {
+  font-size: var(--font-default);
+  letter-spacing: 0.02em;
+  margin-right: 2em;
+}
+.ita{
+  font-family: 'bodyFontIt';
+}
+header{
+}
+main,footer,aside{
+  padding: var(--padding-default);
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
 }
 #heroContainer{
-
+  position: relative;
 }
-footer{
+.hero-img{
+  height: 90vh;
+}
+.no-hero-img{
+  height: 14vmax;
+}
+#itemContainer{
+  position: relative;
+}
+#titleWrapper{
+  background-color: black;
+  color: white;
+  width: 25vw;
+  height: 25vw;
+  background-image: url('../imgs/svg_infoBG.svg');
+  position: absolute;
+  top: -12.5vw;
+  z-index: 20;
+  border-radius: 2px;
+}
+.titleText{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: var(--gap-default);
+}
+.titleText>h1{
+  color: white;
+}
+.titleText>h2{
+  color: white;
+}
+.titleBody{
+  display: flex;
+  align-items: flex-end;
+}
+.spacing{
+  height: 8vmax;
+}
+.spacing-title{
+  height: 14vmax;
+}
+.bg-deco{
+  position: absolute;
+  top: 90vh;
+  background-color: black;
+  width: 100vw;
+  height: 190vh;
+}
+.grid{
+  padding: 0;
+  display: grid;
+  grid-gap: var(--gap-default);
+}
+main #itemContainer .grid .grid-item{
+  display: flex;
+}
+.grid>div, .grid>div>div{
 
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  /* background-color: white; */
+}
+.grid-2-column{
+  grid-template-columns: repeat(2,1fr);
+}
+.grid-3-column{
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: calc((100vw - 12vw) / 3);
+}
+.grid-4-column{
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: calc((100vw - 14vw) / 4);
+}
+.grid-img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border: 1px var(--color-pri) solid; */
+  border-radius: 2px;
+  /* background-color: tan; */
+}
+.grid-item-text{
+  padding: 1vw 0 1vw 0;
+  background-color: white;
+  height: 100%;
+}
+.grid-img>img{
+  width: 100%;
+  height: 100%;
+}
+.g1x2{
+  grid-column: 1/3;
+}
+
+/* aside */
+aside{
+  padding: 0;
+}
+
+aside .aside{
+  grid-gap: 0;
+  grid-auto-rows: calc((100vw - 10vw) / 2 /16 * 9);
+}
+.aside .grid-item{
+  overflow: visible;
+}
+.aside .grid-item img{
+  width: 100%;
+}
+.aside .grid-item .text{
+  background-image: url('../imgs/svg_infoBG.svg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  padding: .5vw;
+  width: 10vw;
+  height: 10vw;
+  color: var(--color-sec);
+  z-index: 10;
+}
+.aside .grid-item .prev{
+  left: 0vw;
+}
+.aside .grid-item .next{
+  right: 0vw;
+  text-align: right;
+}
+
+footer .footer{
+  grid-auto-rows: auto;
+  font-family: 'bodyFontIt';
+}
+.footer>div{
+  display: block;
+}
+
+@media screen and (max-width: 700px) {
+  #titleWrapper{
+    width: 50vw;
+    height: 50vw;
+  }
+  .spacing{
+
+  }
+  .spacing-title{
+    height: 20vmax;
+  }
+  .no-hero-img{
+    height: 25vmin;
+  }
+  .grid{
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: var(--padding-default);
+    grid-auto-rows: auto;
+    align-items: center;
+  }
+  .grid-item-text{
+    padding: var(--padding-default);
+  }
+  main #itemContainer .grid .grid-item {
+    width: 92vw;
+  }
+  main #itemContainer .grid .grid-blank{
+    display: none;
+  }
+  aside .grid {
+    grid-auto-rows: calc(100vw /16 * 9);
+  }
+  .aside .grid-item .text{
+    width: 25vw;
+    height: 25vw;
+  }
+  .g1x2{
+    grid-column: auto;
+  }
 }

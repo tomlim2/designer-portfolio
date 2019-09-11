@@ -1,23 +1,25 @@
 /*general*/
 :root {
-  --loading: url("../imgs/img_loading.svg");
+  --loading: url("../imgs/img_loading_16x9.svg");
   --padding-default: 4vw;
   --gap-default: 2vw;
   --gap-description: 2vw;
-  --font-default: calc(9px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
-  --color-1: rgba(10,10,10,1);
-  --color-1a: rgba(10,10,10,0.5);
-  --color-2: rgba(255,255,255,1);
-  --color-main: rgba(150,150,150,1);
+  --font-default: calc(11px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+  --color-body: rgba(120,120,120,1);
+  --color-pri: rgba(10,10,10,1);
+  --color-pri-op: rgba(10,10,10,0.5);
+  --color-sec: rgba(255,255,255,1);
+  --color-highlight: rgba(150,150,150,1);
+  --color-sp: rgba(245,60,40,1);
 }
 
 ::-moz-selection {
- background-color: var(--color-1);
+ background-color: var(--color-pri);
  color: #fff;
 }
 
 ::selection {
-  background-color: var(--color-1);
+  background-color: var(--color-pri);
   color: #fff;
 }
 
@@ -32,6 +34,7 @@ h1{
   font-size: calc(18px + (38 - 18) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 0.05em;
   margin-bottom: 0.07em;
+  color: var(--color-pri)
 }
 .item-info h1{
   font-size: calc(12px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -49,7 +52,7 @@ h3{
   font-family: 'titleFont';
   font-size: var(--font-default);
   letter-spacing: 0.05em;
-  color: var(--color-1);
+  color: var(--color-pri);
   display: inline-block;
 }
 h4{
@@ -65,7 +68,7 @@ h5 {
 
 body {
   font-family: 'bodyFont';
-  color: rgba(10, 10, 10, 1);
+  color: var(--color-body);
   background-color: rgba(255, 255, 255, 1);
   /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
   font-size: var(--font-default);
@@ -80,7 +83,6 @@ footer{
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(10,10,10,1);
-  line-height: 1.8em;
   font-size: .9em;
   letter-spacing: 0.05em;
   z-index: 200;
@@ -89,30 +91,29 @@ footer .footer-text{
   line-height: 1.6em;
 }
 footer a{
-  color: var(--color-1a);
+  color: var(--color-pri-op);
 }
 footer a:hover,{
-  color: var(--color-2);
-  background-color: var(--color-1);
+  color: var(--color-sec);
+  background-color: var(--color-pri);
 }
 
 a {
   text-decoration: none;
   transform-origin: center;
-  color: var(--color-1);
+  color: var(--color-pri);
 }
 
 a:hover{
-  color: var(--color-main);
+  color: var(--color-highlight);
   text-decoration: none;
 }
 
 
-.empha{
+#empha{
   font-family: 'bodyFontIt';
-  color: var(--color-1);
+  color: var(--color-sp);
   margin-bottom: 0em;
-  text-transform: uppercase;
 }
 
 /* end general */
@@ -127,12 +128,12 @@ a:hover{
   position: fixed;
   text-align: right;
   z-index: 100;
-  color: var(--color-1);
+  color: var(--color-pri);
 }
 
 #nav a{
-  /* text-transform: uppercase; */
   cursor: pointer;
+  padding: .4em;
 }
 #nav a:hover{
   color: rgba(255, 255, 255, 1);
@@ -143,14 +144,12 @@ a:hover{
 
 #nav #logo{
   position: absolute;
-  left: 4vw;
+  left: 3.95vw;
   top: .7em;
   height: 1.9em;
 }
 
 #menu-about, #menu{
-  padding-left: .4em;
-  padding-right: .4em;
 }
 
 .selected{
@@ -175,7 +174,7 @@ a:hover{
   writing-mode:vertical-rl;
   position: absolute;
   text-transform: uppercase;
-  color: var(--color-1);
+  color: var(--color-pri);
   letter-spacing: 0.05em;
 }
 .side-right{
@@ -296,8 +295,8 @@ a:hover{
 
 .about-section{
   text-align: left;
-  background-color: var(--color-1);
-  color: var(--color-2);
+  background-color: var(--color-pri);
+  color: var(--color-sec);
   height: 0vh;
   transition-property: height;
   transition-duration: 400ms;
@@ -311,11 +310,11 @@ a:hover{
 }
 
 .about-wrapper .empha{
-  color: var(--color-2);
+  color: var(--color-sec);
 }
 
 .about-wrapper a{
-  color: var(--color-2);
+  color: var(--color-sec);
 }
 .a-s{
   position: relative;
@@ -332,7 +331,7 @@ a:hover{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: var(--color-1);
+  background-color: var(--color-pri);
 }
 .blank-screen{
   position: relative;
@@ -343,7 +342,7 @@ a:hover{
   position: relative;
   width:100vw;
   height: 100vh;
-  /* background-color: var(--color-main); */
+  /* background-color: var(--color-highlight); */
 }
 #iframe-video{
   position: absolute;
@@ -365,7 +364,7 @@ a:hover{
   margin-top: -40vh;
   box-sizing: border-box;
   overflow: hidden;
-  border: solid var(--color-1) 2px;
+  border: solid var(--color-pri) 2px;
 }
 
 .iframe-wrapper iframe{
@@ -400,7 +399,7 @@ a:hover{
   writing-mode:vertical-rl;
   position: absolute;
   text-transform: uppercase;
-  color: var(--color-1);
+  color: var(--color-pri);
   letter-spacing: 0.05em;
 }
 
@@ -414,7 +413,7 @@ a:hover{
   width: 92vw;
   margin-left: var(--padding-default);
   height: 1px;
-  background-color: var(--color-main);
+  background-color: var(--color-highlight);
 }
 
 .section-wrapper{
@@ -498,7 +497,7 @@ a:hover{
   width: 100%;
 }
 .prevNext{
-  background-color: var(--color-1);
+  background-color: var(--color-pri);
 }
 .prePage,.nextPage{
   position: relative;
@@ -507,7 +506,7 @@ a:hover{
 .prePage::before,.nextPage::before{
   display:block;
   position: absolute;
-  background-color: var(--color-1);
+  background-color: var(--color-pri);
   padding: 1em var(--padding-default) 1em var(--padding-default);
   color: rgba(180,180,180,1);
   top: 0;
@@ -523,7 +522,7 @@ a:hover{
   content: "next";
 }
 .prePage::before:hover, .nextPage:hover{
-  color: var(--color-1);
+  color: var(--color-pri);
 }
 
 /* end children */

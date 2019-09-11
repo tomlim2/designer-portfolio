@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>Codes</title>
+  <title>Juckyard</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="../../assets/css/loadFont.css" type="text/css" media="screen">
   <link rel="stylesheet" href="../../assets/css/main.css" type="text/css" media="screen">
@@ -13,64 +13,242 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="../../assets/js/myscript.js"></script>
+  <style media="screen">
+    #container{
+      top: 0;
+      left: 0;
+      position: relative;
+      height: 90vh;
+      z-index: 0;
+      /* border-bottom: solid rgba(10, 10, 10, 1) 2em; */
+    }
+  </style>
 </head>
 <body>
   <header id="nav">
     <a href="../../index.html"><img id="logo" src="../../assets/imgs/logo.svg" alt=""></a>
-    <a href="../../index.html"><span id="menu" class="home"></span></a> |
-    <a><span id="menu-about"></span></a>
+    <a id="menu" class="home" href="../../index.html"></a>
+    <a id="menu-about"></a>
     <section class='about-section'>
       <div class="about-wrapper">
+        <img src="../../assets/imgs/profile.jpg"/>
         <div class="a-s about">
-          <img src="../../assets/imgs/profile.jpg"/>
+
         </div>
         <div class="a-s contact"></div>
       </div>
     </section>
   </header>
+  <!-- <div id="container"></div> -->
+  <script src="assets/web/bluecat/build/three.js"></script>
+  <script src="assets/web/bluecat/loaders/OBJLoader.js"></script>
+  <script src="assets/web/bluecat/loaders/MTLLoader.js"></script>
+
+
+  <script src="assets/web/bluecat/postprocessing/EffectComposer.js"></script>
+  <script src="assets/web/bluecat/postprocessing/RenderPass.js"></script>
+  <script src="assets/web/bluecat/postprocessing/ShaderPass.js"></script>
+  <script src="assets/web/bluecat/postprocessing/MaskPass.js"></script>
+
+  <script src="assets/web/bluecat/shaders/VignetteShader.js"></script>
+  <script src="assets/web/bluecat/shaders/SepiaShader.js"></script>
+  <script src="assets/web/bluecat/shaders/FilmShader.js"></script>
+  <script src="assets/web/bluecat/shaders/CopyShader.js"></script>
+
+  <script src="assets/web/bluecat/bluecat.js"></script>
   <main>
-    <section id="heroContainer">
-      <div id="infoWrapper">
-        <div class="infoTitle">
-          <h1>Codes</h1>
-        </div>
-        <div class="infoBody">
-          <h2>
-            Grathering Development
-          </h2>
-        </div>
-      </div>
-    </section>
+    <section id="heroContainer" class="no-hero-img"></section>
+    <!-- <div class="bg-deco"></div> -->
     <section id="itemContainer">
-      <div class="grid2Column">
-        <div class="">
-
+      <div id="titleWrapper">
+        <div class="titleText titleTitle">
+          <h1>Juckyard</h1>
         </div>
-        <div class="">
-
-        </div>
-      </div>
-      <div class="grid3Column">
-        <div class="">
-
-        </div>
-        <div class="">
-
-        </div>
-        <div class="">
-
+        <div class="titleText titleBody">
+          <h2>Grathering Development</h2>
         </div>
       </div>
-
+      <div id="spacing" class="spacing spacing-title"></div>
+      <div class="grid grid-2-column">
+        <div class=""></div>
+        <div class="">
+          <div class="">
+            <div class="">
+              <h4>Overview</h4>
+            </div>
+            <p class="">
+              Juckyard is a gathering of website that I developed through html/css/javascript.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="spacing" class="spacing"></div>
+      <div class="grid grid-3-column">
+        <div class="grid-item grid-img g1x2">
+          <img src="assets/img/img_gdshow2019.jpg" alt="">
+        </div>
+        <div class="grid-item grid-item-text">
+          <div class="">
+            <div class="">
+              <h3>Command G</h3>
+            </div>
+            <p class="">
+              A promotion website for CCA Graphic Design Senior Show 2019
+            </p>
+            <p class="">
+              <span class="ita">
+                desktop, mobile, p5, jquery
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="grid-item grid-img g1x2">
+          <img src="assets/img/img_something.jpg" alt="">
+        </div>
+        <div class="grid-item grid-item-text">
+          <div class="">
+            <div class="">
+              <h3>Something is happening</h3>
+            </div>
+            <p class="">
+              Data visualization based on data from NOAA about climate change.
+            </p>
+            <p class="">
+              <span class="ita">
+                desktop, mobile, threejs, jquery
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="grid-item grid-img">
+          <img src="assets/img/img_undertale.gif" alt="">
+        </div>
+        <div class="grid-item grid-item-text">
+          <div class="">
+            <div class="">
+              <h3>Undertale</h3>
+            </div>
+            <p class="">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            </p>
+            <p class="">
+              <span class="ita">
+                p5
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="grid-item grid-blank">
+        </div>
+        <div class="grid-item grid-blank">
+        </div>
+        <div class="grid-item grid-img">
+          <img src="assets/img/gif_waving.gif" alt="">
+        </div>
+        <div class="grid-item grid-item-text">
+          <div class="">
+            <div class="">
+              <h3>Waving Cube</h3>
+            </div>
+            <p class="">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            </p>
+            <p class="">
+              <span class="ita">
+                threejs
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="grid-item grid-img g1x2">
+          <img src="assets/img/img_bluecat.jpg" alt="">
+        </div>
+        <div class="grid-item grid-item-text">
+          <div class="">
+            <div class="">
+              <h3>Bluecat</h3>
+            </div>
+            <p class="">
+              Data visualization based on data from NOAA about climate change.
+            </p>
+            <p class="">
+              <span class="ita">
+                desktop, mobile, threejs, blender
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="grid-item grid-img g1x2">
+          <img src="assets/img/img_alex.jpg" alt="">
+        </div>
+        <div class="grid-item grid-item-text">
+          <div class="">
+            <div class="">
+              <h3>Alexander Calder</h3>
+            </div>
+            <p class="">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            </p>
+            <p class="">
+              <span class="ita">
+                javascript, p5
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="grid-item grid-img g1x2">
+          <img src="assets/img/img_sf.png" alt="">
+        </div>
+        <div class="grid-item grid-item-text">
+          <div class="">
+            <div class="">
+              <h3>Smile Factory</h3>
+            </div>
+            <p class="">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            </p>
+            <p class="">
+              <span class="ita">
+                jquery
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="spacing" class="spacing"></div>
     </section>
   </main>
-  <aside class="section-wrapper prevNext">
-  </aside>
-  <footer class="footer-section">
-      <div class="footer-text">
-        E-mail: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
-        <br>© Tom Lim 2018 --- Development : Tom Lim
+  <aside>
+    <div class="aside grid grid-2-column">
+      <div class="grid-item prev">
+        <img src="../test2019/assets/img/img_hero.jpg" alt="">
+        <div class="text prev">
+          Previous
+        </div>
       </div>
-    </footer>
+      <div class="grid-item next">
+        <img src="../vr2019/img_thumb.png" alt="">
+        <div class="text next">
+          Next
+        </div>
+      </div>
+    </div>
+  </aside>
+  <footer>
+    <div class="footer grid grid-3-column">
+      <div class="">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
+        <br>
+        San Francisco, California
+      </div>
+      <div class="">
+        Copyright, Tom Lim. All rights reserved.
+        <br>Development - Tom Lim
+      </div>
+      <div class="">
+        linkedin | instagram
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
