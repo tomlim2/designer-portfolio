@@ -101,7 +101,7 @@ footer a:hover,{
 a {
   text-decoration: none;
   transform-origin: center;
-  color: var(--color-pri);
+  /* color: var(--color-pri); */
 }
 
 a:hover{
@@ -128,18 +128,18 @@ a:hover{
   position: fixed;
   text-align: right;
   z-index: 100;
-  color: var(--color-pri);
 }
 
-#nav a{
+#menu, #menu-about, .home{
   cursor: pointer;
   padding: .4em;
+  color: var(--color-pri);
 }
-#nav a:hover{
+#menu:hover, #menu-about:hover{
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 1);
   transition-property: color, background-color;
-  transition-duration: 200ms, 400ms;
+  transition-duration: 400ms, 400ms;
 }
 
 #nav #logo{

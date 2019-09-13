@@ -48,6 +48,40 @@ h5 {
 }
 header{
 }
+.nav{
+  width: 100%;
+  /* height: 3.4em; */
+  padding: 1.2em var(--padding-default) 0.8em var(--padding-default);
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  background-color: var(--color-sec);
+  position: fixed;
+  text-align: right;
+  z-index: 100;
+  color: var(--color-pri);
+
+  transition-property: color, background-color, opacity;
+  transition-duration: 400ms, 400ms, 400ms;
+}
+.works, .about{
+  color: var(--color-pri);
+  cursor: pointer;
+  padding: .4em;
+}
+.works:hover, .about:hover{
+  color: var(--color-sec);
+  background-color: var(--color-pri);
+}
+.logo{
+  background-image: url("../imgs/logo.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 3.95vw;
+  top: .7em;
+  height: 1.9em;
+  width: 8.7em;
+}
+
 main,footer,aside{
   padding: var(--padding-default);
   position: relative;
@@ -58,7 +92,7 @@ main,footer,aside{
   position: relative;
 }
 .hero-img{
-  height: 90vh;
+  height: 85vh;
 }
 .no-hero-img{
   height: 14vmax;
@@ -66,7 +100,7 @@ main,footer,aside{
 #itemContainer{
   position: relative;
 }
-#titleWrapper{
+.titleWrapper{
   background-color: black;
   color: white;
   width: 25vw;
@@ -197,7 +231,11 @@ footer .footer{
 .footer>div{
   display: block;
 }
-
+/* invert */
+.invert-nav{
+  color: white;
+  background-color: black;
+}
 @media screen and (max-width: 700px) {
   #titleWrapper{
     width: 50vw;
@@ -237,4 +275,36 @@ footer .footer{
   .g1x2{
     grid-column: auto;
   }
+}
+.txt-bg-inv{
+  background-color: var(--color-pri);
+  color: var(--color-sec);
+}
+.txt-inv{
+  color: var(--color-sec);
+}
+.bg-iv{
+  background-color: var(--color-pri);
+}
+.mark-inv{
+  background-image: url("../imgs/logo-inv.svg");
+}
+.titleWrapper-inv{
+  background-image: url('../imgs/svg_infoBG-inv.svg');
+}
+.titleWrapper-inv h1, .titleWrapper-inv h2{
+  color: var(--color-pri);
+}
+.grid-item-text-inv{
+
+}
+.grid-img-1, .grid-img-2{
+  opacity: 0;
+  transform: translateY(40px);
+  transition-property: transform, opacity;
+  transition-duration: 400ms, 400ms;
+}
+.ani-mv{
+  opacity: 1;
+  transform: translateY(0);
 }

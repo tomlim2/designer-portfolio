@@ -19,7 +19,7 @@ function init() {
 
   renderer = new THREE.WebGLRenderer();
   renderer.setPixelRatio( window.devicePixelRatio );
-  renderer.setSize( window.innerWidth, window.innerHeight*0.94 );
+  renderer.setSize( window.innerWidth, window.innerHeight*0.85 );
   // renderer.gammaInput = true;
   // renderer.gammaOutput = true;
   // renderer.shadowMap.enabled = true;
