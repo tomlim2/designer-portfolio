@@ -8,44 +8,12 @@ $(document).ready(function(){
 		return Math.floor( Math.random() * (n - m + 1) ) + m;
 	};
   var stpt1 = 0;
-  var stpt2 = $('.container-tri').offset().top;
-  var $img1 = $('.grid-img-1')
-  var tri_img_1 = $img1.position().top + $img1.outerHeight(true);
-  var $img2 = $('.grid-img-2')
-  var tri_img_2 = $img2.position().top + $img2.outerHeight(true);
   $(window).scroll(function(){
     var num = $(window).scrollTop();
-    $(".titleWrapper").css({
-      "transform": "translateY(" + Math.max(- num/10, -100) + "px)",
+    $(".hero-img").css({
+      "transform": "translateY(" + Math.min( num/10, 100) + "px)",
       });
-    if(num>stpt1){
-      $(".nav-inv").addClass("txt-bg-inv");
-      $(".works-inv, .about-inv").addClass("txt-inv");
-      $(".logo-inv").addClass("mark-inv");
-    }else{
-      $(".nav-inv").removeClass("txt-bg-inv");
-      $(".works-inv, .about-inv").removeClass("txt-inv");
-      $(".logo-inv").removeClass("mark-inv");
-    }
-    if(num>=stpt2){
-      $("#container").css({
-        "display": "none",
-        });
-    }else{
-      $("#container").css({
-        "display": "block",
-        });
-    }
-    if(num>=tri_img_1){
-      $(".grid-img-1").addClass("ani-mv");
-    }else{
-      // $(".grid-img-1").removeClass("ani-mv");
-    }
-    if(num>=tri_img_2){
-      $(".grid-img-2").addClass("ani-mv");
-    }else{
-      // $(".grid-img-1").removeClass("ani-mv");
-    }
+
   });
 
   var home1 = "Works"
