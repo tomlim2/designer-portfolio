@@ -78,6 +78,7 @@ body {
 }
 
 footer{
+  font-family: 'bodyFontIt';
   position: relative;
   padding: 1.2em var(--padding-default) 1.2em var(--padding-default);
   text-align: center;
@@ -109,7 +110,9 @@ a:hover{
   text-decoration: none;
 }
 
-
+.empha{
+  font-family: 'bodyFontIt';
+}
 #empha{
   font-family: 'bodyFontIt';
   color: var(--color-sp);
