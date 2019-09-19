@@ -238,7 +238,7 @@ footer .footer{
   background-color: black;
 }
 @media screen and (max-width: 700px) {
-  #titleWrapper{
+  .titleWrapper{
     width: 50vw;
     height: 50vw;
   }
@@ -299,11 +299,11 @@ footer .footer{
 .grid-item-text-inv{
 
 }
-.grid-img-1, .grid-img-2{
+.grid-img-1, .grid-img-2, .grid-img-3, .grid-img-4, .grid-img-5, .grid-img-6, .grid-img-7{
   opacity: 0;
   transform: translateY(80px);
   transition-property: transform, opacity;
-  transition-duration: 600ms, 400ms;
+  transition-duration: 400ms, 200ms;
 }
 .ani-mv{
   opacity: 1;
