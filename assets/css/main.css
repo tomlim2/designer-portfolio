@@ -98,13 +98,11 @@ footer a:hover,{
   color: var(--color-sec);
   background-color: var(--color-pri);
 }
-
 a {
   text-decoration: none;
   transform-origin: center;
   /* color: var(--color-pri); */
 }
-
 a:hover{
   color: var(--color-highlight);
   text-decoration: none;
