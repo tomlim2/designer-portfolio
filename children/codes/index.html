@@ -7,8 +7,9 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="../../assets/css/loadFont.css" type="text/css" media="screen">
   <link rel="stylesheet" href="assets/css/cstm.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="../../assets/css/main.css" type="text/css" media="screen">
+  <!-- <link rel="stylesheet" href="../../assets/css/main.css" type="text/css" media="screen"> -->
   <link rel="stylesheet" href="../../assets/css/main_ver12.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="../../assets/css/main_ver12_invert.css" type="text/css" media="screen">
 
   <link rel="icon" href="../../favicon.gif" type="image/gif" sizes="30x30">
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -37,18 +38,21 @@
   </style>
 </head>
 <body>
+  <div id="bg"></div>
   <header id="header" class="nav nav-inv">
     <a href="../../index.html">
       <div id="logo" class="logo logo-inv"></div>
     </a>
     <a id="menu-works" class="works works-inv" href="../../index.html"></a>
-    <a id="menu-about-n" class="about about-inv"></a>
+    <a id="menu-about" class="about about-inv"></a>
     <section class='about-section'>
-      <div class="about-wrapper">
-        <img src="../../assets/imgs/profile.jpg"/>
-        <div class="a-s about">
+      <div class="grid grid-2-column">
+        <div class="grid-item grid-img">
+          <img src="../../assets/imgs/profile.jpg"/>
         </div>
-        <div class="a-s contact"></div>
+        <div class="grid-item grid-item-text">
+          <div class="contact"></div>
+        </div>
       </div>
     </section>
   </header>
@@ -86,19 +90,17 @@
         <div class=""></div>
         <div class="">
           <div class="">
-            <div class="">
-              <h4>Overview</h4>
-            </div>
-            <p class="">
-              Junkyard is a gathering of the website that I developed through HTML/CSS/javascript.
-            </p>
+            <h4>Overview</h4>
           </div>
+          <p class="">
+            Junkyard is a gathering of the website that I developed through HTML/CSS/javascript.
+          </p>
         </div>
       </div>
       <div id="spacing" class="spacing"></div>
       <div class="grid grid-3-column">
         <div class="grid-item grid-img g1x2 grid-img-1">
-          <a href="#"><img src="assets/img/img_gdshow2019.jpg" alt=""></a>
+          <a href="https://tomlim2.github.io/seniorshow2019" target="_blank"><img src="assets/img/img_gdshow2019.jpg" alt=""></a>
         </div>
         <div class="grid-item grid-item-text">
           <div class="">
@@ -116,7 +118,9 @@
           </div>
         </div>
         <div class="grid-item grid-img g1x2 grid-img-2">
-          <img src="assets/img/img_something.jpg" alt="">
+          <a href="assets/web/cp1pj2/index.html" target="_blank">
+            <img src="assets/img/img_something.jpg" alt="">
+          </a>
         </div>
         <div class="grid-item grid-item-text">
           <div class="">
@@ -134,16 +138,15 @@
           </div>
         </div>
         <div class="grid-item grid-img grid-img-3">
+          <a href="assets/web/undertale/index.html" target="_blank">
           <img src="assets/img/img_undertale.gif" alt="">
+        </a>
         </div>
         <div class="grid-item grid-item-text">
           <div class="">
             <div class="">
               <h3>Undertale</h3>
             </div>
-            <!-- <p class="">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-            </p> -->
             <p class="">
               <span class="ita">
                 p5
@@ -156,7 +159,9 @@
         <div class="grid-item grid-blank">
         </div>
         <div class="grid-item grid-img grid-img-4">
-          <img src="assets/img/gif_waving.gif" alt="">
+          <a href="assets/web/wavingcube/index.html" target="_blank">
+            <img src="assets/img/gif_waving.gif" alt="">
+          </a>
         </div>
         <div class="grid-item grid-item-text">
           <div class="">
@@ -174,7 +179,9 @@
           </div>
         </div>
         <div class="grid-item grid-img g1x2 grid-img-5">
-          <img src="assets/img/img_bluecat.jpg" alt="">
+          <a href="bluecat.html" target="_blank">
+          <img src="assets/img/img_bluecat.gif" alt="">
+        </a>
         </div>
         <div class="grid-item grid-item-text">
           <div class="">
@@ -192,7 +199,9 @@
           </div>
         </div>
         <div class="grid-item grid-img g1x2 grid-img-6">
-          <img src="assets/img/img_alex.jpg" alt="">
+          <a href="assets/web/intr2pj3/index.html" target="_blank">
+            <img src="assets/img/img_alex.gif" alt="">
+          </a>
         </div>
         <div class="grid-item grid-item-text">
           <div class="">
@@ -210,7 +219,9 @@
           </div>
         </div>
         <div class="grid-item grid-img g1x2 grid-img-7">
-          <img src="assets/img/img_sf.png" alt="">
+          <a href="assets/web/smilefactory/index.html" target="_blank">
+            <img src="assets/img/img_sf.gif" alt="">
+          </a>
         </div>
         <div class="grid-item grid-item-text">
           <div class="">
@@ -259,9 +270,9 @@
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
       </div>
       <div class="">
-        <a href="https://www.linkedin.com/in/tommlimm/">linkedin</a> | <a href="https://www.instagram.com/tommlimm/">instagram</a>
-        <br>
         San Francisco, California
+        <br>
+        <a href="https://www.linkedin.com/in/tommlimm/">linkedin</a> | <a href="https://www.instagram.com/tommlimm/">instagram</a>
       </div>
       <div class="">
         Copyright, Tom Lim. All rights reserved.

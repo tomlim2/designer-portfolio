@@ -17,7 +17,7 @@ $(document).ready(function(){
   var tri_img_1 = $img.position().top + $img.outerHeight(true) - 80;
   $(window).scroll(function(){
     var num = $(window).scrollTop();
-    if(num>=tri_img_1){
+    if(num >= tri_img_1){
       $(".grid-img-1").addClass("ani-mv");
     }
   });
@@ -26,7 +26,7 @@ $(document).ready(function(){
   var tri_img_2 = $img.position().top + $img.outerHeight(true) - 80;
   $(window).scroll(function(){
     var num = $(window).scrollTop();
-    if(num>=tri_img_2){
+    if(num >= tri_img_2){
       $(".grid-img-2").addClass("ani-mv");
     }
   });
@@ -35,7 +35,7 @@ $(document).ready(function(){
   var tri_img_3 = $img.position().top + $img.outerHeight(true) - 80;
   $(window).scroll(function(){
     var num = $(window).scrollTop();
-    if(num>=tri_img_3){
+    if(num >= tri_img_3){
       $(".grid-img-3").addClass("ani-mv");
     }
   });
@@ -44,7 +44,7 @@ $(document).ready(function(){
   var tri_img_4 = $img.position().top + $img.outerHeight(true) - 80;
   $(window).scroll(function(){
     var num = $(window).scrollTop();
-    if(num>=tri_img_4){
+    if(num >= tri_img_4){
       $(".grid-img-4").addClass("ani-mv");
     }
   });
@@ -53,7 +53,7 @@ $(document).ready(function(){
   var tri_img_5 = $img.position().top + $img.outerHeight(true) - 80;
   $(window).scroll(function(){
     var num = $(window).scrollTop();
-    if(num>=tri_img_5){
+    if(num >= tri_img_5){
       $(".grid-img-5").addClass("ani-mv");
     }
   });
@@ -62,7 +62,7 @@ $(document).ready(function(){
   var tri_img_6 = $img.position().top + $img.outerHeight(true) - 80;
   $(window).scroll(function(){
     var num = $(window).scrollTop();
-    if(num>=tri_img_6){
+    if(num >= tri_img_6){
       $(".grid-img-6").addClass("ani-mv");
     }
   });
@@ -71,7 +71,7 @@ $(document).ready(function(){
   var tri_img_7 = $img.position().top + $img.outerHeight(true) - 80;
   $(window).scroll(function(){
     var num = $(window).scrollTop();
-    if(num>=tri_img_7){
+    if(num >= tri_img_7){
       $(".grid-img-7").addClass("ani-mv");
     }
   });
@@ -84,16 +84,18 @@ $(document).ready(function(){
     $("#container").css({
       "transform": "translateY(" + Math.min( num/10, 100) + "px)",
       });
-    if(num>stpt1){
-      $(".nav-inv").addClass("txt-bg-inv");
+
+    if(num > stpt1){
+      $(".nav-inv,#bg").addClass("txt-bg-inv");
       $(".works-inv, .about-inv").addClass("txt-inv");
       $(".logo-inv").addClass("mark-inv");
     }else{
-      $(".nav-inv").removeClass("txt-bg-inv");
+      $(".nav-inv,#bg").removeClass("txt-bg-inv");
       $(".works-inv, .about-inv").removeClass("txt-inv");
       $(".logo-inv").removeClass("mark-inv");
     }
-    if(num>=stpt2){
+
+    if(num >= stpt2){
       $("#container").css({
         "display": "none",
         });
@@ -105,15 +107,15 @@ $(document).ready(function(){
   });
 
   var home1 = "Works"
-  $( "#menu-works,.home" ).append(home1);
+  $( "#menu-works" ).append(home1);
   var menuAbout = "About"
-  $( "#menu-about,#menu-about-n" ).append(menuAbout);
-  var intro = "<p>Hi, I am Tom, a visual designer living in San Francisco, and have focused on experimenting mixture of graphic, animation, and programming, so my majority of graphic design work is screen-based media. I make 2D/3D motion, and branding.<br/><br/>-</p>";
-  var contact = "<p><a href=\"https://linkedin.com/in/tommlimm/\" target=\"_blank\" style='margin-top:1.5em'>LinkedIn</a> | <a href=\"https://www.instagram.com/tommlimm/\" target=\"_blank\" style='margin-top:1.5em'>Instagram</a><br/><a href=\"https://drive.google.com/open?id=1WF2Tcy2bwwxDNnPJxjD1qJRAmpsl1h4K\" download>Resume</a> | <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com\" target=\"_blank\" >E-mail</a></p>";
-  var info1 = "<p><h2 class=\"empha\">Training</h2> BFA Graphic Design with high distinction - California College of the Arts, Spring 2019</p>";
-  var info2 = "<p><h2 class=\"empha\">Awards</h2> Student To Watch - Graphic Design USA, Spring 2019<br/><br/>-</p>";
+  $( "#menu-about" ).append(menuAbout);
+  var intro = "Hi, I am Tom, a visual designer living in San Francisco, and have focused on experimenting mixture of graphic, animation, and programming, so my majority of graphic design work is screen-based media. I make 2D/3D motion, and branding.<br/><br/>";
+  var contact = "<p><a href=\"https://linkedin.com/in/tommlimm/\" target=\"_blank\" style='margin-top:1.5em'>linkedIn</a> | <a href=\"https://www.instagram.com/tommlimm/\" target=\"_blank\" style='margin-top:1.5em'>instagram</a><br/><a href=\"https://drive.google.com/open?id=1WF2Tcy2bwwxDNnPJxjD1qJRAmpsl1h4K\" download>resume</a> | <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com\" target=\"_blank\" >tomandlim@gmail.com</a></p>";
+  var info1 = "<p><span class=\"empha\">Training</span> <br/> BFA Graphic Design with high distinction - California College of the Arts, Spring 2019</p>";
+  var info2 = "<p><span class=\"empha\">Awards</span> <br/> Student To Watch - Graphic Design USA, Spring 2019<br/><br/></p>";
 
-  $( "#menu-about,#menu-about-n" ).click(function() {
+  $( "#menu-about, #menu-about-n" ).click(function() {
     $('.about-section').toggleClass('about-open');
     $( "#menu-about" ).toggleClass("selected");
   });

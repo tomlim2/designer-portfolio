@@ -88,21 +88,26 @@ footer{
   letter-spacing: 0.05em;
   z-index: 200;
 }
+
 footer .footer-text{
   line-height: 1.6em;
 }
+
 footer a{
   color: var(--color-pri-op);
 }
+
 footer a:hover,{
   color: var(--color-sec);
   background-color: var(--color-pri);
 }
+
 a {
   text-decoration: none;
   transform-origin: center;
   /* color: var(--color-pri); */
 }
+
 a:hover{
   color: var(--color-highlight);
   text-decoration: none;
@@ -111,6 +116,7 @@ a:hover{
 .empha{
   font-family: 'bodyFontIt';
 }
+
 #empha{
   font-family: 'bodyFontIt';
   color: var(--color-sp);
