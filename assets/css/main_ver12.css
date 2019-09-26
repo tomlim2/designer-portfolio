@@ -439,11 +439,26 @@ footer a {
   .no-hero-img{
     height: 25vmin;
   }
-  .grid{
+  .side-info{
+    display: none;
+  }
+  #video-full-screen{
+    left: 0;
+    width: 92vw;
+    height: calc(92vw/16*9);
+  }
+  .hero-video{
+    padding-top: 5vmax;
+    height: calc(92vw/16*9);
+  }
+  .grid, .grid-2-column{
     grid-template-columns: repeat(1,1fr);
     grid-gap: var(--padding-default);
     grid-auto-rows: auto;
     align-items: center;
+  }
+  .grid-img > a > img, .grid-img > a > video{
+    width: 100%;
   }
   .grid-item-text{
     padding: var(--padding-default);
