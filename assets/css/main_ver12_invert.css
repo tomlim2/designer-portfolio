@@ -34,7 +34,7 @@ body .bg-iv{
 }
 
 .mark-inv{
-  background-image: url("../imgs/logo-inv.svg");
+  background-image: url("../imgs/logo-invert.svg");
 }
 
 .titleWrapper-inv h1, .titleWrapper-inv h2{
@@ -44,4 +44,8 @@ body .bg-iv{
 .invert-nav{
   color: var(--color-sec);
   background-color: var(--color-pri);
+}
+
+footer .footer{
+  color: var(--color-sec);
 }

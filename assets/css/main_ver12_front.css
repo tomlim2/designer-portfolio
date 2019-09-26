@@ -1,0 +1,46 @@
+.nav, .bg{
+  transition-property: color, background-color, opacity;
+  transition-duration: 600ms, 600ms, 600ms;
+}
+
+.nav{
+  background-color: var(--color-pri);
+}
+
+.works, .about{
+  color: var(--color-sec);
+}
+
+.logo{
+  background-image: url("../imgs/logo-invert.svg");
+}
+
+.bg{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-pri);
+}
+
+.side-info{
+  color: var(--color-sec);
+}
+
+.mark-pri{
+  background-image: url("../imgs/logo.svg");
+}
+
+.txt-bg-pri{
+  background-color: var(--color-sec);
+  color: var(--color-pri);
+}
+
+.txt-pri{
+  color: var(--color-pri);
+}
+
+/* status */
+.selected{
+  color: var(--color-sec);
+  background-color: var(--color-pri);
+}

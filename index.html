@@ -7,52 +7,35 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="icon" href="favicon.gif" type="image/gif" sizes="30x30">
   <link rel="stylesheet" href="assets/css/loadFont.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="assets/css/main.css" type="text/css" media="screen" />
-  <script type="text/javascript" src="assets/js/myscript.js"></script>
+  <link rel="stylesheet" href="assets/css/main_ver12.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="assets/css/main_ver12_front.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="assets/js/myscript_ver12.js"></script>
+  <script type="text/javascript" src="assets/js/myscript_ver12_front.js"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  @keyframes parallaxprss {
-    0%{
-      filter: hue-rotate(0deg);
-    }
-    100%{
-      filter: hue-rotate(360deg);
-    }
-  }
-  #container{
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  #intro_text{
-    position: absolute;
-    z-index: 10;
-    width: 50%;
-    color: white;
-    padding: 1vw;
-    text-transform: uppercase;
-    bottom: 5vh;
-  }
-  </style>
 </head>
 <body>
-  <header id="nav">
-    <a href="index.html"><img id="logo" src="assets/imgs/logo.svg" alt=""></a>
-    <a id="menu" class="home" href="../../index.html"></a>
-    <a id="menu-about"></a>
+  <div class="bg"></div>
+  <header id="header" class="nav">
+    <a href="index.html">
+      <div id="logo" class="logo"></div>
+    </a>
+    <a id="menu-works" class="works" href="index.html"></a>
+    <a id="menu-about" class="about"></a>
     <section class='about-section'>
-      <div class="about-wrapper">
-        <div class="a-s about">
+      <div class="grid grid-2-column">
+        <div class="grid-item grid-img">
           <img src="assets/imgs/profile.jpg"/>
         </div>
-        <div class="a-s contact"></div>
+        <div class="grid-item grid-item-text">
+          <div class="contact"></div>
+        </div>
       </div>
     </section>
   </header>
-  <main id="page-wrapper">
+  <main>
     <!-- demoreel -->
-    <div id="hero-container">
+    <section id="heroContainer" class='hero-video'>
       <div class="side-info side-left">
         Demo Reel ver 1.1
       </div>
@@ -60,125 +43,121 @@
         2019
       </div>
       <iframe id='video-full-screen' src="https://player.vimeo.com/video/358237996" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-    </div>
+    </section>
     <!-- demoreel end -->
-    <div id="page-size">
+    <section id="itemContainer">
       <!-- coming soon -->
-      <!-- graphic -->
-      <section id="portfolio-scetion">
-        <div id="portfolio-box">
-          <div class="item">
-            <a href="children/tbd/index.html">
-              <div class="item-thumbnail-wrapper">
-                <img class="item-thumbnail-img" src="children/tbd/img_thumb.jpg" alt="">
+      <div class="grid grid-2-column">
+        <div class="grid-item grid-img">
+          <a href="children/tbd/index.html">
+            <img class="item-thumbnail-img" src="children/tbd/img_thumb.jpg" alt="">
+          </a>
+          <div class="item-info-wrapper">
+            <div class="item-info">
+              <div class="info-title">
+                Office of Civic Innovation
               </div>
-            </a>
-            <div class="item-info-wrapper">
-              <div class="item-info">
-                <h1 class="info-title">
-                  Office of Civic Innovation
-                </h1>
-                <h2 class="info-detail">
-                  re-Branding
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <a href="children/concept2017/index.html">
-              <div class="item-thumbnail-wrapper">
-                <img class="item-thumbnail-img" src="children/concept2017/img_thumb.jpg" alt="">
-              </div>
-            </a>
-            <div class="item-info-wrapper">
-              <div class="item-info">
-                <h1 class="info-title">
-                  Curiosity
-                </h1>
-                <h2 class="info-detail">
-                  Key visual
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <a href="children/gd3/index.html">
-              <div class="item-thumbnail-wrapper">
-                <img class="item-thumbnail-img" src="children/gd3/img_thumb.jpg" alt="">
-              </div>
-            </a>
-            <div class="item-info-wrapper">
-              <div class="item-info">
-                <h1 class="info-title">
-                  Olivia
-                </h1>
-                <h2 class="info-detail">
-                  Branding
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <a href="children/test2019/index.html">
-              <div class="item-thumbnail-wrapper">
-                <video class="item-thumbnail-img" src="children/test2019/video_thumb.mp4" autoplay loop muted></video>
-              </div>
-            </a>
-            <div class="item-info-wrapper">
-              <div class="item-info">
-                <h1 class="info-title">
-                  Personal Projects
-                </h1>
-                <h2 class="info-detail">
-                  3D motion graphic
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <a href="children/vr2019/index.html">
-              <div class="item-thumbnail-wrapper">
-                <video class="item-thumbnail-img" src="children/vr2019/video_thumb.mp4" autoplay loop muted></video>
-              </div>
-            </a>
-            <div class="item-info-wrapper">
-              <div class="item-info">
-                <h1 class="info-title">
-                  Summer VR Project
-                </h1>
-                <h2 class="info-detail">
-                  VR
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <a href="children/codes/index.html">
-              <div class="item-thumbnail-wrapper">
-                <img class="item-thumbnail-img" src="children/codes/img_thumb.gif" alt="portfolio">
-              </div>
-            </a>
-            <div class="item-info-wrapper">
-              <div class="item-info">
-                <h1 class="info-title">
-                  Junkyard <span id="empha" >: processing</span>
-                </h1>
-                <h2 class="info-detail">
-                  Development
-                </h2>
+              <div class="info-detail">
+                re-branding
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+        <div class="grid-item grid-img">
+          <a href="children/concept2017/index.html">
+              <img class="item-thumbnail-img" src="children/concept2017/img_thumb.jpg" alt="">
+          </a>
+          <div class="item-info-wrapper">
+            <div class="item-info">
+              <div class="info-title">
+                Curiosity
+              </div>
+              <div class="info-detail">
+                Key visual
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item grid-img">
+          <a href="children/gd3/index.html">
+              <img class="item-thumbnail-img" src="children/gd3/img_thumb.jpg" alt="">
+          </a>
+          <div class="item-info-wrapper">
+            <div class="item-info">
+              <div class="info-title">
+                Olivia
+              </div>
+              <div class="info-detail">
+                Branding
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item grid-img">
+          <a href="children/test2019/index.html">
+              <video class="item-thumbnail-img" src="children/test2019/video_thumb.mp4" autoplay loop muted></video>
+          </a>
+          <div class="item-info-wrapper">
+            <div class="item-info">
+              <div class="info-title">
+                Personal Projects
+              </div>
+              <div class="info-detail">
+                3D motion graphic
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item grid-img">
+          <a href="children/vr2019/index.html">
+              <video class="item-thumbnail-img" src="children/vr2019/video_thumb.mp4" autoplay loop muted></video>
+          </a>
+          <div class="item-info-wrapper">
+            <div class="item-info">
+              <div class="info-title">
+                Summer VR Project
+              </div>
+              <div class="info-detail">
+                VR
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item grid-img">
+          <a href="children/codes/index.html">
+              <img class="item-thumbnail-img" src="children/codes/img_thumb.gif" alt="portfolio">
+          </a>
+          <div class="item-info-wrapper">
+            <div class="item-info">
+              <div class="info-title">
+                Junkyard <span id="empha" >: processing</span>
+              </div>
+              <div class="info-detail">
+                Development
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer-section">
-    <div class="footer-text">
-      E-mail: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
-      <br>© Tom Lim 2018 --- Development : Tom Lim
+  <footer>
+    <div class="footer grid grid-3-column">
+      <div class="">
+        <a href="https://drive.google.com/open?id=1WF2Tcy2bwwxDNnPJxjD1qJRAmpsl1h4K" target="_blank">resume</a>
+        <br>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
+      </div>
+      <div class="">
+        San Francisco, California
+        <br>
+        <a href="https://www.linkedin.com/in/tommlimm/">linkedin</a> | <a href="https://www.instagram.com/tommlimm/">instagram</a>
+      </div>
+      <div class="">
+        Copyright, Tom Lim. All rights reserved.
+        <br>development by Tom Lim
+      </div>
     </div>
   </footer>
-
 </body>
 </html>
