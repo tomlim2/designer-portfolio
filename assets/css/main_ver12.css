@@ -354,34 +354,6 @@ main #itemContainer .grid .grid-item{
   grid-column: 1/3;
 }
 
-/* main page grid */
-.grid > div > .item-info-wrapper{
-  margin: .5em 0 0 0;
-  opacity: 1;
-  left: 10px;
-  bottom: 0px;
-  position: absolute;
-  width: 61%;
-  height: auto;
-  background-color: rgba(255,255,255,1);
-  /* color: rgba(255,255,255,1); */
-}
-.item-info{
-  padding: 1vw var(--gap-default) 1vw var(--gap-default);
-  line-height: .95em;
-}
-.info-title{
-  color: var(--color-pri);
-  font-size: var(--font-default);
-  letter-spacing: 0.02em;
-}
-.info-detail{
-  font-family: 'bodyFontIt';
-  text-transform: lowercase;
-}
-
-/* end main page grid */
-
 /* aside */
 aside{
   padding: 0;
@@ -429,6 +401,9 @@ footer a {
 }
 
 @media screen and (max-width: 700px) {
+  h1, h2, h3, h4, h5, body{
+    font-size: .9em;
+  }
   .titleWrapper{
     width: 50vw;
     height: 50vw;
