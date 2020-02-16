@@ -39,26 +39,26 @@
 }
 
 .nav{
-  background-color: var(--color-pri);
+  background-color: var(--color-sec);
 }
 
 .works, .about{
-  color: var(--color-sec);
+  color: var(--color-pri);
 }
 
 .logo{
-  background-image: url("../imgs/logo-invert.svg");
+  background-image: url("../imgs/logo.svg");
 }
 
 .bg{
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: var(--color-pri);
+  background-color: var(--color-sec);
 }
 
 .side-info{
-  color: var(--color-sec);
+  color: var(--color-pri);
 }
 
 .mark-pri{
@@ -66,18 +66,18 @@
 }
 
 .txt-bg-pri{
-  background-color: var(--color-sec);
-  color: var(--color-pri);
+  background-color: var(--color-pri);
+  color: var(--color-sec);
 }
 
 .txt-pri{
-  color: var(--color-pri);
+  color: var(--color-sec);
 }
 
 /* status */
 .selected{
-  color: var(--color-sec);
-  background-color: var(--color-pri);
+  color: var(--color-pri);
+  background-color: var(--color-sec);
 }
 
 @media screen and (max-width: 700px) {
