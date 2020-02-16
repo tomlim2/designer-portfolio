@@ -5,12 +5,11 @@
   --gap-default: 2vw;
   --gap-description: 2vw;
   --width-two-columns: 45vw;
-  --height-two-columns: calc(45vw / 16 * 9);
-  --font-default: calc(11px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
-  --color-body: rgba(120, 120, 120, 1);
+  --font-default: 1em;
   --color-pri: rgba(10, 10, 10, 1);
   --color-pri-op: rgba(10, 10, 10, 0.5);
   --color-sec: rgba(255, 255, 255, 1);
+  --color-thrid: rgba(110, 110, 110, 1);
   --color-highlight: rgba(150, 150, 150, .5);
   --color-sp: rgba(245, 60, 40, 1);
 }
@@ -40,7 +39,7 @@ a:hover{
 }
 
 .empha{
-  font-family: 'bodyFontIt';
+  font-family: 'titleFont';
 }
 
 body {
@@ -48,7 +47,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   background-color: rgba(255, 255, 255, 1);
-  color: var(--color-body);
+  color: var(--color-pri);
   font-family: 'bodyFont';
   font-size: var(--font-default);
   line-height: 1.5em;
@@ -64,37 +63,22 @@ h1, h2, h3, h4, h5, .info-title{
   display: inline-block;
   font-family: 'titleFont';
   line-height: 1.2em;
-  color: var(--color-pri);
   text-transform: none;
+  font-size: var(--font-default);
 }
 
 h1{
-  font-size: calc(28px + (38 - 28) * ((100vw - 300px) / (1600 - 300)));
-  letter-spacing: 0em;
   margin-bottom: 0.07em;
-  text-transform: uppercase;
+}
+h2{
+  font-family: 'subTitleFont';
 }
 
-h2{
-  font-family: 'bodyFontIt';
-  font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
-  letter-spacing: 0em;
-}
-h3{
-  font-size: var(--font-default);
-  letter-spacing: 0em;
-  text-transform: uppercase;
-}
-h4{
-  font-family: 'bodyFontTitle';
-}
 h5 {
-  font-size: var(--font-default);
   letter-spacing: 0.02em;
   margin-right: 2em;
 }
 .ita{
-  font-family: 'bodyFontIt';
 }
 
 /* header */
@@ -104,29 +88,28 @@ header{
   width: 100%;
   /* height: 3.4em; */
   padding: 1.2em var(--padding-default) 0.4em var(--padding-default);
-  font-size: 0.9em;
   letter-spacing: 0.05em;
   background-color: var(--color-sec);
   position: fixed;
   text-align: right;
   z-index: 100;
-  color: var(--color-pri);
 }
 
-#nav #logo{
+.nav #logo{
   position: absolute;
   left: 3.95vw;
   top: .7em;
   height: 1.9em;
 }
+
 .works, .about{
+  font-family: 'titleFont';
   cursor: pointer;
-  color: var(--color-pri);
   padding: .4em;
 }
 
 .works:hover, .about:hover{
-  color: var(--color-sec);
+  color: var(--color-highlight);
   background-color: var(--color-pri);
 }
 .logo{
@@ -154,6 +137,13 @@ header{
   transition-property: height, padding, transform;
   transition-duration: 400ms, 500ms, 400ms;
   transition-delay: 0ms;
+}
+.about-section > .grid-2-column {
+  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: var(--height-two-columns);
+}
+.about-section > .grid-2-column > div, .about-section > .grid-2-column > div > div {
+  width: 42vw;
 }
 
 .about-section a{
@@ -219,8 +209,6 @@ main,footer,aside{
   text-align: center;
   writing-mode:vertical-rl;
   position: absolute;
-  text-transform: uppercase;
-  color: var(--color-pri);
   letter-spacing: 0.05em;
 }
 .side-right{
@@ -233,7 +221,6 @@ main,footer,aside{
 }
 .side-bottom{
   width: 100%;
-  text-transform: uppercase;
   position: absolute;
   text-align: center;
   bottom: 1em;
@@ -264,17 +251,21 @@ main,footer,aside{
   padding: var(--gap-default);
 }
 
-.titleText>h1{
-  color: white;
+.titleText > h1{
+  font-size: 1.6em;
 }
 
-.titleText>h2{
+.titleText > h2{
   color: white;
 }
 
 .titleBody{
   display: flex;
   align-items: flex-end;
+}
+
+.thin{
+  font-family: 'subTitleFont';
 }
 
 .spacing{
@@ -307,7 +298,7 @@ main #itemContainer .grid .grid-item{
 
 .grid-2-column {
   grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: var(--height-two-columns);
+  grid-auto-rows: auto;
 }
 .grid-2-column > div, .grid-2-column > div > div {
   width: 45vw;
@@ -364,7 +355,7 @@ aside .aside{
   grid-auto-rows: calc(100vw / 2 /16 * 9);
 }
 
-.aside .grid-item .text{
+.aside > .grid-item > .text{
   background-image: url('../imgs/svg_infoBG.svg');
   background-position: 50% 50%;
   background-size: cover;
@@ -377,10 +368,10 @@ aside .aside{
   color: var(--color-sec);
   z-index: 10;
 }
-.aside .grid-item .prev{
+.aside > .grid-item > .prev{
   left: 0vw;
 }
-.aside .grid-item .next{
+.aside > .grid-item > .next{
   right: 0vw;
   text-align: right;
 }
@@ -388,8 +379,6 @@ aside .aside{
 footer .footer{
   text-align: center;
   grid-auto-rows: auto;
-  font-family: 'bodyFontIt';
-  color: var(--color-pri);
 }
 
 footer a {
@@ -402,7 +391,6 @@ footer a {
 
 @media screen and (max-width: 700px) {
   h1, h2, h3, h4, h5, body{
-    font-size: .9em;
   }
   .titleWrapper{
     width: 50vw;

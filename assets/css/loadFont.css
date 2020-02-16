@@ -2,17 +2,18 @@
   font-family: 'bodyFont';
   src:  url('../other/fs-b.otf') format('opentype');
 }
-@font-face {
-  font-family: 'bodyFontIt';
-  src:  url('../other/fs-it.otf') format('opentype');
-}
+
 @font-face {
   font-family: 'bodyFontTitle';
   src:  url('../other/fs-b-title.otf') format('opentype');
 }
 @font-face {
   font-family: 'titleFont';
-  src:  url('../other/fs-title.otf') format('opentype');
+  src:  url('../other/slab-r.ttf') format('opentype');
+}
+@font-face {
+  font-family: 'subTitleFont';
+  src:  url('../other/san-l.otf') format('opentype');
 }
 @font-face {
   font-family: 'bodyFont_ko';

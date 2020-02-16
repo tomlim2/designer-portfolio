@@ -8,6 +8,9 @@ footer, footer a{
   background-color: var(--color-pri);
   color: var(--color-sec);
 }
+.works-inv, .about-inv{
+  color: var(--color-pri);
+}
 .nav,#bg{
   transition-property: color, background-color, opacity;
   transition-duration: 400ms, 400ms, 400ms;
