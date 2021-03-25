@@ -447,6 +447,12 @@ footer a {
   .g1x2{
     grid-column: auto;
   }
+  .about-section > .grid-2-column {
+    grid-template-columns: none;
+  }
+  .about-section > .grid-2-column > div, .about-section > .grid-2-column > div > div {
+    width: 84vw;
+  }
 }
 
 /* animation */
