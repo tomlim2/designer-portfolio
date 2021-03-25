@@ -90,3 +90,7 @@
     height: calc(92vw / 16 * 9);
   }
 }
+.selected{
+  color: white;
+  background-color: var(--color-pri);
+}
