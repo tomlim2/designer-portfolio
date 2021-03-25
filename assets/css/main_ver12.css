@@ -451,7 +451,7 @@ footer a {
     grid-template-columns: none;
   }
   .about-section > .grid-2-column > div, .about-section > .grid-2-column > div > div {
-    width: 84vw;
+    width: 88vw;
   }
 }
 
