@@ -463,6 +463,6 @@ footer a {
 
 /* status */
 .selected{
-  color: var(--color-sec);
+  color: white;
   background-color: var(--color-pri);
 }

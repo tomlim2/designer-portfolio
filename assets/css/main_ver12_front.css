@@ -74,12 +74,6 @@
   color: var(--color-sec);
 }
 
-/* status */
-.selected{
-  color: var(--color-pri);
-  background-color: var(--color-sec);
-}
-
 @media screen and (max-width: 700px) {
   .grid > div > .item-info-wrapper{
   }
