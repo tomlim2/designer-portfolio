@@ -5,4 +5,4 @@ My works about 2/3D motion, brand, graphic, visual Design, VR/AR, and creative c
 
 ## Tech stack
 
-- HTML,CSS, JavaScript
+- HTML, CSS, JavaScript
