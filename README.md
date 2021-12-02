@@ -1,6 +1,8 @@
-# TL's designer portfolio
-My works as designer, and me me me
+# Design Portfolio
 
-## Tech Stack
-HTML
+– 2019.07 <br/>
+2/3D motion, brand, graphic, visual Design, VR/AR, and creative coding 
 
+## Tech stack
+
+- HTML,CSS, JavaScript
