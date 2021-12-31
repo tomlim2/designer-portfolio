@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'bodyFont';
-  src:  url('../other/fs-b.otf') format('opentype');
+  src:  url('../other/fs-b.ttf') format('opentype');
 }
 
 @font-face {
   font-family: 'bodyFontTitle';
-  src:  url('../other/fs-b-title.otf') format('opentype');
+  src:  url('../other/fs-b-title.ttf') format('opentype');
 }
 @font-face {
   font-family: 'titleFont';
@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: 'subTitleFont';
-  src:  url('../other/san-l.otf') format('opentype');
+  src:  url('../other/san-l.ttf') format('opentype');
 }
 @font-face {
   font-family: 'bodyFont_ko';
