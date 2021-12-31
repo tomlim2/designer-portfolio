@@ -2,7 +2,7 @@ $(document).ready(function(){
   var windowWidth = $(window).width();
 	var windowHeight = $(window).height();
 
-  var stpt1 = 0;
+  
   var stpt2 = $('.container-tri').offset().top;
 
 
@@ -71,7 +71,10 @@ $(document).ready(function(){
     }
   });
 
+
+
   $(window).scroll(function(){
+    var stpt1 = 0;
     var num = $(window).scrollTop();
     $(".titleWrapper").css({
       "transform": "translateY(" + Math.max(- num/10, -100) + "px)",
