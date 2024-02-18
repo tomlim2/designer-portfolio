@@ -2,71 +2,155 @@ export type TypeTag = {
   tagName: string;
 };
 
+export type TypeCompanyName =
+  | "FLFI"
+  | "Varo Bank"
+  | "Cinamon"
+  | "TBD"
+  | "Filomine"
+  | "March Square"
+  | "Freelance"
+  | "CCA";
+
 export interface IfItemWork {
   id: number | string;
-  title: string;
+  projectName: string;
   url: string;
   thumbnailUrl: string;
   jobTitle: string;
   tags: TypeTag[];
   isPassword: boolean;
+  companyName: TypeCompanyName;
 }
 
 export const ListWork: IfItemWork[] = [
   {
     id: 1,
-    title: "Media arts",
+    projectName: "Toon Shader",
+    thumbnailUrl: "/assets",
+    tags: [{ tagName: "Unreal engine5" }, { tagName: "Python" }],
+    jobTitle: "Technical Artist",
+    url: "/about",
+    isPassword: true,
+    companyName: "Cinamon",
+  },
+  {
+    id: 1,
+    projectName: "Character Customizing System",
+    thumbnailUrl: "/assets",
+    tags: [
+      { tagName: "Unreal engine5" },
+      { tagName: "Blueprint" },
+      { tagName: "Structure" },
+      { tagName: "Python" },
+    ],
+    jobTitle: "Technical Artist",
+    url: "/about",
+    isPassword: true,
+    companyName: "Cinamon",
+  },
+  {
+    id: 1,
+    projectName: "Media arts",
     thumbnailUrl: "/assets",
     tags: [
       { tagName: "Javascript" },
       { tagName: "P5" },
-      { tagName: "Blender"},
-      { tagName: "Figma"},
-      { tagName: "Adobe Creative"},
+      { tagName: "ChatGPT" },
+      { tagName: "Blender" },
+      { tagName: "Figma" },
+      { tagName: "Adobe Creative" },
     ],
     jobTitle: "Creative developer",
     url: "/about",
     isPassword: true,
+    companyName: "Freelance",
   },
   {
     id: 1,
-    title: "FLFI",
+    projectName: "OG Community",
+    thumbnailUrl: "/assets",
+    tags: [{ tagName: "Typescript" }, { tagName: "Vue3&Nuxt" }],
+    jobTitle: "Front-end engineer",
+    url: "/about",
+    isPassword: true,
+    companyName: "FLFI",
+  },
+  {
+    id: 1,
+    projectName: "OG Community Launching Sequnce",
+    thumbnailUrl: "/assets",
+    tags: [{ tagName: "Adobe Creative" }],
+    jobTitle: "Motion Design",
+    url: "/about",
+    isPassword: true,
+    companyName: "FLFI",
+  },
+  {
+    id: 1,
+    projectName: "NFT Terminal",
     thumbnailUrl: "/assets",
     tags: [
       { tagName: "Typescript" },
       { tagName: "Vue3&Nuxt" },
-      { tagName: "Cinema4D" },
-      { tagName: "Adobe Creative" },
+      { tagName: "Discord" },
     ],
-    jobTitle: "Front-end engineer & 3d generalist",
+    jobTitle: "Front-end engineer",
     url: "/about",
     isPassword: true,
+    companyName: "FLFI",
   },
   {
     id: 1,
-    title: "Varo Bank",
+    projectName: "Tax Refund Guide",
     thumbnailUrl: "/assets",
-    tags: [{ tagName: "Freelance" }],
+    tags: [
+      { tagName: "Adobe Creative" },
+      { tagName: "Educational Advertising" },
+    ],
     jobTitle: "UX Engineer",
     url: "/about",
     isPassword: true,
+    companyName: "Varo Bank",
+  },
+  {
+    id: 1,
+    projectName: "Varo Future App",
+    thumbnailUrl: "/assets",
+    tags: [{ tagName: "Adobe Creative" }, { tagName: "Lottie Files" }],
+    jobTitle: "UX Engineer",
+    url: "/about",
+    isPassword: true,
+    companyName: "Varo Bank",
+  },
+  {
+    id: 1,
+    projectName: "In-App Graphic Animation",
+    thumbnailUrl: "/assets",
+    tags: [{ tagName: "Adobe Creative" }, { tagName: "Lottie Files" }],
+    jobTitle: "UX Engineer",
+    url: "/about",
+    isPassword: true,
+    companyName: "Varo Bank",
   },
   {
     id: 0,
-    title: "OCI",
+    projectName: "OCI Design System",
     thumbnailUrl: "/assets",
     tags: [{ tagName: "Branding" }],
     jobTitle: "job title",
     url: "/about",
     isPassword: false,
+    companyName: "TBD",
   },
   {
     id: 2,
-    title: "VR",
+    projectName: "VR",
     thumbnailUrl: "/assets",
-    tags: [{ tagName: "Freelance" }],
+    tags: [{ tagName: "VR" }, { tagName: "Unreal Engine4" }],
     jobTitle: "Creative developer",
     url: "/about",
     isPassword: false,
+    companyName: "CCA",
   },
 ];

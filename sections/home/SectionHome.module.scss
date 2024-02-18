@@ -13,6 +13,10 @@ $primary-color: #64ff00;
   }
 }
 
+.project {
+  margin-bottom: 24px;
+}
+
 .tagName {
   & + .tagName::before {
     content: ", ";

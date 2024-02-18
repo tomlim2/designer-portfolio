@@ -8,8 +8,8 @@ export default function SectionHome() {
         <ul>
           {ListWork.map((item: IfItemWork, index: number) => {
             return (
-              <li key={index + item.title}>
-                {item.title}
+              <li className={styles.project} key={index + item.projectName}>
+                {item.projectName}
                 <br />
                 {item.jobTitle}
                 <br />
