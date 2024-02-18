@@ -3,7 +3,7 @@ import styles from "./MainFooter.module.scss";
 
 export default function MainFooter() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <ul>
         <li>
           <a href="/work">tomandlim@gmail.com</a>
@@ -11,12 +11,12 @@ export default function MainFooter() {
       </ul>
       <ul>
         <li>
-          <a href="/about">Seoul, South Korea</a>
+          Seoul, South Korea
         </li>
       </ul>
       <ul>
         <li>
-          <a href="/about">Copyright, Tom Lim. All rights reserved.</a>
+          Copyright, Tom Lim. All rights reserved.
         </li>
       </ul>
     </footer>
