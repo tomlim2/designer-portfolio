@@ -11,8 +11,8 @@ export default function MainHeader() {
             <Image
               src="/assets/imgs/svg_logo_inverted.svg"
               alt="My Logo"
-              width={100}
-              height={24}
+              width={120}
+              height={40}
               priority
             />
           </a>

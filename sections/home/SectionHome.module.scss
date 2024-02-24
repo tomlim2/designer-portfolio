@@ -1,16 +1,9 @@
+@use "../Sections.module.scss";
+
 $primary-color: #64ff00;
 
 :export {
   primaryColor: $primary-color;
-}
-
-.section {
-  padding: 80px 16px 16px 16px;
-  ul {
-    li {
-      list-style-type: none;
-    }
-  }
 }
 
 .project {

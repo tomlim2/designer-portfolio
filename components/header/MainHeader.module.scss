@@ -31,7 +31,16 @@
 .menu {
   display: flex;
   li {
+    font-size: 1.125rem;
+    font-weight: 600;
     list-style-type: none;
+    a {
+      color: var(--color-surface50);
+
+      &:hover {
+        color: var(--color-surface-white);
+      }
+    }
     & + li {
       margin-left: 1rem;
     }

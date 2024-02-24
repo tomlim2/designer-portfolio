@@ -149,6 +149,19 @@
   --ease-in-out-quart: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+::selection {
+  background: rgba(10, 228, 72, 0.5);
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgba(10, 228, 72, 0.5);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
