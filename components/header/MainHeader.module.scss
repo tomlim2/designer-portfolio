@@ -1,18 +1,39 @@
 .header {
+  background-color: var(--color-just-black);
+  left: 0;
   position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 20;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerWide {
+  padding-left: max(1.5rem, min(1.5534vw + 1.13592rem, 3rem));
+  padding-right: max(1.5rem, min(1.5534vw + 1.13592rem, 3rem));
+}
+
+.headerInner {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 16px 16px 16px;
+  border-bottom: 0.0625rem solid var(--color-surface25);
+  padding-bottom: 0.6875rem;
+  padding-top: 0.75rem;
+}
 
-  ul {
-    display: flex;
-    li {
-      list-style-type: none;
-      & + li {
-        margin-left: 1rem;
-      }
+.menu {
+  display: flex;
+  li {
+    list-style-type: none;
+    & + li {
+      margin-left: 1rem;
     }
   }
 }

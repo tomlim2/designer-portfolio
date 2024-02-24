@@ -1,11 +1,11 @@
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 16px 16px 16px;
+  display: grid;
+  grid-template-columns: repeat(3, calc(calc(100vw - 32px) / 3));
+  padding: 40px 16px;
 
   ul {
     li {
+      text-align: center;
       list-style-type: none;
       & + li {
         margin-left: 1rem;
