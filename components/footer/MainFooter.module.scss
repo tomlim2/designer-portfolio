@@ -1,11 +1,19 @@
+@use "../../sections/Sections.module.scss";
+
 .footer {
-  display: grid;
-  grid-template-columns: repeat(3, calc(calc(100vw - 32px) / 3));
-  padding: 40px 16px;
+  background-color: var(--color-surface-white);
+  color: var(--color-just-black);
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    padding-bottom: max(3rem,min(1.0356vw + 2.75728rem,4rem));
+    padding-top: max(3rem,min(1.0356vw + 2.75728rem,4rem));
+  }
 
   ul {
     li {
-      text-align: center;
+      
       list-style-type: none;
       & + li {
         margin-left: 1rem;
