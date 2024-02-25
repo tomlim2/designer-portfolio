@@ -15,15 +15,16 @@
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
   gap: 2rem;
 }
 
 .project {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2,50%);
 }
 
 .description{
-  margin-top: 1rem;
 }
 
 .imageWrapper {
