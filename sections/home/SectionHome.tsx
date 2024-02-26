@@ -20,8 +20,8 @@ export default function SectionHome() {
                   </a>
                   <div className={styles.description}>
                     <h4 className={styles.projectName}>{item.projectName}</h4>
-                    <div>{item.jobTitle}</div>
-                    <div>
+                    <div className={styles.projectSubtitle}>{item.jobTitle}</div>
+                    <div className={styles.projectTags}>
                       {item.tags.map((tag: TypeTag, index: number) => (
                         <span
                           className={styles.tagName}
