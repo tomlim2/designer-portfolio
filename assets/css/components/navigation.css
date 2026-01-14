@@ -97,7 +97,7 @@ header {
 
 .about-section > .grid-2-column > div,
 .about-section > .grid-2-column > div > div {
-  width: 42vw;
+  width: 100%;
 }
 
 .about-section a {

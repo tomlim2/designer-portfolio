@@ -159,6 +159,11 @@ var ThemeManager = (function() {
 
     console.log('ThemeManager: Initialized with mode "' + config.mode + '", threshold: ' + config.threshold);
 
+    // Apply theme IMMEDIATELY to prevent FOUC
+    var currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var shouldApply = currentScrollTop > config.threshold;
+    applyTheme(shouldApply);
+
     // Create scroll handler
     scrollHandler = handleScroll;
 
@@ -169,9 +174,6 @@ var ThemeManager = (function() {
       // Fallback for older browsers
       window.onscroll = scrollHandler;
     }
-
-    // Initial check
-    handleScroll();
 
     isInitialized = true;
   }

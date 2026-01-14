@@ -18,6 +18,7 @@
 
 /* Components */
 @import 'components/navigation.css';
+@import 'components/layout.css';
 @import 'components/footer.css';
 @import 'components/grid.css';
 @import 'components/hero.css';

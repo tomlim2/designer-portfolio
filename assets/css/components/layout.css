@@ -1,0 +1,32 @@
+/* Main Layout Containers */
+
+/* Critical: These containers provide the 4vw padding that centers all content */
+main,
+footer,
+aside {
+  padding: var(--padding-default);
+  position: relative;
+  width: 100%;
+}
+
+/* Portfolio Section Override */
+#portfolio-scetion {
+  padding: var(--padding-default);
+}
+
+/* Page Wrapper */
+#page-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#page-wrapper-2 {
+  position: relative;
+  background-color: var(--color-bg);
+}
+
+/* Container with parallax support */
+#container {
+  transform: translateY(var(--parallax-offset, 0));
+}

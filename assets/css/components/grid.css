@@ -23,7 +23,7 @@
 
 .grid-2-column > div,
 .grid-2-column > div > div {
-  width: 45vw;
+  width: 100%;
 }
 
 /* 3-Column Grid */
@@ -237,6 +237,7 @@ main #itemContainer .grid .grid-item {
     grid-gap: var(--padding-default);
     grid-auto-rows: calc(92vw / 3 * 2);
     align-items: center;
+    justify-items: center;
   }
 
   .grid-img > a > img,

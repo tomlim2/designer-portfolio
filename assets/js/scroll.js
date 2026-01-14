@@ -186,7 +186,8 @@ var ScrollAnimations = (function() {
       offset = Math.min(scrollTop / settings.speed, settings.maxOffset);
     }
 
-    element.style.transform = 'translateY(' + offset + 'px)';
+    // Use CSS custom property to avoid overwriting centering transforms
+    element.style.setProperty('--parallax-offset', offset + 'px');
   }
 
   /**

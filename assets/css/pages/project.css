@@ -24,8 +24,7 @@ aside {
 
 /* Section Divider */
 #section-divider {
-  width: 92vw;
-  margin-left: var(--padding-default);
+  width: 100%;
   height: 1px;
   background-color: var(--color-highlight);
 }

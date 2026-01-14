@@ -73,34 +73,6 @@ $(document).ready(function(){
 
 
 
-  $(window).scroll(function(){
-    var stpt1 = 0;
-    var num = $(window).scrollTop();
-    $(".titleWrapper").css({
-      "transform": "translateY(" + Math.max(- num/10, -100) + "px)",
-      });
-    $("#container").css({
-      "transform": "translateY(" + Math.min( num/10, 100) + "px)",
-      });
-
-    if(num > stpt1){
-      $(".nav-inv,#bg").addClass("txt-bg-inv");
-      $(".works-inv, .about-inv").addClass("txt-inv");
-      $(".logo-inv").addClass("mark-inv");
-    }else{
-      $(".nav-inv,#bg").removeClass("txt-bg-inv");
-      $(".works-inv, .about-inv").removeClass("txt-inv");
-      $(".logo-inv").removeClass("mark-inv");
-    }
-
-    if(num >= stpt2){
-      $("#container").css({
-        "display": "none",
-        });
-    }else{
-      $("#container").css({
-        "display": "block",
-        });
-    }
-  });
+  // Theme switching and parallax now handled by ThemeManager and ScrollAnimations modules
+  // Removing duplicate logic to prevent conflicts
 });

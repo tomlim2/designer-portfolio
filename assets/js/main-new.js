@@ -94,7 +94,7 @@
             direction: 'up'
           },
           container: {
-            selector: '#container',
+            selector: '#heroContainer',
             speed: 10,
             maxOffset: 100,
             direction: 'down'
@@ -107,7 +107,7 @@
           animationClass: 'ani-mv'
         },
         visibility: {
-          element: '#container',
+          element: '#heroContainer',
           trigger: '.container-tri',
           hideWhenPassed: true
         }
@@ -138,7 +138,7 @@
             direction: 'up'
           },
           container: {
-            selector: '#container',
+            selector: '#heroContainer',
             speed: 10,
             maxOffset: 100,
             direction: 'down'
@@ -151,7 +151,7 @@
           animationClass: 'ani-mv'
         },
         visibility: {
-          element: '#container',
+          element: '#heroContainer',
           trigger: '.container-tri',
           hideWhenPassed: true
         }
