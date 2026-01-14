@@ -59,6 +59,7 @@ var Navigation = (function() {
 
   var isInitialized = false;
   var aboutToggleHandler = null;
+  var aboutClickOutsideHandler = null;
 
   /**
    * Injects menu text into navigation elements
@@ -143,11 +144,46 @@ var Navigation = (function() {
   }
 
   /**
+   * Closes the about section
+   * @private
+   */
+  function closeAboutSection() {
+    var aboutSection = document.querySelector(config.selectors.aboutSection);
+    var menuAbout = document.querySelector(config.selectors.menuAbout);
+
+    if (aboutSection && aboutSection.classList.contains(config.classes.aboutOpen)) {
+      aboutSection.classList.remove(config.classes.aboutOpen);
+    }
+
+    if (menuAbout && menuAbout.classList.contains(config.classes.selected)) {
+      menuAbout.classList.remove(config.classes.selected);
+    }
+  }
+
+  /**
+   * Handles clicks outside the about section content to close it
+   * @private
+   */
+  function handleClickOutside(event) {
+    var aboutSection = document.querySelector(config.selectors.aboutSection);
+
+    if (!aboutSection || !aboutSection.classList.contains(config.classes.aboutOpen)) {
+      return;
+    }
+
+    // Check if click is directly on the about-section (overlay), not its children
+    if (event.target === aboutSection) {
+      closeAboutSection();
+    }
+  }
+
+  /**
    * Attaches event listeners for about section toggle
    * @private
    */
   function attachEventListeners() {
     aboutToggleHandler = toggleAboutSection;
+    aboutClickOutsideHandler = handleClickOutside;
 
     var aboutTriggers = document.querySelectorAll(
       config.selectors.menuAbout + ',' + config.selectors.menuAboutAlt
@@ -166,6 +202,16 @@ var Navigation = (function() {
         element.onclick = aboutToggleHandler;
       }
     });
+
+    // Add click outside listener to about section
+    var aboutSection = document.querySelector(config.selectors.aboutSection);
+    if (aboutSection) {
+      if (aboutSection.addEventListener) {
+        aboutSection.addEventListener('click', aboutClickOutsideHandler);
+      } else {
+        aboutSection.onclick = aboutClickOutsideHandler;
+      }
+    }
   }
 
   /**
@@ -187,7 +233,18 @@ var Navigation = (function() {
       }
     });
 
+    // Remove click outside listener
+    var aboutSection = document.querySelector(config.selectors.aboutSection);
+    if (aboutSection && aboutClickOutsideHandler) {
+      if (aboutSection.removeEventListener) {
+        aboutSection.removeEventListener('click', aboutClickOutsideHandler);
+      } else {
+        aboutSection.onclick = null;
+      }
+    }
+
     aboutToggleHandler = null;
+    aboutClickOutsideHandler = null;
   }
 
   /**

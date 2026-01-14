@@ -15,7 +15,7 @@ header {
   color: var(--color-text);
   position: fixed;
   text-align: right;
-  z-index: 100;
+  z-index: 250;
   transition-property: color, background-color, opacity;
   transition-duration: var(--transition-fast), var(--transition-fast), var(--transition-fast);
 }
