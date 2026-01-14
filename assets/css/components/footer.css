@@ -1,0 +1,51 @@
+/* Footer */
+
+footer {
+  position: relative;
+  padding: 1.2em var(--padding-default);
+  text-align: center;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'bodyFontIt', sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  z-index: 200;
+}
+
+footer .footer {
+  text-align: center;
+  grid-auto-rows: auto;
+}
+
+footer .footer > div {
+  display: block;
+}
+
+footer .footer-text {
+  line-height: var(--line-height-loose);
+}
+
+footer a {
+  color: var(--color-text-op);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+footer a:hover {
+  color: var(--color-bg);
+  background-color: var(--color-text);
+}
+
+/* Dark Theme Footer Override */
+[data-theme="dark"] footer {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+[data-theme="dark"] footer a {
+  color: var(--color-bg);
+}
+
+[data-theme="dark"] footer a:hover {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}

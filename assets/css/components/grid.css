@@ -1,0 +1,280 @@
+/* Grid System & Layout */
+
+/* Base Grid */
+.grid {
+  padding: 0;
+  display: grid;
+  grid-gap: var(--gap-default);
+}
+
+.grid > div,
+.grid > div > div {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* 2-Column Grid */
+.grid-2-column {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+}
+
+.grid-2-column > div,
+.grid-2-column > div > div {
+  width: 45vw;
+}
+
+/* 3-Column Grid */
+.grid-3-column {
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: calc((100vw - 12vw) / 3);
+}
+
+/* 4-Column Grid */
+.grid-4-column {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: calc((100vw - 14vw) / 4);
+}
+
+/* Grid Items */
+main #itemContainer .grid .grid-item {
+  display: flex;
+}
+
+.grid-item-text {
+  padding: 1vw 0;
+  height: 100%;
+}
+
+/* Grid Images */
+.grid-img {
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.grid-img > img {
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: auto;
+}
+
+.grid-img > a > img,
+.grid-img > a > video {
+  height: 100%;
+  transform-origin: 50% 50%;
+  transition-duration: var(--transition-fast);
+  transition-property: transform;
+}
+
+.grid-img > a > img:hover,
+.grid-img > a > video:hover {
+  transform: scale(1.02);
+}
+
+/* Grid Modifiers */
+.g1x2 {
+  grid-column: 1/3;
+}
+
+/* Portfolio Grid (2-column for homepage) */
+#portfolio-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: var(--gap-default);
+}
+
+#portfolio-box .item {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* Item Thumbnails */
+.item-thumbnail-wrapper {
+  display: block;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: calc(45vw / 16 * 9);
+  float: left;
+  background-image: var(--loading-bg);
+  background-size: cover;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.item-thumbnail-img {
+  width: 100%;
+  height: 100%;
+  transform-origin: center middle;
+  transition-property: transform;
+  transition-duration: var(--transition-fast);
+}
+
+.item-thumbnail-wrapper:hover .item-thumbnail-img {
+  transform: scale(1.02);
+}
+
+.item-thumbnail-thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center middle;
+}
+
+/* Item Info */
+.item-info-wrapper {
+  margin: 0.5em 0 0 0;
+  opacity: 1;
+  left: 10px;
+  bottom: 0;
+  position: absolute;
+  width: 61%;
+  height: auto;
+  background-color: var(--color-bg);
+}
+
+.item-info {
+  padding: 1vw var(--gap-default);
+  line-height: 1.1em;
+}
+
+.info-title {
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+}
+
+/* Project Boxes (for child pages) */
+#project-box-1c,
+#project-box-2c,
+#project-box-2c-description,
+#project-box-3c,
+#project-box-4c,
+#project-box-storyboard {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: var(--gap-default);
+}
+
+#project-box-2c {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: calc(45vw / 16 * 9);
+}
+
+#project-box-2c div,
+#project-box-3c div,
+#project-box-4c div {
+  overflow: hidden;
+}
+
+#project-box-2c-description {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#project-box-3c,
+#project-box-storyboard {
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: calc(32vw / 16 * 9);
+}
+
+#project-box-storyboard {
+  padding: 0;
+  border-radius: 5px;
+}
+
+#project-box-storyboard div {
+  position: relative;
+  overflow: hidden;
+}
+
+#project-box-4c {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: calc(24vw / 16 * 9);
+}
+
+/* Project Images */
+.pj-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: 50% 50%;
+}
+
+.item-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: 50% 50%;
+}
+
+#img-default,
+#img-defualt {
+  width: 100%;
+}
+
+/* Utilities */
+.comingsoon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bw {
+  filter: grayscale(100%);
+}
+
+/* Responsive Grid */
+@media screen and (max-width: 700px) {
+  .grid,
+  .grid-2-column {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: var(--padding-default);
+    grid-auto-rows: calc(92vw / 3 * 2);
+    align-items: center;
+  }
+
+  .grid-img > a > img,
+  .grid-img > a > video {
+    height: calc(92vw / 3 * 2);
+  }
+
+  .grid-item-text {
+    padding: var(--padding-default);
+  }
+
+  main #itemContainer .grid .grid-item {
+    width: 92vw;
+  }
+
+  main #itemContainer .grid .grid-blank {
+    display: none;
+  }
+
+  .g1x2 {
+    grid-column: auto;
+  }
+
+  #portfolio-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: var(--padding-default);
+  }
+
+  .item-thumbnail-wrapper {
+    height: calc(92vw / 16 * 9);
+  }
+
+  #project-box-2c,
+  #project-box-2c-description,
+  #project-box-3c,
+  #project-box-4c,
+  #project-box-storyboard {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+  }
+}

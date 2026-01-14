@@ -1,0 +1,152 @@
+/* Navigation & Header */
+
+header {
+  position: relative;
+}
+
+/* Main Navigation */
+.nav,
+#nav {
+  width: 100%;
+  padding: 1.2em var(--padding-default) 0.8em var(--padding-default);
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  position: fixed;
+  text-align: right;
+  z-index: 100;
+  transition-property: color, background-color, opacity;
+  transition-duration: var(--transition-fast), var(--transition-fast), var(--transition-fast);
+}
+
+/* Logo */
+.logo,
+#logo,
+.nav #logo,
+#nav #logo {
+  background-image: var(--logo-url);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 3.95vw;
+  top: 0.7em;
+  height: 1.9em;
+  width: 8.7em;
+  margin: 0;
+}
+
+/* Menu Items */
+.works,
+.about,
+#menu,
+#menu-about,
+.home {
+  font-family: 'titleFont', serif;
+  color: var(--color-text);
+  cursor: pointer;
+  padding: 0.4em;
+  transition-property: color, background-color;
+  transition-duration: var(--transition-fast), var(--transition-fast);
+}
+
+.works:hover,
+.about:hover,
+#menu:hover,
+#menu-about:hover {
+  color: var(--color-highlight);
+  background-color: var(--color-text);
+}
+
+/* Selected State */
+.selected {
+  color: var(--color-bg);
+  background-color: var(--color-text);
+}
+
+/* About Section Overlay */
+.about-section {
+  text-align: left;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  height: 0vh;
+  padding-top: -20vw;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  transform: scale(1.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  transition-property: height, padding, transform;
+  transition-duration: var(--transition-fast), var(--transition-medium), var(--transition-fast);
+  transition-delay: 0ms;
+}
+
+.about-section.about-open {
+  transform: scale(1);
+  padding: var(--gap-default);
+  height: 80vh;
+}
+
+.about-section > .grid-2-column {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: var(--height-two-columns);
+}
+
+.about-section > .grid-2-column > div,
+.about-section > .grid-2-column > div > div {
+  width: 42vw;
+}
+
+.about-section a {
+  font-family: 'bodyFontIt', sans-serif;
+  color: var(--color-bg);
+}
+
+.about-section a:hover {
+  color: var(--color-highlight);
+}
+
+.about-section .grid {
+  grid-auto-rows: auto;
+}
+
+.about-section .grid-item-text {
+  padding: 0;
+}
+
+.about-section img {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.about-section .empha {
+  color: var(--color-bg);
+}
+
+/* About Wrapper (for dedicated about pages) */
+.about-wrapper {
+  display: grid;
+  padding: var(--padding-default);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: var(--gap-default);
+  line-height: var(--line-height-loose);
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 700px) {
+  .about-section > .grid-2-column {
+    grid-template-columns: none;
+  }
+
+  .about-section > .grid-2-column > div,
+  .about-section > .grid-2-column > div > div {
+    width: 88vw;
+  }
+
+  .about-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

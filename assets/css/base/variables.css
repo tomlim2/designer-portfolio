@@ -1,0 +1,58 @@
+/* CSS Custom Properties - Theme System */
+
+/* Light Theme (Default) */
+:root {
+  /* Colors - Light Theme */
+  --color-bg: rgba(255, 255, 255, 1);
+  --color-text: rgba(10, 10, 10, 1);
+  --color-text-body: rgba(120, 120, 120, 1);
+  --color-text-muted: rgba(110, 110, 110, 1);
+  --color-text-op: rgba(10, 10, 10, 0.5);
+  --color-highlight: rgba(150, 150, 150, 1);
+  --color-accent: rgba(245, 60, 40, 1);
+
+  /* Logos */
+  --logo-url: url("../../imgs/logo.svg");
+  --logo-url-invert: url("../../imgs/logo-invert.svg");
+
+  /* Layout */
+  --padding-default: 4vw;
+  --gap-default: 2vw;
+  --gap-description: 2vw;
+
+  /* Typography */
+  --font-default: calc(11px + (20 - 11) * ((100vw - 300px) / (1600 - 300)));
+  --font-h1: calc(18px + (38 - 18) * ((100vw - 300px) / (1600 - 300)));
+  --font-h1-item: calc(12px + (24 - 12) * ((100vw - 300px) / (1600 - 300)));
+  --font-h2: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+  --line-height-default: 1.5em;
+  --line-height-title: 1.2em;
+  --line-height-loose: 1.6em;
+
+  /* Transitions */
+  --transition-fast: 400ms;
+  --transition-medium: 500ms;
+
+  /* Grid */
+  --width-two-columns: 45vw;
+  --height-two-columns: auto;
+
+  /* Assets */
+  --loading-bg: url("../../imgs/img_loading_16x9.svg");
+  --info-bg: url('../../imgs/svg_infoBG.svg');
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  /* Colors - Dark Theme */
+  --color-bg: rgba(10, 10, 10, 1);
+  --color-text: rgba(255, 255, 255, 1);
+  --color-text-body: rgba(255, 255, 255, 0.8);
+  --color-text-muted: rgba(180, 180, 180, 1);
+  --color-text-op: rgba(255, 255, 255, 0.5);
+  --color-highlight: rgba(200, 200, 200, 1);
+
+  /* Logos */
+  --logo-url: url("../../imgs/logo-invert.svg");
+  --logo-url-invert: url("../../imgs/logo.svg");
+}

@@ -1,0 +1,87 @@
+/* Home Page Styles */
+
+/* Front Page Grid */
+.grid-front-column {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: calc(45vw / 3 * 2);
+}
+
+.grid-front-column .grid-img a img,
+.grid-front-column .grid-img a video {
+  width: 45vw;
+  height: calc(45vw / 16 * 9);
+}
+
+/* Item Info Overlay (homepage specific) */
+.grid > div > .item-info-wrapper {
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-bg);
+  z-index: 10;
+  bottom: 0;
+}
+
+/* Portfolio Section */
+#page-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#page-wrapper-2 {
+  position: relative;
+  background-color: var(--color-bg);
+}
+
+#portfolio-scetion {
+  padding: var(--padding-default);
+}
+
+#portfolio-scetion .sort {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+  display: inline-block;
+}
+
+/* Hero Container (homepage) - inherits base styles from components/hero.css */
+
+/* Video positioning inherited from components/hero.css */
+
+/* Text Utilities (homepage specific) */
+.mark-pri {
+  background-image: var(--logo-url);
+}
+
+.txt-bg-pri {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+.txt-pri {
+  color: var(--color-bg);
+}
+
+/* Dark Theme Text Utilities */
+[data-theme="dark"] .mark-pri {
+  background-image: var(--logo-url-invert);
+}
+
+/* Responsive Home Page */
+@media screen and (max-width: 700px) {
+  .grid-front-column {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: var(--padding-default);
+    grid-auto-rows: calc(92vw / 3 * 2);
+    align-items: center;
+  }
+
+  .grid-front-column .grid-img a img,
+  .grid-front-column .grid-img a video {
+    width: 92vw;
+    height: calc(92vw / 16 * 9);
+  }
+}

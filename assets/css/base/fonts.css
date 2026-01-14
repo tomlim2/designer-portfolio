@@ -1,0 +1,73 @@
+/* Font Face Declarations */
+
+@font-face {
+  font-family: 'bodyFont';
+  src: url('/assets/other/fs-b.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bodyFontIt';
+  src: url('/assets/other/fs-it.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'titleFont';
+  src: url('/assets/other/fs-title.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bodyFontTitle';
+  src: url('/assets/other/fs-b-title.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'subTitleFont';
+  src: url('/assets/other/san-l.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'titleFont_ko';
+  src: url('/assets/fonts/SeoulNamsanDEB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bodyFont_ko';
+  src: url('/assets/fonts/SeoulNamsanDM.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'slabBold';
+  src: url('/assets/other/slab-b.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'slabRegular';
+  src: url('/assets/other/slab-r.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

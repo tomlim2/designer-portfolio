@@ -1,0 +1,166 @@
+/* Project Pages (Children) */
+
+/* Main Content */
+main,
+aside {
+  padding: var(--padding-default);
+  position: relative;
+  width: 100%;
+}
+
+aside {
+  padding: 0;
+}
+
+/* Section Wrapper */
+.section-wrapper {
+  padding: var(--padding-default);
+}
+
+.section-title {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+/* Section Divider */
+#section-divider {
+  width: 92vw;
+  margin-left: var(--padding-default);
+  height: 1px;
+  background-color: var(--color-highlight);
+}
+
+/* Description */
+.description {
+  line-height: var(--line-height-default);
+}
+
+.description p {
+  font-size: 0.8em;
+}
+
+/* Aside Navigation */
+aside .aside {
+  grid-gap: 0;
+  grid-auto-rows: calc(100vw / 2 / 16 * 9);
+}
+
+.aside > .grid-item > .text {
+  background-image: var(--info-bg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  padding: 0.5vw;
+  width: 10vw;
+  height: 10vw;
+  color: var(--color-bg);
+  z-index: 10;
+}
+
+.aside > .grid-item > .prev {
+  left: 0;
+}
+
+.aside > .grid-item > .next {
+  right: 0;
+  text-align: right;
+}
+
+/* Prev/Next Navigation */
+.prevNext {
+  background-color: var(--color-text);
+}
+
+.prePage,
+.nextPage {
+  position: relative;
+  display: inline-block;
+}
+
+.prePage::before,
+.nextPage::before {
+  display: block;
+  position: absolute;
+  background-color: var(--color-text);
+  padding: 1em var(--padding-default);
+  color: rgba(180, 180, 180, 1);
+  top: 0;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.prePage::before {
+  content: "previous";
+  right: 0;
+}
+
+.nextPage::before {
+  content: "next";
+}
+
+.prePage::before:hover,
+.nextPage:hover {
+  color: var(--color-text);
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] body {
+  color: var(--color-text-body);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5 {
+  color: var(--color-bg);
+}
+
+/* Inverted Navigation Classes (for scroll-based theme switching) */
+.works-inv,
+.about-inv {
+  color: var(--color-text);
+}
+
+.invert-nav {
+  color: var(--color-bg);
+  background-color: var(--color-text);
+}
+
+.txt-bg-inv {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+.txt-inv {
+  color: var(--color-bg);
+}
+
+.mark-inv {
+  background-image: var(--logo-url-invert);
+}
+
+[data-theme="dark"] .mark-inv {
+  background-image: var(--logo-url);
+}
+
+/* Animation Classes */
+.ani-mv {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Project Pages */
+@media screen and (max-width: 700px) {
+  aside .grid {
+    grid-auto-rows: calc(100vw / 16 * 9);
+  }
+
+  .aside .grid-item .text {
+    width: 25vw;
+    height: 25vw;
+  }
+}
